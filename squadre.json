@@ -1,0 +1,121 @@
+{
+    "classifica": [
+        {
+            "squadra": "FIVE CLUB",
+            "logo": "https://www.csire.it/media/loghi_societa/04200545.jpg",
+            "punti": 34,
+            "giocate": 16,
+            "vinte": 11,
+            "perse": 4,
+            "pareggiate": 1,
+            "penalita": 0,
+            "reti_fatte": 84,
+            "reti_subite": 60,
+            "differenza_reti": 24
+        },
+        {
+            "squadra": "GOLDONI FRUTTA SALINA Gol",
+            "logo": "https://www.csire.it/media/loghi_societa/logo_soc_default.jpg",
+            "punti": 33,
+            "giocate": 16,
+            "vinte": 10,
+            "perse": 3,
+            "pareggiate": 3,
+            "penalita": 0,
+            "reti_fatte": 79,
+            "reti_subite": 47,
+            "differenza_reti": 32
+        },
+        {
+            "squadra": "F.C. MARMOTTE",
+            "logo": "https://www.csire.it/media/loghi_squadre/2747.jpg",
+            "punti": 27,
+            "giocate": 16,
+            "vinte": 8,
+            "perse": 5,
+            "pareggiate": 3,
+            "penalita": 0,
+            "reti_fatte": 71,
+            "reti_subite": 60,
+            "differenza_reti": 11
+        },
+        {
+            "squadra": "AVELLINO BANFI",
+            "logo": "https://www.csire.it/media/loghi_societa/04200780.jpg",
+            "punti": 23,
+            "giocate": 16,
+            "vinte": 6,
+            "perse": 5,
+            "pareggiate": 5,
+            "penalita": 0,
+            "reti_fatte": 54,
+            "reti_subite": 47,
+            "differenza_reti": 7
+        },
+        {
+            "squadra": "BAR SPORT",
+            "logo": "https://www.csire.it/media/loghi_societa/04200325.jpg",
+            "punti": 19,
+            "giocate": 16,
+            "vinte": 6,
+            "perse": 9,
+            "pareggiate": 1,
+            "penalita": 0,
+            "reti_fatte": 50,
+            "reti_subite": 58,
+            "differenza_reti": -8
+        },
+        {
+            "squadra": "PICCOLO OCEANO",
+            "logo": "https://www.csire.it/media/loghi_societa/04200325.jpg",
+            "punti": 19,
+            "giocate": 16,
+            "vinte": 6,
+            "perse": 9,
+            "pareggiate": 1,
+            "penalita": 0,
+            "reti_fatte": 53,
+            "reti_subite": 64,
+            "differenza_reti": -11
+        },
+        {
+            "squadra": "NSC SANTILIO",
+            "logo": "https://www.csire.it/media/loghi_societa/04200780.jpg",
+            "punti": 17,
+            "giocate": 16,
+            "vinte": 5,
+            "perse": 9,
+            "pareggiate": 2,
+            "penalita": 0,
+            "reti_fatte": 64,
+            "reti_subite": 94,
+            "differenza_reti": -30
+        },
+        {
+            "squadra": "DEPORTIVES DLB",
+            "logo": "https://www.csire.it/media/loghi_squadre/2754.jpg",
+            "punti": 16,
+            "giocate": 16,
+            "vinte": 4,
+            "perse": 8,
+            "pareggiate": 4,
+            "penalita": 0,
+            "reti_fatte": 56,
+            "reti_subite": 64,
+            "differenza_reti": -8
+        },
+        {
+            "squadra": "REAL MALEDUCATI",
+            "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg",
+            "punti": 16,
+            "giocate": 16,
+            "vinte": 4,
+            "perse": 8,
+            "pareggiate": 4,
+            "penalita": 0,
+            "reti_fatte": 56,
+            "reti_subite": 73,
+            "differenza_reti": -17
+        }
+    ]
+}

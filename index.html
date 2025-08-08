@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Classifica Squadre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Classifica Squadre</h1>
+    <div id="risultato">Caricamento...</div>
+
+    <script>
+        window.addEventListener('load', () => {
+            fetch('http://127.0.0.1:5000/esegui')
+                .then(response => response.json())
+                .then(data => {
+                    const risultatoDiv = document.getElementById('risultato');
+                    if (data.errore) {
+                        risultatoDiv.innerHTML = `<p style="color:red;">Errore: ${data.errore}</p>`;
+                    } else {
+                        risultatoDiv.innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                    }
+                })
+                .catch(err => {
+                    document.getElementById('risultato').innerHTML = `<p style="color:red;">Errore di rete: ${err}</p>`;
+                });
+        });
+    </script>
+</body>
+</html>
