@@ -4,7 +4,7 @@ import subprocess
 import json
 import os
 
-app = Flask(__name__, static_folder="static")  # puoi cambiare static_folder se vuoi
+app = Flask(__name__)  # puoi cambiare static_folder se vuoi
 CORS(app)
 
 @app.route('/')
