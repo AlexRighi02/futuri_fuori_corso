@@ -1,16 +1,19 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS
 import subprocess
 import json
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static")  # puoi cambiare static_folder se vuoi
 CORS(app)
 
+@app.route('/')
+def home():
+    # Serve una pagina index.html (opzionale, puoi modificarla)
+    return send_from_directory('static', 'index.html')
 
 @app.route('/esegui', methods=['GET'])
 def esegui_script():
-
     try:
         # Esegue lo script Python
         subprocess.run(['python3', 'estrai_classifica.py'], check=True)
@@ -33,4 +36,3 @@ def esegui_script():
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8080))
     app.run(host='0.0.0.0', port=port)
-
