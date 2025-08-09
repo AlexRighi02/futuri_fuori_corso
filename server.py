@@ -49,7 +49,10 @@ def esegui_script():
             print("stdout:", e.stdout)
         if e.stderr:
             print("stderr:", e.stderr)
-        return jsonify({'errore': "Errore nell'esecuzione di estrai_classifica.py"}), 500
+        return jsonify({
+            'errore': "Errore nell'esecuzione di estrai_classifica.py"
+            'err': e,  # tutto ciò che lo script ha stampato su console (print)
+        }), 500
 
     except Exception as e:
         print("Errore generico:", e)
