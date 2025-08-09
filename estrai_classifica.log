@@ -1,0 +1,107 @@
+✅ Elemento trovato: Calcio a 7
+✅ Click eseguito su C07
+⚠️ Tentativo 1 fallito per 0780: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.183); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x555ca80d42ca <unknown>
+#1 0x555ca7b7b550 <unknown>
+#2 0x555ca7b82198 <unknown>
+#3 0x555ca7b84a28 <unknown>
+#4 0x555ca7b84ab3 <unknown>
+#5 0x555ca7bc75cd <unknown>
+#6 0x555ca7bf2bc2 <unknown>
+#7 0x555ca7bc0c6a <unknown>
+#8 0x555ca7bf2d8e <unknown>
+#9 0x555ca7c189e6 <unknown>
+#10 0x555ca7bf2993 <unknown>
+#11 0x555ca7bbed6b <unknown>
+#12 0x555ca7bc0141 <unknown>
+#13 0x555ca80992ab <unknown>
+#14 0x555ca809d0b9 <unknown>
+#15 0x555ca8080139 <unknown>
+#16 0x555ca809dc68 <unknown>
+#17 0x555ca806460f <unknown>
+#18 0x555ca80c21f8 <unknown>
+#19 0x555ca80c23d6 <unknown>
+#20 0x555ca80d35e6 <unknown>
+#21 0x7f4d52c48aa4 <unknown>
+#22 0x7f4d52cd5c3c <unknown>
+
+✅ Elemento trovato: A.s.d. taneto 20.14
+✅ Click eseguito su 0780
+✅ Elemento trovato: Open a 7 golden l.
+✅ Banner #cm nascosto con JavaScript
+⚠️ Tentativo 1 fallito per 183: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.183); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x555ca80d42ca <unknown>
+#1 0x555ca7b7b550 <unknown>
+#2 0x555ca7b82198 <unknown>
+#3 0x555ca7b84a28 <unknown>
+#4 0x555ca7b84ab3 <unknown>
+#5 0x555ca7bcedee <unknown>
+#6 0x555ca7bc125d <unknown>
+#7 0x555ca7bf2bc2 <unknown>
+#8 0x555ca7bc0c6a <unknown>
+#9 0x555ca7bf2d8e <unknown>
+#10 0x555ca7c189e6 <unknown>
+#11 0x555ca7bf2993 <unknown>
+#12 0x555ca7bbed6b <unknown>
+#13 0x555ca7bc0141 <unknown>
+#14 0x555ca80992ab <unknown>
+#15 0x555ca809d0b9 <unknown>
+#16 0x555ca8080139 <unknown>
+#17 0x555ca809dc68 <unknown>
+#18 0x555ca806460f <unknown>
+#19 0x555ca80c21f8 <unknown>
+#20 0x555ca80c23d6 <unknown>
+#21 0x555ca80d35e6 <unknown>
+#22 0x7f4d52c48aa4 <unknown>
+#23 0x7f4d52cd5c3c <unknown>
+
+✅ Elemento trovato: Open a 7 golden l.
+✅ Banner #cm nascosto con JavaScript
+✅ Click eseguito su 183
+✅ Elemento trovato: Real maleducati
+✅ Banner #cm nascosto con JavaScript
+✅ Click eseguito su 2725
+✅ Elemento trovato: Gir. c
+✅ Banner #cm nascosto con JavaScript
+⚠️ Tentativo 1 fallito per C: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.183); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x555ca80d42ca <unknown>
+#1 0x555ca7b7b550 <unknown>
+#2 0x555ca7b82198 <unknown>
+#3 0x555ca7b84a28 <unknown>
+#4 0x555ca7b84ab3 <unknown>
+#5 0x555ca7bcedee <unknown>
+#6 0x555ca7bc125d <unknown>
+#7 0x555ca7bf2bc2 <unknown>
+#8 0x555ca7bc0c6a <unknown>
+#9 0x555ca7bf2d8e <unknown>
+#10 0x555ca7c189e6 <unknown>
+#11 0x555ca7bf2993 <unknown>
+#12 0x555ca7bbed6b <unknown>
+#13 0x555ca7bc0141 <unknown>
+#14 0x555ca80992ab <unknown>
+#15 0x555ca809d0b9 <unknown>
+#16 0x555ca8080139 <unknown>
+#17 0x555ca809dc68 <unknown>
+#18 0x555ca806460f <unknown>
+#19 0x555ca80c21f8 <unknown>
+#20 0x555ca80c23d6 <unknown>
+#21 0x555ca80d35e6 <unknown>
+#22 0x7f4d52c48aa4 <unknown>
+#23 0x7f4d52cd5c3c <unknown>
+
+✅ Elemento trovato: Gir. c
+✅ Banner #cm nascosto con JavaScript
+✅ Click eseguito su C
+✅ Elemento trovato: CERCA
+✅ Banner #cm nascosto con JavaScript
+✅ Click eseguito su btn-search
+✅ Elemento trovato: CLASSIFICHE
+✅ Banner #cm nascosto con JavaScript
+✅ Click eseguito su btn_submenu_classifiche
+✅ Dati delle squadre salvati in squadre.json
