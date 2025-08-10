@@ -4,9 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
-import chromedriver_autoinstaller
 import json
 
 
@@ -65,9 +63,6 @@ def wait_and_click(driver, by, value, timeout=10, retries=3, element_index=None)
 # CONFIGURAZIONE BROWSER
 # =====================================================
 
-# Installa automaticamente il Chromedriver giusto
-chromedriver_autoinstaller.install()
-
 options = Options()
 options.add_argument("--headless=new")
 options.add_argument('--no-sandbox')
@@ -76,7 +71,7 @@ options.add_argument('--disable-dev-shm-usage')
 # Percorso del binario di Chromium su Render
 options.binary_location = "/usr/bin/chromium-browser"
 
-# Percorso di Chromedriver
+# Percorso di Chromedriver su Render
 service = Service("/usr/bin/chromedriver")
 driver = webdriver.Chrome(service=service, options=options)
 
@@ -100,9 +95,6 @@ wait_and_click(driver, By.ID, 'btn_submenu_classifiche')
 # =====================================================
 # PARSING PAGINA
 # =====================================================
-html = driver.page_source
-soup = BeautifulSoup(html, 'html.parser')
-
 table = None
 while True:
     html = driver.page_source
