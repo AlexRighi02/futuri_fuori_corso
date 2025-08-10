@@ -32,7 +32,7 @@ def close_banner(driver, elemento):
     driver.execute_script("arguments[0].scrollIntoView(true);", elemento)
 
 
-def wait_and_click(driver, by, value, timeout=10, retries=3, element_index=None):
+def wait_and_click(driver, by, value, timeout=10, retries=10, element_index=None):
     """Click robusto con retry"""
     for attempt in range(1, retries + 1):
         try:
@@ -77,8 +77,6 @@ options = Options()
 
 # Modalità headless compatibile
 options.add_argument("--headless=new")  # per Chrome >=109
-# Se fallisce, si può forzare "--headless" vecchio stile
-# options.add_argument("--headless")
 
 # Flag per evitare DevToolsActivePort error
 options.add_argument("--no-sandbox")
@@ -88,11 +86,6 @@ options.add_argument("--disable-extensions")
 options.add_argument("--disable-software-rasterizer")
 options.add_argument("--remote-debugging-port=9222")  # fondamentale
 options.add_argument("--window-size=1920,1080")
-
-# Forza lingua e disabilita prompt
-options.add_argument("--lang=it-IT")
-options.add_argument("--disable-notifications")
-options.add_argument("--disable-popup-blocking")
 
 # qui inserisci il codice per cercare il browser
 for candidate in ["/usr/bin/chromium", "chromium", "chromium-browser", "google-chrome"]:
