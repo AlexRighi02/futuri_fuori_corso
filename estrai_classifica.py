@@ -94,15 +94,13 @@ options.add_argument("--lang=it-IT")
 options.add_argument("--disable-notifications")
 options.add_argument("--disable-popup-blocking")
 
-# Prova a trovare il binario di Chromium/Chrome
-for candidate in ["chromium-browser", "chromium", "google-chrome"]:
+# qui inserisci il codice per cercare il browser
+for candidate in ["/usr/bin/chromium", "chromium", "chromium-browser", "google-chrome"]:
     path = shutil.which(candidate)
     if path:
         options.binary_location = path
         print(f"✅ Browser trovato: {path}")
         break
-else:
-    print("⚠️ Nessun browser trovato nel PATH, Selenium userà quello di sistema se disponibile.")
 
 # Trova chromedriver
 chromedriver_path = shutil.which("chromedriver")
