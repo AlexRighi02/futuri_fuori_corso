@@ -10,7 +10,7 @@ CORS(app)
 @app.route('/')
 def home():
     # Serve una pagina index.html (opzionale, puoi modificarla)
-    return send_from_directory('.', 'index.html')
+    return send_from_directory('./react-site/public/', 'index.html')
 
 @app.route('/esegui', methods=['GET'])
 def esegui_script():
