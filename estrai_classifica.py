@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
+import chromedriver_autoinstaller
 import json
 
 
@@ -63,8 +64,12 @@ def wait_and_click(driver, by, value, timeout=10, retries=3, element_index=None)
 # =====================================================
 # CONFIGURAZIONE BROWSER
 # =====================================================
+
+# Installa automaticamente il Chromedriver giusto
+chromedriver_autoinstaller.install()
+
 options = Options()
-options.add_argument('--headless')
+options.add_argument("--headless=new")
 options.add_argument('--no-sandbox')
 options.add_argument('--disable-dev-shm-usage')
 
