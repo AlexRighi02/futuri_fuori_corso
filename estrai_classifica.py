@@ -1,30 +1,39 @@
+#!/usr/bin/env python3
+import shutil
+import json
+from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from bs4 import BeautifulSoup
-import json
-import shutil
 
-chromedriver_path = shutil.which("chromedriver")
-print("Chromedriver trovato in:", chromedriver_path)
+try:
+    from webdriver_manager.chrome import ChromeDriverManager
+    USE_WDM = True
+except ImportError:
+    USE_WDM = False
 
-# 🔹 Attende il caricamento completo della pagina
+
+# =====================================================
+# FUNZIONI UTILI
+# =====================================================
+
 def wait_for_page_load(driver, timeout=10):
+    """Aspetta che la pagina sia completamente caricata"""
     WebDriverWait(driver, timeout).until(
         lambda d: d.execute_script('return document.readyState') == 'complete'
     )
 
 
-# 🔹 Nasconde eventuali banner di cookie che bloccano i click
 def close_banner(driver, elemento):
+    """Scorri fino all'elemento (per evitare overlay/banner)"""
     driver.execute_script("arguments[0].scrollIntoView(true);", elemento)
 
 
-# 🔹 Funzione universale per cliccare un elemento con retry
 def wait_and_click(driver, by, value, timeout=10, retries=3, element_index=None):
+    """Click robusto con retry"""
     for attempt in range(1, retries + 1):
         try:
             if element_index is None:
@@ -39,10 +48,8 @@ def wait_and_click(driver, by, value, timeout=10, retries=3, element_index=None)
 
             print(f"✅ Elemento trovato: {elemento.text.strip() if elemento.text else value}")
 
-            # Scorri fino all'elemento
             close_banner(driver, elemento)
 
-            # Nascondi eventuale banner #cm
             try:
                 driver.execute_script("document.getElementById('cm').style.display = 'none';")
                 print("✅ Banner #cm nascosto con JavaScript")
@@ -63,22 +70,54 @@ def wait_and_click(driver, by, value, timeout=10, retries=3, element_index=None)
 
 
 # =====================================================
-# CONFIGURAZIONE BROWSER
+# CONFIGURAZIONE CHROME
 # =====================================================
 
 options = Options()
-options.add_argument("--headless=new")
-options.add_argument('--no-sandbox')
-options.add_argument('--disable-dev-shm-usage')
 
-# Percorso del binario di Chromium su Render
-options.binary_location = "/usr/bin/chromium-browser"
+# Modalità headless compatibile
+options.add_argument("--headless=new")  # per Chrome >=109
+# Se fallisce, si può forzare "--headless" vecchio stile
+# options.add_argument("--headless")
 
-if not chromedriver_path:
-    raise Exception("Chromedriver non trovato nel PATH!")
+# Flag per evitare DevToolsActivePort error
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--disable-gpu")
+options.add_argument("--disable-extensions")
+options.add_argument("--disable-software-rasterizer")
+options.add_argument("--remote-debugging-port=9222")  # fondamentale
+options.add_argument("--window-size=1920,1080")
 
-# Percorso di Chromedriver su Render
-service = Service(chromedriver_path)
+# Forza lingua e disabilita prompt
+options.add_argument("--lang=it-IT")
+options.add_argument("--disable-notifications")
+options.add_argument("--disable-popup-blocking")
+
+# Prova a trovare il binario di Chromium/Chrome
+for candidate in ["chromium-browser", "chromium", "google-chrome"]:
+    path = shutil.which(candidate)
+    if path:
+        options.binary_location = path
+        print(f"✅ Browser trovato: {path}")
+        break
+else:
+    print("⚠️ Nessun browser trovato nel PATH, Selenium userà quello di sistema se disponibile.")
+
+# Trova chromedriver
+chromedriver_path = shutil.which("chromedriver")
+
+if chromedriver_path:
+    print(f"✅ Chromedriver trovato in: {chromedriver_path}")
+    service = Service(chromedriver_path)
+else:
+    if USE_WDM:
+        print("⚠️ Chromedriver non trovato, scarico con webdriver-manager...")
+        chromedriver_path = ChromeDriverManager().install()
+        service = Service(chromedriver_path)
+    else:
+        raise Exception("❌ Chromedriver non trovato e webdriver-manager non installato! Esegui: pip install webdriver-manager")
+
 driver = webdriver.Chrome(service=service, options=options)
 
 
@@ -106,10 +145,10 @@ while True:
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
     table = soup.find('table', class_='tbl-standard charts')
-    if table:        
+    if table:
         break
     else:
-        print("❌ Tabella non trovata, ritento")
+        print("❌ Tabella non trovata, ritento...")
         wait_for_page_load(driver)
 
 driver.quit()
@@ -119,7 +158,7 @@ driver.quit()
 # =====================================================
 json_data = {"classifica": []}
 
-for tr in table.find_all('tr')[1:]:  # Salta l'intestazione
+for tr in table.find_all('tr')[1:]:
     td = tr.find_all('td')
 
     nome_squadra = td[1].find('a').text.strip() if td[1].find('a') else ''
