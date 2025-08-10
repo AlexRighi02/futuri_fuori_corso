@@ -43,7 +43,8 @@ def esegui_script():
         print("Errore subprocess:", e)
         print("stdout:", e.stdout)
         print("stderr:", e.stderr)
-        return jsonify({'errore': "Errore nell'esecuzione di estrai_classifica.py"}), 500
+        strToReturn = e.stderr + " " + e.stdout
+        return jsonify({'errore': "Errore nell'esecuzione di estrai_classifica.py", 'details': strToReturn}), 500
 
     except Exception as e:
         print("Errore generico:", e)
