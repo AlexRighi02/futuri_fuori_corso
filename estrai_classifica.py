@@ -6,7 +6,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import json
+import shutil
 
+chromedriver_path = shutil.which("chromedriver")
+print("Chromedriver trovato in:", chromedriver_path)
 
 # 🔹 Attende il caricamento completo della pagina
 def wait_for_page_load(driver, timeout=10):
@@ -71,8 +74,11 @@ options.add_argument('--disable-dev-shm-usage')
 # Percorso del binario di Chromium su Render
 options.binary_location = "/usr/bin/chromium-browser"
 
+if not chromedriver_path:
+    raise Exception("Chromedriver non trovato nel PATH!")
+
 # Percorso di Chromedriver su Render
-service = Service("/usr/bin/chromedriver")
+service = Service(chromedriver_path)
 driver = webdriver.Chrome(service=service, options=options)
 
 
