@@ -11,11 +11,10 @@ ENV CHROME_BIN=/usr/bin/chromium
 ENV CHROMEDRIVER_PATH=/usr/bin/chromedriver
 
 # Copia i file di progetto
-WORKDIR /app
-COPY requirements.txt ./
+WORKDIR /app/back-end
+COPY requirements.txt /app/back-end/
 RUN pip install --no-cache-dir -r requirements.txt
-
-COPY . .
+COPY back-end/ /app/back-end/
 
 # Espone la porta di Flask/Gunicorn
 EXPOSE 8080
