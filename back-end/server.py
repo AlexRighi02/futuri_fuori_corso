@@ -4,13 +4,14 @@ import subprocess
 import json
 import os
 
-app = Flask(__name__)  # puoi cambiare static_folder se vuoi
+app = Flask(__name__)
 CORS(app)
+
+FRONTEND_BUILD = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "front-end", "build")
 
 @app.route('/')
 def home():
-    # Serve una pagina index.html (opzionale, puoi modificarla)
-    return send_from_directory('./react-site/public/', 'index.html')
+    return send_from_directory(FRONTEND_BUILD, 'index.html')
 
 @app.route('/esegui', methods=['GET'])
 def esegui_script():
