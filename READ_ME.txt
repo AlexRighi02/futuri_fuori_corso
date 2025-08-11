@@ -4,8 +4,8 @@ OPZIONE 1:
 - recarsi nella cartella front-end e avviare npm: npm start
 
 OPZIONE 2:
-- avviare i Dockerfile con: docker build -t mio-progetto .
-- far girare il sito sulla porta 8080: docker run -p 8080:8080 mio-progetto
+- avviare i Dockerfile con: sudo docker build -t mio-progetto .
+- far girare il sito sulla porta 8080: sudo docker run -p 8080:8080 mio-progetto
 - andare sul browser nella porta 8080: http://localhost:8080/
 
 OPZIONE 3:
@@ -69,22 +69,15 @@ if __name__ == '__main__':                               Qui il codice prova a l
 
 ___________________________________________________________________________________________________________________________________________________
 
-SPIEGAZIONE
-api.py (codice -> back-end/api.py)
 
+api.py:
 Questo script Python per inviare richieste POST e parsare i dati HTML è stato creato partendo da una chiamata API effettuata tramite Postman.
-
 Postman è uno strumento molto veloce e comodo perché permette di:
-
-Configurare e testare facilmente le richieste API con interfaccia grafica, senza scrivere codice iniziale.
-
-Visualizzare immediatamente la risposta del server, per capire cosa viene restituito.
-
-Generare automaticamente codice in diversi linguaggi (come Python, JavaScript, curl, ecc.) a partire dalla richiesta configurata.
-
-Sperimentare e modificare le richieste in modo interattivo, per ottimizzare parametri, header, e payload.
-
-Risparmiare tempo nello sviluppo perché evita di scrivere da zero tutte le chiamate HTTP e la gestione dei dettagli.
-
-In questo modo, Postman accelera molto la fase di prototipazione e test delle API, permettendo di passare rapidamente dal test manuale alla scrittura del codice Python funzionante e pronto per essere integrato.
+- Configurare e testare facilmente le richieste API con interfaccia grafica, senza scrivere codice iniziale.
+- Visualizzare immediatamente la risposta del server, per capire cosa viene restituito.
+- Generare automaticamente codice in diversi linguaggi (come Python, JavaScript, curl, ecc.) a partire dalla richiesta configurata.
+- Sperimentare e modificare le richieste in modo interattivo, per ottimizzare parametri, header, e payload.
+- Risparmiare tempo nello sviluppo perché evita di scrivere da zero tutte le chiamate HTTP e la gestione dei dettagli.
+In questo modo, Postman accelera molto la fase di prototipazione e test delle API, permettendo di passare rapidamente dal test manuale alla 
+scrittura del codice Python funzionante e pronto per essere integrato.
 

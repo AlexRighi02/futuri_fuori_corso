@@ -32,13 +32,13 @@ def esegui_script():
             stderr=subprocess.PIPE,
             text=True
         )
-        if not os.path.exists('squadre.json'):
-            return jsonify({'errore': 'File squadre.json non trovato'}), 500
-        with open('squadre.json', 'r', encoding='utf-8') as f:
+        if not os.path.exists('classifica.json'):
+            return jsonify({'errore': 'File classifica.json non trovato'}), 500
+        with open('classifica.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
         return jsonify({'data': data, 'stdout': result.stdout, 'stderr': result.stderr})
     except subprocess.CalledProcessError as e:
-        return jsonify({'errore': "Errore nell'esecuzione di estrai_classifica.py", 'details': e.stderr + " " + e.stdout}), 500
+        return jsonify({'errore': "Errore nell'esecuzione di api.py", 'details': e.stderr + " " + e.stdout}), 500
     except Exception as e:
         return jsonify({'errore': str(e)}), 500
 
