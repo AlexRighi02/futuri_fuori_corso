@@ -8,10 +8,11 @@ table {
 
 /* Intestazione principale sopra la tabella */
 thead tr:first-child th {
-    background-color: #003399;
+    background-color: none;
     /* Blu scuro */
     font-size: 1.2rem;
     padding: 10px;
+    color: black;
 }
 
 /* Riga dei titoli di colonna */
