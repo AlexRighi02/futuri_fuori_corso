@@ -1,3 +1,25 @@
+Come testare il funzionamento del programma:
+OPZIONE 1:
+- avviare il server con: python3 server.py
+- recarsi nella cartella front-end e avviare npm: npm start
+
+OPZIONE 2:
+- avviare i Dockerfile con: docker build -t mio-progetto .
+- far girare il sito sulla porta 8080: docker run -p 8080:8080 mio-progetto
+- andare sul browser nella porta 8080: http://localhost:8080/
+
+OPZIONE 3:
+Caricare le modifiche su Github:
+- git add .
+- git commit -m "commento"
+- git push
+Andare su Render, avviare il server e verificare tutto funzioni all'URL: https://sito-ffc.onrender.com/
+
+
+N.B. Tutte le opzioni devono funzionare e soprattuto la numero 3.
+___________________________________________________________________________________________________________________________________________________
+
+
 Spiegazione dei programmi nel progetto:
 
 Dockerfile:
