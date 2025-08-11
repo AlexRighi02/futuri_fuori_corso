@@ -4,19 +4,27 @@ import subprocess
 import json
 import os
 
-app = Flask(__name__)
-CORS(app)
-
 FRONTEND_BUILD = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "front-end", "build")
+
+app = Flask(__name__, static_folder=FRONTEND_BUILD, static_url_path='')
+CORS(app)
 
 @app.route('/')
 def home():
-    return send_from_directory(FRONTEND_BUILD, 'index.html')
+    return app.send_static_file('index.html')
+
+# Route per qualsiasi altra pagina React
+@app.route('/<path:path>')
+def static_proxy(path):
+    file_path = os.path.join(FRONTEND_BUILD, path)
+    if os.path.isfile(file_path):
+        return send_from_directory(FRONTEND_BUILD, path)
+    else:
+        return app.send_static_file('index.html')
 
 @app.route('/esegui', methods=['GET'])
 def esegui_script():
     try:
-        print("Avvio estrai_classifica.py")
         result = subprocess.run(
             ['python3', 'api.py'],
             check=True,
@@ -24,35 +32,16 @@ def esegui_script():
             stderr=subprocess.PIPE,
             text=True
         )
-        print("Fine estrai_classifica.py")
-        print("stdout:", result.stdout)
-        print("stderr:", result.stderr)
-
-        if not os.path.exists('classifica.json'):
-            print("Errore: squadre.json non trovato")
+        if not os.path.exists('squadre.json'):
             return jsonify({'errore': 'File squadre.json non trovato'}), 500
-
         with open('squadre.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
-        return jsonify({
-            'data': data,
-            'stdout': result.stdout,
-            'stderr': result.stderr
-        })
-
+        return jsonify({'data': data, 'stdout': result.stdout, 'stderr': result.stderr})
     except subprocess.CalledProcessError as e:
-        print("Errore subprocess:", e)
-        print("stdout:", e.stdout)
-        print("stderr:", e.stderr)
-        strToReturn = e.stderr + " " + e.stdout
-        return jsonify({'errore': "Errore nell'esecuzione di estrai_classifica.py", 'details': strToReturn}), 500
-
+        return jsonify({'errore': "Errore nell'esecuzione di estrai_classifica.py", 'details': e.stderr + " " + e.stdout}), 500
     except Exception as e:
-        print("Errore generico:", e)
         return jsonify({'errore': str(e)}), 500
-
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8080))
     app.run(host='0.0.0.0', port=port)
-
