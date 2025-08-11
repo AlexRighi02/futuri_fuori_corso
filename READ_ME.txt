@@ -47,4 +47,22 @@ if __name__ == '__main__':                               Qui il codice prova a l
 
 ___________________________________________________________________________________________________________________________________________________
 
-    
+SPIEGAZIONE
+api.py (codice -> back-end/api.py)
+
+Questo script Python per inviare richieste POST e parsare i dati HTML è stato creato partendo da una chiamata API effettuata tramite Postman.
+
+Postman è uno strumento molto veloce e comodo perché permette di:
+
+Configurare e testare facilmente le richieste API con interfaccia grafica, senza scrivere codice iniziale.
+
+Visualizzare immediatamente la risposta del server, per capire cosa viene restituito.
+
+Generare automaticamente codice in diversi linguaggi (come Python, JavaScript, curl, ecc.) a partire dalla richiesta configurata.
+
+Sperimentare e modificare le richieste in modo interattivo, per ottimizzare parametri, header, e payload.
+
+Risparmiare tempo nello sviluppo perché evita di scrivere da zero tutte le chiamate HTTP e la gestione dei dettagli.
+
+In questo modo, Postman accelera molto la fase di prototipazione e test delle API, permettendo di passare rapidamente dal test manuale alla scrittura del codice Python funzionante e pronto per essere integrato.
+

@@ -1,0 +1,64 @@
+/* Stile tabella principale */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Intestazione principale sopra la tabella */
+thead tr:first-child th {
+    background-color: #003399;
+    /* Blu scuro */
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/* Riga dei titoli di colonna */
+thead tr:nth-child(2) {
+    background-color: #3a3a3a;
+    font-weight: bold;
+}
+
+/* Celle dell'intestazione */
+thead th {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* Righe alternate del corpo */
+tbody tr:nth-child(odd) {
+    background-color: #2a2a2a;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+/* Celle del corpo */
+tbody td {
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Stile posizione (prima colonna) */
+tbody td:first-child {
+    font-weight: bold;
+    color: #007bff;
+    /* Blu per il numero posizione */
+}
+
+/* Hover sulle righe (opzionale) */
+tbody tr:hover {
+    background-color: #444;
+    cursor: pointer;
+}

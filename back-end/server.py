@@ -17,7 +17,7 @@ def esegui_script():
     try:
         print("Avvio estrai_classifica.py")
         result = subprocess.run(
-            ['python3', 'estrai_classifica.py'],
+            ['python3', 'api.py'],
             check=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
@@ -27,7 +27,7 @@ def esegui_script():
         print("stdout:", result.stdout)
         print("stderr:", result.stderr)
 
-        if not os.path.exists('squadre.json'):
+        if not os.path.exists('classifica.json'):
             print("Errore: squadre.json non trovato")
             return jsonify({'errore': 'File squadre.json non trovato'}), 500
 
