@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CustomNavbar from './components/CustomNavbar';
+import Navbar_FFC from './components/Navbar_FFC';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CustomNavbar />
+    <Navbar_FFC />
     <App />
   </React.StrictMode>
 );
