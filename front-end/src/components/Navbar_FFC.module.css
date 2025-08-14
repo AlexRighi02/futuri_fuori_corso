@@ -14,19 +14,7 @@
   justify-content: center !important;
 }
 
-.navMenu {
-  margin: 0 80px;
-}
-
-.logo {
-  height: 145px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-41%);
-  top: 3px;
-}
-
-.link {
+.link, .sideLink{
   display: inline-block;
   color: #fff !important;
   margin: 0 20px;
@@ -39,7 +27,7 @@
   transition: color 0.3s ease; 
 }
 
-.link::after {
+.link::after, .sideLink::after {
   content: "";
   position: absolute;
   left: 0;
@@ -50,10 +38,112 @@
   transition: width 0.2s ease;
 }
 
-.link:hover::after {
+.link:hover::after, .sideLink:hover::after {
   width: 100%;
 }
 
-.link:hover {
+.link:hover, .sideLink:hover {
   color: rgb(241 189 9) !important;
+}
+
+.navMenu {
+  margin: 0 80px;
+}
+
+.logo {
+  height: 145px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-40%);
+  top: 3px;
+}
+
+.navTendina {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  display: none;
+}
+
+.closeIcon {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+:global(.sideMenu) {
+  position: absolute;
+  flex-direction: column !important;
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+  padding-top: 40px;
+  padding-right: 80px;
+  padding-left: 10px;
+  background-color: #000;
+  border-left: solid 2px rgb(241 189 9);
+
+  /* Trasizione da destra */
+  transform: translateX(100%); /* fuori dallo schermo a destra */
+  transition: transform 0.5s ease;
+}
+
+/* Logo a sinistra su schermi piccoli */
+@media (max-width: 992px) { /* breakpoint Bootstrap "lg" */
+  .logo {
+    height: 100px;
+    left: 10px;
+    transform: none;
+  }
+
+  .navMenu {
+    display: none !important;
+  }
+
+  .navTendina {
+    display: block;
+  }
+
+  .navbar {
+    height: 60px;
+  }
+}
+
+.hamburger {
+  width: 20px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+/* Stato iniziale */
+.hamburger span:nth-child(1),
+.hamburger span:nth-child(3) {
+  width: 100%; /* Linee lunghe */
+}
+
+.hamburger span:nth-child(2) {
+  width: 60%; /* Linea centrale più corta */
+}
+
+/* Hover: invertiamo le lunghezze */
+.hamburger:hover span:nth-child(1),
+.hamburger:hover span:nth-child(3) {
+  width: 60%; /* Accorcia le linee sopra e sotto */
+}
+
+.hamburger:hover span:nth-child(2) {
+  width: 100%; /* Allunga la linea centrale */
 }
