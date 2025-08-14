@@ -8,20 +8,37 @@ const Navbar_FFC = () => {
   let isMenuOpen = false;
   const clickMenu = () => {
     isMenuOpen = !isMenuOpen;
-    document.querySelector(".sideMenu").style.transform = isMenuOpen ? "translateX(0)" : "translateX(100%)";
+
+    if (isMenuOpen) {
+      document.querySelector(".sideMenu").style.display = "block";
+      setTimeout(() => {
+        document.querySelector(".sideMenu").style.transform = "translateX(0)";
+      }, 0);
+    } else {
+      document.querySelector(".sideMenu").style.transform = "translateX(100%)";
+      setTimeout(() => {
+        document.querySelector(".sideMenu").style.display = "none";
+      }, 500);
+    }
   };
 
   const closeMenu = () => {
-    isMenuOpen = false;
+    isMenuOpen = false;    
     document.querySelector(".sideMenu").style.transform = "translateX(100%)";
+    setTimeout(() => {
+      document.querySelector(".sideMenu").style.display = "none";
+    }, 500);
   };
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 992) {
         // chiudi automaticamente il menu
-        document.querySelector(".sideMenu").style.transform = "translateX(100%)";
         isMenuOpen = false;
+        document.querySelector(".sideMenu").style.transform = "translateX(100%)";
+        setTimeout(() => {
+          document.querySelector(".sideMenu").style.display = "none";
+        }, 500);
       }
     };
 

@@ -75,6 +75,7 @@
 }
 
 :global(.sideMenu) {
+  display: none;
   position: absolute;
   flex-direction: column !important;
   right: 0px;
