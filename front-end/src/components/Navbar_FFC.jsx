@@ -84,7 +84,6 @@ const Navbar_FFC = () => {
           </div>         
         </Nav>
 
-
         <div className="sideMenu" style={{ backgroundImage: 'url("/img/WallPaper.png")', backgroundSize: 'cover'}}>
           <div className={styles.closeIcon} onClick={closeMenu}>
             <i className="bi bi-x-lg"></i>
@@ -96,8 +95,6 @@ const Navbar_FFC = () => {
             <Nav.Link href="#chi-siamo" className={styles.sideLink}>CHI SIAMO</Nav.Link>
           </Nav>
         </div>
-        
-
       </Container>
     </Navbar>
   );
