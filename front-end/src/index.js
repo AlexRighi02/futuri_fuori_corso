@@ -10,6 +10,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar_FFC />
-    <App />
+    <div id="toBlur">
+      <App />
+    </div>
   </React.StrictMode>
 );

@@ -1,5 +1,4 @@
 .navbar {
-  background-color: #000;
   border-bottom: 2px solid rgb(241 189 9); /* linea verde */
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -14,7 +13,7 @@
   justify-content: center !important;
 }
 
-.link, .sideLink{
+.link {
   display: inline-block;
   color: #fff !important;
   margin: 0 20px;
@@ -27,7 +26,26 @@
   transition: color 0.3s ease; 
 }
 
-.link::after, .sideLink::after {
+.sideLink{
+  display: inline-block;
+  color: #fff !important;
+
+  padding-right: 80px !important;
+  padding-left: 10px !important;
+
+  margin: 0 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  border-bottom: 1px solid #f3bc09;
+
+  padding-bottom: 2px !important;
+  position: relative;
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+.link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -38,7 +56,7 @@
   transition: width 0.2s ease;
 }
 
-.link:hover::after, .sideLink:hover::after {
+.link:hover::after {
   width: 100%;
 }
 
@@ -65,6 +83,13 @@
   display: none;
 }
 
+.blurredChild {
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
 .closeIcon {
   cursor: pointer;
   color: #fff;
@@ -72,6 +97,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
+  z-index: 1000;
 }
 
 :global(.sideMenu) {
@@ -81,36 +107,11 @@
   right: 0px;
   top: 0px;
   height: 100vh;
-  padding-top: 40px;
-  padding-right: 80px;
-  padding-left: 10px;
-  background-color: #000;
   border-left: solid 2px rgb(241 189 9);
 
   /* Trasizione da destra */
   transform: translateX(100%); /* fuori dallo schermo a destra */
   transition: transform 0.5s ease;
-}
-
-/* Logo a sinistra su schermi piccoli */
-@media (max-width: 992px) { /* breakpoint Bootstrap "lg" */
-  .logo {
-    height: 100px;
-    left: 10px;
-    transform: none;
-  }
-
-  .navMenu {
-    display: none !important;
-  }
-
-  .navTendina {
-    display: block;
-  }
-
-  .navbar {
-    height: 60px;
-  }
 }
 
 .hamburger {
@@ -148,3 +149,111 @@
 .hamburger:hover span:nth-child(2) {
   width: 100%; /* Allunga la linea centrale */
 }
+
+
+/* Voglio fare più breakpoint: 992px, 768px, 576px */
+
+@media (max-width: 992px) {
+
+  .navMenu {
+    display: none !important;
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 20px;
+  }
+
+  .hamburger span {
+    height: 3px;
+  }
+
+  .logo {
+    height: 150px;
+    left: 10px;
+    transform: none;
+  }
+
+  .navbar {
+    height: 80px;
+  }
+
+  .navTendina {
+    display: block;
+    top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 130px;
+    left: 10px;
+    transform: none;
+  }
+
+  .navMenu {
+    display: none !important;
+  }
+
+  .navTendina {
+    display: block;
+    top: 25px;
+  }
+
+  .navbar {
+    height: 70px;
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 20px;
+  }
+
+  .hamburger span {
+    height: 3px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .logo {
+    height: 110px;
+    left: 7px;
+    transform: none;
+  }
+
+  .navMenu {
+    display: none !important;
+  }
+
+  .navTendina {
+    display: block;
+    top: 22px;
+  }
+
+  .navbar {
+    height: 60px;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: 17px;
+  }
+
+  .hamburger span {
+    height: 3px;
+  }
+
+  .sideLink {
+    font-size: 15px;
+
+    padding-right: 60px !important;
+    padding-left: 5px !important;
+
+    margin: 0 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+

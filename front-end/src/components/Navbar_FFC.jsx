@@ -7,15 +7,18 @@ const Navbar_FFC = () => {
 
   let isMenuOpen = false;
   const clickMenu = () => {
+    console.log(isMenuOpen);
     isMenuOpen = !isMenuOpen;
 
     if (isMenuOpen) {
       document.querySelector(".sideMenu").style.display = "block";
+      document.getElementById("toBlur").style.filter = "blur(5px)";
       setTimeout(() => {
         document.querySelector(".sideMenu").style.transform = "translateX(0)";
       }, 0);
     } else {
       document.querySelector(".sideMenu").style.transform = "translateX(100%)";
+      document.getElementById("toBlur").style.filter = "none";
       setTimeout(() => {
         document.querySelector(".sideMenu").style.display = "none";
       }, 500);
@@ -25,6 +28,7 @@ const Navbar_FFC = () => {
   const closeMenu = () => {
     isMenuOpen = false;    
     document.querySelector(".sideMenu").style.transform = "translateX(100%)";
+    document.getElementById("toBlur").style.filter = "none";
     setTimeout(() => {
       document.querySelector(".sideMenu").style.display = "none";
     }, 500);
@@ -34,11 +38,12 @@ const Navbar_FFC = () => {
     const handleResize = () => {
       if (window.innerWidth > 992) {
         // chiudi automaticamente il menu
-        isMenuOpen = false;
         document.querySelector(".sideMenu").style.transform = "translateX(100%)";
+        document.getElementById("toBlur").style.filter = "none";
         setTimeout(() => {
           document.querySelector(".sideMenu").style.display = "none";
         }, 500);
+        isMenuOpen = false;
       }
     };
 
@@ -54,7 +59,7 @@ const Navbar_FFC = () => {
 
 
   return (
-    <Navbar expand="lg" className={`${styles.navbar} sticky-top`} variant="dark">
+    <Navbar expand="lg" className={`${styles.navbar} sticky-top`} style={{ backgroundImage: 'url("/img/WallPaper.png")', backgroundSize: 'cover', backgroundPosition: 'center' }} variant="dark">
       <Container fluid className={`${styles.navContainer} blurred`}>
 
         <Nav className={`${styles.navMenu}`}>
@@ -80,11 +85,11 @@ const Navbar_FFC = () => {
         </Nav>
 
 
-        <div className="sideMenu">
+        <div className="sideMenu" style={{ backgroundImage: 'url("/img/WallPaper.png")', backgroundSize: 'cover'}}>
           <div className={styles.closeIcon} onClick={closeMenu}>
             <i className="bi bi-x-lg"></i>
           </div>
-          <Nav className={styles.sideNav}>
+          <Nav className={`${styles.sideNav} ${styles.blurredChild}`} >
             <Nav.Link href="#home" className={styles.sideLink}>HOME</Nav.Link>
             <Nav.Link href="#calendario" className={styles.sideLink}>CALENDARIO</Nav.Link>
             <Nav.Link href="#rosa" className={styles.sideLink}>ROSA</Nav.Link>
