@@ -18,3 +18,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#sfondoSito {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #sfondoSito {
+    width: 120%;
+    transform: translateX(-5%);
+  }
+}
+
+
+@media (max-width: 576px) {
+  #sfondoSito {
+    width: 150%;
+    transform: translateX(-10%);
+  }
+}

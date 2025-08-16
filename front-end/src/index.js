@@ -11,6 +11,8 @@ root.render(
   <React.StrictMode>
     <Navbar_FFC />
     <div id="toBlur">
+      {/*<img src={process.env.PUBLIC_URL + '/img/Sfondo_FFC_tmp_3.JPG'} id="sfondoSito" alt="Sfondo FFC" />*/}
+      <img src={process.env.PUBLIC_URL + '/img/Sfondo_FFC_tmp.png'} id="sfondoSito" alt="Sfondo FFC" />
       <App />
     </div>
   </React.StrictMode>
