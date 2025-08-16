@@ -59,7 +59,7 @@ const Navbar_FFC = () => {
 
 
   return (
-    <Navbar expand="lg" className={`${styles.navbar} sticky-top`} style={{ backgroundImage: 'url("/img/WallPaper.png")', backgroundSize: 'cover', backgroundPosition: 'center' }} variant="dark">
+    <Navbar expand="lg" className={`${styles.navbar} sticky-top`} style={{ backgroundImage: 'url("/img/WallPaper.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <Container fluid className={`${styles.navContainer} blurred`}>
 
         <Nav className={`${styles.navMenu}`}>
