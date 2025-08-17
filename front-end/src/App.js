@@ -16,7 +16,7 @@ const App = () => {
 
     
     <div>
-      {/*
+      
       <h1>Classifica Squadre</h1>
       <div id="risultato">
         {errore && <p style={{ color: 'red' }}>Errore: {errore}</p>}
@@ -28,7 +28,7 @@ const App = () => {
               : <Classifica classifica={data.data.classifica} />
         )}
       </div>
-      */}
+      
     </div>
   );
 

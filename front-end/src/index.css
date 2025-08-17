@@ -15,6 +15,14 @@ body {
   padding: 0;
   overflow-x: hidden;
   height: 100vh;
+  background-image: url('../public/img/Sfondo_FFC_1.png');
+  background-size: 100% auto;     /* larghezza = 100% del div, altezza proporzionata */
+  background-position: top left; /* l'immagine parte dall'angolo in alto a sinistra del div */
+}
+
+#container_carosello {  
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 html {
@@ -32,6 +40,21 @@ code {
   bottom: 50% !important;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  color: #fff !important;
+  opacity: 0.5 !important;
+  font-size: 20px !important;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  opacity: 1 !important;
+  transition: opacity 0.3s;
+}
+
+::after {
+    font-size: 30px !important;
+}
+
 #sfondoSito {
   width: 100%;
   height: auto;
@@ -42,6 +65,10 @@ code {
     width: 120%;
     transform: translateX(-5%);
   }
+
+  ::after {
+    font-size: 25px !important;
+  }
 }
 
 
@@ -49,5 +76,9 @@ code {
   #sfondoSito {
     width: 150%;
     transform: translateX(-10%);
+  }
+
+  ::after {
+    font-size: 20px !important;
   }
 }
