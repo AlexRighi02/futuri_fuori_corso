@@ -1,0 +1,302 @@
+{
+    "partite": [
+        {
+            "squadre": [
+                {
+                    "nome": "FIVE CLUB",
+                    "logo": "https://www.csire.it/media/loghi_societa/04200545.jpg"
+                },
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                }
+            ],
+            "data": "01/10/2024",
+            "ora": "21:45",
+            "codice": "2024183CA0104",
+            "risultato": "5 - 2",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--five-club-real-maleducati-2024183CA0104.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                },
+                {
+                    "nome": "AVELLINO BANFI",
+                    "logo": "https://www.csire.it/media/loghi_societa/04200780.jpg"
+                }
+            ],
+            "data": "07/10/2024",
+            "ora": "21:30",
+            "codice": "2024183CA0201",
+            "risultato": "3 - 3",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--real-maleducati-avellino-banfi-2024183CA0201.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                }
+            ],
+            "data": "RIPOSA",
+            "ora": "",
+            "codice": "",
+            "risultato": "",
+            "link_dettaglio": ""
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "PICCOLO OCEANO",
+                    "logo": "https://www.csire.it/media/loghi_societa/04200325.jpg"
+                },
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                }
+            ],
+            "data": "25/10/2024",
+            "ora": "21:00",
+            "codice": "2024183CA0401",
+            "risultato": "7 - 6",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--piccolo-oceano-real-maleducati-2024183CA0401.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                },
+                {
+                    "nome": "DEPORTIVES DLB",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2754.jpg"
+                }
+            ],
+            "data": "28/10/2024",
+            "ora": "20:15",
+            "codice": "2024183CA0504",
+            "risultato": "3 - 3",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--real-maleducati-deportives-dlb-2024183CA0504.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "BAR SPORT",
+                    "logo": "https://www.csire.it/media/loghi_societa/04200325.jpg"
+                },
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                }
+            ],
+            "data": "04/11/2024",
+            "ora": "21:00",
+            "codice": "2024183CA0602",
+            "risultato": "2 - 4",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--bar-sport-real-maleducati-2024183CA0602.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                },
+                {
+                    "nome": "F.C. MARMOTTE",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2747.jpg"
+                }
+            ],
+            "data": "11/11/2024",
+            "ora": "21:30",
+            "codice": "2024183CA0703",
+            "risultato": "2 - 2",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--real-maleducati-f-c-marmotte-2024183CA0703.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "GOLDONI FRUTTA SALINA Gol",
+                    "logo": "https://www.csire.it/media/loghi_societa/logo_soc_default.jpg"
+                },
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                }
+            ],
+            "data": "20/11/2024",
+            "ora": "21:00",
+            "codice": "2024183CA0803",
+            "risultato": "3 - 2",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--goldoni-frutta-salina-gol-real-maleducati-2024183CA0803.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                },
+                {
+                    "nome": "NSC SANTILIO",
+                    "logo": "https://www.csire.it/media/loghi_societa/04200780.jpg"
+                }
+            ],
+            "data": "25/11/2024",
+            "ora": "20:15",
+            "codice": "2024183CA0902",
+            "risultato": "2 - 5",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--real-maleducati-nsc-santilio-2024183CA0902.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                },
+                {
+                    "nome": "FIVE CLUB",
+                    "logo": "https://www.csire.it/media/loghi_societa/04200545.jpg"
+                }
+            ],
+            "data": "02/12/2024",
+            "ora": "21:30",
+            "codice": "2024183CR1004",
+            "risultato": "7 - 6",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--real-maleducati-five-club-2024183CR1004.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "AVELLINO BANFI",
+                    "logo": "https://www.csire.it/media/loghi_societa/04200780.jpg"
+                },
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                }
+            ],
+            "data": "17/02/2025",
+            "ora": "20:15",
+            "codice": "2024183CR1101",
+            "risultato": "8 - 3",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--avellino-banfi-real-maleducati-2024183CR1101.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                }
+            ],
+            "data": "RIPOSA",
+            "ora": "",
+            "codice": "",
+            "risultato": "",
+            "link_dettaglio": ""
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                },
+                {
+                    "nome": "PICCOLO OCEANO",
+                    "logo": "https://www.csire.it/media/loghi_societa/04200325.jpg"
+                }
+            ],
+            "data": "03/03/2025",
+            "ora": "21:30",
+            "codice": "2024183CR1301",
+            "risultato": "6 - 4",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--real-maleducati-piccolo-oceano-2024183CR1301.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "DEPORTIVES DLB",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2754.jpg"
+                },
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                }
+            ],
+            "data": "10/03/2025",
+            "ora": "20:15",
+            "codice": "2024183CR1404",
+            "risultato": "3 - 4",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--deportives-dlb-real-maleducati-2024183CR1404.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                },
+                {
+                    "nome": "BAR SPORT",
+                    "logo": "https://www.csire.it/media/loghi_societa/04200325.jpg"
+                }
+            ],
+            "data": "17/03/2025",
+            "ora": "20:15",
+            "codice": "2024183CR1502",
+            "risultato": "2 - 5",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--real-maleducati-bar-sport-2024183CR1502.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. MARMOTTE",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2747.jpg"
+                },
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                }
+            ],
+            "data": "26/03/2025",
+            "ora": "21:00",
+            "codice": "2024183CR1603",
+            "risultato": "9 - 3",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--f-c-marmotte-real-maleducati-2024183CR1603.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                },
+                {
+                    "nome": "GOLDONI FRUTTA SALINA Gol",
+                    "logo": "https://www.csire.it/media/loghi_societa/logo_soc_default.jpg"
+                }
+            ],
+            "data": "31/03/2025",
+            "ora": "21:30",
+            "codice": "2024183CR1703",
+            "risultato": "4 - 5",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--real-maleducati-goldoni-frutta-salina-gol-2024183CR1703.html"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "NSC SANTILIO",
+                    "logo": "https://www.csire.it/media/loghi_societa/04200780.jpg"
+                },
+                {
+                    "nome": "REAL MALEDUCATI",
+                    "logo": "https://www.csire.it/media/loghi_squadre/2725.jpg"
+                }
+            ],
+            "data": "08/04/2025",
+            "ora": "21:30",
+            "codice": "2024183CR1802",
+            "risultato": "3 - 3",
+            "link_dettaglio": "https://www.csire.it/albo/partite/calcio-open-a-7-golden-l--nsc-santilio-real-maleducati-2024183CR1802.html"
+        }
+    ]
+}
