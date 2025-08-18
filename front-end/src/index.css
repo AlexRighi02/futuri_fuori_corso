@@ -20,9 +20,10 @@ body {
   background-position: top left; /* l'immagine parte dall'angolo in alto a sinistra del div */
 }
 
-#container_carosello {  
-  padding-top: 50px;
-  padding-bottom: 100px;
+.section-title {
+  color: white !important;
+  font-weight: normal !important;
+  margin-bottom: 10px !important;
 }
 
 html {
@@ -80,5 +81,25 @@ code {
 
   ::after {
     font-size: 20px !important;
+  }
+}
+
+
+#container_carosello {  
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  #container_carosello {  
+    padding-top: 33px;
+    padding-bottom: 27px;
+  }
+}
+
+@media (max-width: 500px) {
+  #container_carosello {  
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 }

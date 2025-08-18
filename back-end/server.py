@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, send_from_directory
+from flask import Flask, jsonify, send_from_directory, request
 from flask_cors import CORS
 import subprocess
 import json
@@ -62,6 +62,16 @@ def esegui_apir():
         return jsonify({'errore': "Errore nell'esecuzione di apirisultati.py", 'details': e.stderr + " " + e.stdout}), 500
     except Exception as e:
         return jsonify({'errore': str(e)}), 500
+
+
+@app.route('/link_post.txt', methods=['GET'])
+def get_link_post():
+    try:
+        with open("Post_Instagram/link_post.txt", "r", encoding="utf-8") as f:
+            content = f.read()
+        return jsonify({"successo": True, "contenuto": content})
+    except Exception as e:
+        return jsonify({"errore": str(e)}), 500
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8080))

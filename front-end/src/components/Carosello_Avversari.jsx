@@ -1,51 +1,49 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import styles from './Carosello_Avversari.module.css';
 
-import { Navigation, Autoplay } from 'swiper/modules';
-
-function Carosello_Avversari() {
+function Carosello_Marquee() {
   const images = [
-    '/img/Carosello_FFC_1.png',
-    '/img/Carosello_FFC_2.png',
-    '/img/Carosello_FFC_1.png',
-    '/img/Carosello_FFC_2.png',
-    '/img/Carosello_FFC_1.png',
+    '/img/img_avversari/focumeu.png',
+    '/img/img_avversari/taneto.png',
+    '/img/img_avversari/realmaleducati.png',
+    '/img/img_avversari/no_logo.png',
+    '/img/img_avversari/no_logo.png',
+    '/img/img_avversari/no_logo.png',
+    '/img/img_avversari/no_logo.png'
   ];
 
-  const handleClick = (index) => {
-    if (index === 0) {
-      // esempio funzione
-      console.log("Vai al calendario");
-    } else if (index === 1) {
-      console.log("Vai alle rose");
-    }
-  };
+  const names = [
+    'Focumeu',
+    'Taneto',
+    'Real maleducati',
+    'SQUADRA 1',
+    'SQUADRA 2',
+    'SQUADRA 3',
+    'SQUADRA 4'
+  ];
+
+  const loopImages = [...images, ...images]; // duplico le immagini
+  const loopNames = [...names, ...names];
 
   return (
-    <Swiper
-      modules={[Navigation, Autoplay]}
-      slidesPerView={3}       // quante immagini mostrate
-      slidesPerGroup={1}      // quante scorrono ogni volta
-      spaceBetween={10}       // spazio tra le immagini
-      navigation              // frecce avanti/indietro
-      autoplay={{ delay: 7000 }}
-      loop={true}             // ciclo infinito
-    >
-      {images.map((src, index) => (
-        <SwiperSlide key={index}>
-          <img
-            src={process.env.PUBLIC_URL + src}
-            alt={`slide-${index}`}
-            style={{ cursor: 'pointer', width: '100%', height: 'auto' }}
-            onClick={() => handleClick(index)}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className={styles.marqueeWrapper}>
+      <div className={styles.titleWrapper}>
+        <h1 className={styles.title_campionato}>BRONZE LEAGUE 2025/26</h1>
+        <h2 className={styles.title_girone}>GIRONE A</h2>
+      </div>
+      <div className={styles.marqueeContent}>
+        {loopImages.map((src, index) => (
+          <div className={styles.item} key={index}>
+            <div className={styles.imageWrapper}>
+              <img src={process.env.PUBLIC_URL + src} className={styles.logo_avversari} />
+            </div>
+            <div className={styles.textWrapper}>
+              <p>{loopNames[index].toUpperCase()}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 
-export default Carosello_Avversari;
+export default Carosello_Marquee;

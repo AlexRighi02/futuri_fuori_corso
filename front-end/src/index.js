@@ -15,13 +15,14 @@ root.render(
     <Navbar_FFC />
     <div id="toBlur">
       <Carosello_FFC />
-      <div id="risultati">
-        <Risultati></Risultati>
-      </div>
       <div id="container_carosello">
         <Carosello_Avversari />
       </div>
-      {/* <App /> */}
+      {/*
+      <div id="risultati">
+        <Risultati />
+      </div>      
+       <App /> */}
     </div>
   </React.StrictMode>
 );

@@ -44,8 +44,10 @@ for row in soup.find_all("tr"):
             "risultato": row.find("span", class_="text-result").get_text(strip=True) if row.find("span", class_="text-result") else "",
             "link_dettaglio": "https://www.csire.it" + row.find("a", class_="button")["href"] if row.find("a", class_="button") and row.find("a", class_="button").has_attr("href") else ""
         }
-        json_partite["partite"].append(partita)
-        print("✅ Trovata partita:", partita)
+
+        if partita["data"] != "RIPOSA":
+            json_partite["partite"].append(partita)
+            print("✅ Trovata partita:", partita)
 
 # salva su file
 with open("partite.json", "w", encoding="utf-8") as f:

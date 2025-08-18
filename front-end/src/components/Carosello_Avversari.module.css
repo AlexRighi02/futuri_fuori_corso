@@ -18,3 +18,187 @@
 .customNext {
   right: 10px;
 }
+
+.marqueeWrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marqueeContent {
+  display: flex;
+  width: max-content; /* importante: larghezza contenuto adattiva */
+  animation: marquee 30s linear infinite; /* scorrimento lineare infinito */
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+  flex-shrink: 0; /* evita ridimensionamento delle immagini */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* metà perché abbiamo duplicato le immagini */
+  }
+}
+
+
+.logo_avversari {
+  width: 150px;
+  transition: transform 0.3s ease-in-out; /* effetto dolce */
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.textWrapper p{
+  text-align: left;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.bannerWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.titleWrapper {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.title_campionato {
+  font-size: calc(33px * 1.618);
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.title_girone {
+  font-size: 33px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1500px) {
+  .titleWrapper {
+    margin-top: 20px;
+  }
+
+  .title_campionato {
+    font-size: calc(30px * 1.618);
+  }
+
+  .title_girone {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .logo_avversari {
+    width: 130px;
+    transition: transform 0.3s ease-in-out; /* effetto dolce */
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .textWrapper p{
+    font-size: 25px;
+  }
+
+  .titleWrapper {
+    margin-top: 15px;
+  }
+
+  .title_campionato {
+    font-size: calc(26px * 1.618);
+  }
+
+  .title_girone {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo_avversari {
+    width: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .textWrapper p{
+    font-size: 20px;
+  }
+
+  .titleWrapper {
+    margin-top: 10px;
+  }
+
+  .title_campionato {
+    font-size: calc(22px * 1.618);
+  }
+
+  .title_girone {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo_avversari {
+    width: 80px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .textWrapper p{
+    font-size: 16px;
+  }
+
+  .titleWrapper {
+    margin-top: 5px;
+  }
+
+  .title_campionato {
+    font-size: calc(18px * 1.618);
+  }
+
+  .title_girone {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo_avversari {
+    width: 60px;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .textWrapper p{
+    font-size: 13px;
+  }
+
+  .titleWrapper {
+    margin-top: 0px;
+  }
+
+  .title_campionato {
+    font-size: calc(15px * 1.618);
+  }
+
+  .title_girone {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+

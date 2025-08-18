@@ -34,7 +34,7 @@ const Risultati = () => {
 
     return (
         <div className="results-container">
-            <h2 className="section-title">Risultati</h2>
+            <h2 className="section-title">ULTIMI RISULTATI</h2>
             <Swiper
                 modules={[Navigation, Pagination]}
                 spaceBetween={20}
