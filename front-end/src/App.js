@@ -16,8 +16,6 @@ const App = () => {
 
     
     <div>
-      
-      <h1>Classifica Squadre</h1>
       <div id="risultato">
         {errore && <p style={{ color: 'red' }}>Errore: {errore}</p>}
         {!errore && (

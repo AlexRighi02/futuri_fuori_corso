@@ -18,11 +18,12 @@ root.render(
       <div id="container_carosello">
         <Carosello_Avversari />
       </div>
+      <App />
       {/*
       <div id="risultati">
         <Risultati />
       </div>      
-       <App /> */}
+      */}
     </div>
   </React.StrictMode>
 );

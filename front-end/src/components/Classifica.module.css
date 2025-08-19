@@ -1,23 +1,35 @@
 /* Stile tabella principale */
 table {
-    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    width: 90%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.table tr {
+    border-bottom: 1px solid #ddd;
 }
 
 /* Intestazione principale sopra la tabella */
 thead tr:first-child th {
-    background-color: none;
     /* Blu scuro */
-    font-size: 1.2rem;
+    font-size: 19px;
     padding: 10px;
-    color: black;
+    color: white;
+    text-align: center;
+}
+
+.highlights{
+    background-color: #ffc10763;
 }
 
 /* Riga dei titoli di colonna */
 thead tr:nth-child(2) {
-    background-color: #3a3a3a;
+    background-color: none;
     font-weight: bold;
 }
 
@@ -25,41 +37,259 @@ thead tr:nth-child(2) {
 thead th {
     padding: 10px;
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 23px;
 }
 
 /* Righe alternate del corpo */
 tbody tr:nth-child(odd) {
-    background-color: #2a2a2a;
+    background-color: none;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #3a3a3a;
+    background-color: none;
 }
 
 /* Celle del corpo */
 tbody td {
-    padding: 10px;
-    font-size: 0.9rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 23px;
+    text-shadow: 3px 3px 3px rgb(0 5 12);
+}
+
+.squadra {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.nomeSquadra {
+    text-align: left;
+    font-size: 23px;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+    width: 60px;
+    height: 60px;
     display: block;
     margin: 0 auto;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.logoContainer{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 /* Stile posizione (prima colonna) */
 tbody td:first-child {
     font-weight: bold;
-    color: #007bff;
+    color: white;
     /* Blu per il numero posizione */
 }
 
-/* Hover sulle righe (opzionale) */
-tbody tr:hover {
-    background-color: #444;
-    cursor: pointer;
+.posizione {
+    padding-left: 15px;
 }
+
+@media (max-width: 1500px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nomeSquadra {
+        font-size: 20px;
+    }
+
+    tbody td {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        font-size: 20px;
+    }
+
+    thead th {
+        padding: 9px;
+        font-size: 20px;    
+    }
+
+    thead tr:first-child th {
+        font-size: 17px;
+        padding: 10px;
+    }
+
+    table {
+        margin-top: 26px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nomeSquadra {
+        font-size: 17px;
+    }
+
+    tbody td {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        font-size: 17px;
+    }
+
+    thead th {
+        padding: 7px;
+        font-size: 17px;    
+    }
+
+    thead tr:first-child th {
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    table {
+        margin-top: 21px;
+    }
+
+    .logoContainer{
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .nomeSquadra {
+        font-size: 15px;
+    }
+
+    tbody td {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        font-size: 15px;
+    }
+
+    thead th {
+        padding: 7px;
+        font-size: 15px;    
+    }
+
+    thead tr:first-child th {
+        font-size: 12px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    table {
+        margin-top: 17px;
+    }
+
+    .logoContainer{
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 810px) {
+    .toHide {
+        display: none;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nomeSquadra {
+        font-size: 13px;
+    }
+
+    tbody td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 13px;
+    }
+
+    thead th {
+        padding: 5px;
+        font-size: 13px;    
+    }
+
+    thead tr:first-child th {
+        font-size: 11px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    table {
+        margin-top: 14px;
+    }
+
+    .logoContainer{
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .toHide {
+        display: none;
+    }
+
+    .nomeSquadra {
+        font-size: 11px;
+    }
+
+    tbody td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 11px;
+    }
+
+    thead th {
+        padding: 5px;
+        font-size: 11px;    
+    }
+
+    thead tr:first-child th {
+        font-size: 10px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    table {
+        margin-top: 10px;
+    }
+
+    .logoContainer{
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+}
+
