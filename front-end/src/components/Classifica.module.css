@@ -8,10 +8,36 @@ table {
     color: white;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 25px;
+}
+
+.promozione, .playoff {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;       /* diametro cerchio */
+  height: 30px;
+  border-radius: 33%; /* rende il div rotondo */
+  border: 1px solid black;    /* bordo */
+  font-weight: bold;
+  text-shadow: none;
+  box-shadow: black 0px 0px 5px; /* ombra */
+}
+
+.promozione{
+    background-color: #196f18;
+}
+
+.playoff{
+    background-color: #cb8d00;
 }
 
 .table tr {
     border-bottom: 1px solid #ddd;
+}
+
+.lastRow {
+    border-bottom: none !important;
 }
 
 /* Intestazione principale sopra la tabella */
@@ -103,6 +129,12 @@ tbody td:first-child {
         height: 60px;
     }
 
+    .promozione, .playoff {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
     .nomeSquadra {
         font-size: 20px;
     }
@@ -124,7 +156,7 @@ tbody td:first-child {
     }
 
     table {
-        margin-top: 26px;
+        margin-top: 27px;
     }
 }
 
@@ -132,6 +164,12 @@ tbody td:first-child {
     .logo {
         width: 50px;
         height: 50px;
+    }
+
+    .promozione, .playoff {
+        font-size: 17px;
+        width: 27px;
+        height: 27px;
     }
 
     .nomeSquadra {
@@ -155,7 +193,7 @@ tbody td:first-child {
     }
 
     table {
-        margin-top: 21px;
+        margin-top: 24px;
     }
 
     .logoContainer{
@@ -169,6 +207,12 @@ tbody td:first-child {
     .logo {
         width: 45px;
         height: 45px;
+    }
+
+    .promozione, .playoff {
+        font-size: 15px;
+        width: 25px;
+        height: 52px;
     }
 
     .nomeSquadra {
@@ -195,7 +239,7 @@ tbody td:first-child {
     }
 
     table {
-        margin-top: 17px;
+        margin-top: 20px;
     }
 
     .logoContainer{
@@ -213,6 +257,12 @@ tbody td:first-child {
     .logo {
         width: 40px;
         height: 40px;
+    }
+
+    .promozione, .playoff {
+        font-size: 13px;
+        width: 23px;
+        height: 23px;
     }
 
     .nomeSquadra {
@@ -239,7 +289,7 @@ tbody td:first-child {
     }
 
     table {
-        margin-top: 14px;
+        margin-top: 18px;
     }
 
     .logoContainer{
@@ -256,6 +306,12 @@ tbody td:first-child {
 
     .nomeSquadra {
         font-size: 11px;
+    }
+
+    .promozione, .playoff {
+        font-size: 11px;
+        width: 21px;
+        height: 21px;
     }
 
     tbody td {
@@ -278,7 +334,7 @@ tbody td:first-child {
     }
 
     table {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .logoContainer{

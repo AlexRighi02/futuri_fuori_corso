@@ -1,8 +1,25 @@
 import styles from './Classifica.module.css';
+import { useState, useEffect } from "react";
 
 const Classifica = ({ classifica }) => {
     const nomeSquadra = "avellino banfi"; // Nome della squadra da evidenziare
-    const isMobile = window.innerWidth < 500;
+    const squadre_promosse = 2;
+    const squadre_playoff = 4;
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+        setIsMobile(window.innerWidth < 768);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        // cleanup
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+
 
     return (
         <table className={styles.table}>
@@ -17,20 +34,22 @@ const Classifica = ({ classifica }) => {
                     <th>{isMobile ? 'S' : 'PERSE'}</th>
                     <th className={styles.toHide}>{isMobile ? 'GF' : 'GOL FATTI'}</th>
                     <th className={styles.toHide}>{isMobile ? 'GS' : 'GOL SUBITI'}</th>
-                    <th className={styles.toHide}>DIFF. RETI</th>
+                    <th className={styles.toHide}>{isMobile ? 'DR' : 'DIFF. RETI'}</th>
                 </tr>
             </thead>
             <tbody>
                 {classifica.map((squadra, index) => (
-                    <tr key={index} className={`${ squadra.squadra.toUpperCase() === nomeSquadra.toUpperCase()? styles.highlights : ''}`}>
-                        <td className={styles.posizione}>{index + 1}</td>
-                        <td className={`${styles.squadra}`}>
-                            <div className={styles.logoContainer}>
-                                <img src={squadra.logo} alt={squadra.squadra} className={styles.logo} />
-                            </div>
-                            <div className={styles.nomeSquadra}>
-                                {squadra.squadra.toUpperCase()}
-                            </div>
+                    <tr key={index} className={`${squadra.squadra.toUpperCase() === nomeSquadra.toUpperCase() ? styles.highlights : ''} ${index === classifica.length - 1 ? styles.lastRow : ''}`}>
+                        <td className={`${styles.posizione}`}>
+                            <span className={`${index < squadre_promosse ? styles.promozione : ''} ${index >= squadre_promosse && index < squadre_promosse + squadre_playoff ? styles.playoff : ''}`}>{index + 1}</span>
+                        </td>
+                        <td className={styles.squadra}>
+                        <div className={styles.logoContainer}>
+                            <img src={squadra.logo} alt={squadra.squadra} className={styles.logo} />
+                        </div>
+                        <div className={styles.nomeSquadra}>
+                            {squadra.squadra.toUpperCase()}
+                        </div>
                         </td>
                         <td>{squadra.punti}</td>
                         <td>{squadra.giocate}</td>
