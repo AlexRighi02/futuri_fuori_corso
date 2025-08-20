@@ -21,7 +21,7 @@ table {
   border: 1px solid black;    /* bordo */
   font-weight: bold;
   text-shadow: none;
-  box-shadow: black 0px 0px 5px; /* ombra */
+  box-shadow: 3px 3px 3px rgb(0 5 12); /* ombra */
 }
 
 .promozione{
@@ -110,6 +110,7 @@ tbody td {
     height: 60px;
     border-radius: 50%;
     margin-right: 20px;
+    box-shadow: 3px 3px 3px rgb(0 5 12);
 }
 
 /* Stile posizione (prima colonna) */
