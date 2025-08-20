@@ -1,3 +1,98 @@
+import requests
+from bs4 import BeautifulSoup
+import json
+import time
+
+# URL della richiesta POST
+url = "https://www.csire.it/public/ajax/filtri.php"
+
+# Dati da inviare
+payload = "albo=ok&classifiche=ok&campionato=183&squadra=2725&girone=C"
+
+# Intestazioni HTTP
+headers = {
+    'accept': '*/*',
+    'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+    'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+    'origin': 'https://www.csire.it',
+    'priority': 'u=1, i',
+    'referer': 'https://www.csire.it/albo/risultati-calendario-classifiche-squadre.html',
+    'sec-ch-ua': '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36',
+    'x-requested-with': 'XMLHttpRequest',
+    'Cookie': 'PHPSESSID=phse32o7n7pv32sh69c7iqch56; lb_csc={"level": ["necessary_cookies"], "version": "2"}'
+}
+
+# Numero massimo di tentativi
+max_retries = 5
+wait_seconds = 5  # Attesa tra un tentativo e l'altro
+
+for attempt in range(max_retries):
+    try:
+        response = requests.post(url, headers=headers, data=payload, timeout=10)
+        response.raise_for_status()  # Genera eccezione se status != 200
+        break  # Se la richiesta ha successo, esce dal ciclo
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Tentativo {attempt+1} fallito: {e}")
+        if attempt < max_retries - 1:
+            print(f"⏳ Riprovando tra {wait_seconds} secondi...")
+            time.sleep(wait_seconds)
+        else:
+            print("🚫 Tutti i tentativi falliti. Uscita.")
+            exit(1)
+
+# Parsing HTML
+soup = BeautifulSoup(response.text, 'html.parser')
+table = soup.find('table', class_='tbl-standard')
+
+if not table:
+    print("🚫 Tabella non trovata nella pagina.")
+    exit(1)
+
+json_data = {"classifica": []}
+
+for tr in table.find_all('tr')[1:]:
+    td = tr.find_all('td')
+    nome_squadra = td[1].find('a').text.strip() if td[1].find('a') else ''
+    logo_squadra = td[0].find('img')['src'] if td[0].find('img') else ''
+    logo_squadra = 'https://www.csire.it' + logo_squadra if logo_squadra else ''
+    partite_giocate = int(td[3].text.strip())
+    punti = int(td[2].text.strip())
+    vittorie = int(td[4].text.strip())
+    perse = int(td[5].text.strip())
+    pareggiate = int(td[6].text.strip())
+    penalita = int(td[7].text.strip())
+    gol_fatti = int(td[8].text.strip())
+    gol_subiti = int(td[9].text.strip())
+    diff_reti = gol_fatti - gol_subiti
+
+    json_data["classifica"].append({
+        "squadra": nome_squadra,
+        "logo": logo_squadra,
+        "punti": punti,
+        "giocate": partite_giocate,
+        "vinte": vittorie,
+        "perse": perse,
+        "pareggiate": pareggiate,
+        "penalita": penalita,
+        "gol_fatti": gol_fatti,
+        "gol_subiti": gol_subiti,
+        "differenza_reti": diff_reti
+    })
+
+# Salva JSON
+with open('classifica.json', 'w', encoding='utf-8') as f:
+    json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+print("Dati delle squadre salvati in classifica.json")
+
+
+"""
 import requests  # Per fare richieste HTTP
 from bs4 import BeautifulSoup  # Per fare il parsing di HTML
 import json  # Per lavorare con i dati JSON
@@ -82,3 +177,4 @@ for tr in table.find_all('tr')[1:] :
 
 # Messaggio finale di conferma
 print("✅ Dati delle squadre salvati in classifica.json")
+"""

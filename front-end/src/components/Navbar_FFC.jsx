@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { Link } from "react-router-dom";
 import styles from "./Navbar_FFC.module.css";
 
 const Navbar_FFC = () => {
@@ -26,7 +27,7 @@ const Navbar_FFC = () => {
   };
 
   const closeMenu = () => {
-    isMenuOpen = false;    
+    isMenuOpen = false;
     document.querySelector(".sideMenu").style.transform = "translateX(100%)";
     document.getElementById("toBlur").style.filter = "none";
     setTimeout(() => {
@@ -63,8 +64,8 @@ const Navbar_FFC = () => {
       <Container fluid className={`${styles.navContainer} blurred`}>
 
         <Nav className={`${styles.navMenu}`}>
-            <Nav.Link href="#home" className={styles.link}>HOME</Nav.Link>
-            <Nav.Link href="#calendario" className={styles.link}>CALENDARIO</Nav.Link>
+          <Nav.Link as={Link} to="/" className={styles.link}>HOME</Nav.Link>
+          <Nav.Link as={Link} to="/calendario" className={styles.link}>CALENDARIO</Nav.Link>
         </Nav>
 
         <Navbar.Brand href="#">
@@ -72,8 +73,8 @@ const Navbar_FFC = () => {
         </Navbar.Brand>
 
         <Nav className={`${styles.navMenu}`}>
-            <Nav.Link href="#rosa" className={styles.link}>ROSA</Nav.Link>
-            <Nav.Link href="#chi-siamo" className={styles.link}>CHI SIAMO</Nav.Link>
+          <Nav.Link as={Link} to="/rosa" className={styles.link}>ROSA</Nav.Link>
+          <Nav.Link as={Link} to="/chi-siamo" className={styles.link}>CHI SIAMO</Nav.Link>
         </Nav>
 
         <Nav className={styles.navTendina}>
@@ -81,18 +82,18 @@ const Navbar_FFC = () => {
             <span></span>
             <span></span>
             <span></span>
-          </div>         
+          </div>
         </Nav>
 
-        <div className="sideMenu" style={{ backgroundImage: 'url("/img/WallPaper.png")', backgroundSize: 'cover'}}>
+        <div className="sideMenu" style={{ backgroundImage: 'url("/img/WallPaper.png")', backgroundSize: 'cover' }}>
           <div className={styles.closeIcon} onClick={closeMenu}>
             <i className="bi bi-x-lg"></i>
           </div>
           <Nav className={`${styles.sideNav} ${styles.blurredChild}`} >
-            <Nav.Link href="#home" className={styles.sideLink}>HOME</Nav.Link>
-            <Nav.Link href="#calendario" className={styles.sideLink}>CALENDARIO</Nav.Link>
-            <Nav.Link href="#rosa" className={styles.sideLink}>ROSA</Nav.Link>
-            <Nav.Link href="#chi-siamo" className={styles.sideLink}>CHI SIAMO</Nav.Link>
+            <Nav.Link as={Link} to="/" className={styles.link}>HOME</Nav.Link>
+            <Nav.Link as={Link} to="/calendario" className={styles.link}>CALENDARIO</Nav.Link>
+            <Nav.Link as={Link} to="/rosa" className={styles.link}>ROSA</Nav.Link>
+            <Nav.Link as={Link} to="/chi-siamo" className={styles.link}>CHI SIAMO</Nav.Link>
           </Nav>
         </div>
       </Container>
