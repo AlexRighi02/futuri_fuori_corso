@@ -61,10 +61,6 @@ code {
   height: auto;
 }
 
-div#risultati {
-    margin-top: 40px;
-}
-
 @media (max-width: 768px) {
   #sfondoSito {
     width: 120%;

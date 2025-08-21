@@ -68,7 +68,7 @@
     text-align: center;
     margin-bottom: 45px;
     color: white;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .result_card {
@@ -180,7 +180,7 @@
     .section_title {
         font-size: calc(30px * 1.618) !important;
         margin-bottom: 43px;
-        margin-top: 70px;
+        margin-top: 80px;
     }
 
     .data_numero {
@@ -250,7 +250,7 @@
     .section_title {
         font-size: calc(26px * 1.618) !important;
         margin-bottom: 37px;
-        margin-top: 60px;
+        margin-top: 70px;
     }
 
     .data_numero {
@@ -435,8 +435,8 @@
 @media (max-width: 700px) {
     .section_title {
         font-size: calc(18px * 1.618) !important;
-        margin-bottom: 27px;
-        margin-top: 45px;
+        margin-bottom: 24px;
+        margin-top: 50px;
     }
 
     .div_toAlign{
@@ -525,8 +525,8 @@
     }
 
     .section_title {
-        margin-bottom: 40px;
-        margin-top: 60px;
+        margin-bottom: 18px;
+        margin-top: 33px;
     }
 
     .data_numero {
