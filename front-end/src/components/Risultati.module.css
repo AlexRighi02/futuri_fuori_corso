@@ -41,7 +41,7 @@
 }
 
 .div_toSpace {
-    z-index: 1000;
+    z-index: 500;
 }
 
 .data_partita span, .orario_partita span {
@@ -69,6 +69,11 @@
     margin-bottom: 45px;
     color: white;
     margin-top: 90px;
+}
+
+strong {
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
 }
 
 .result_card {
@@ -144,6 +149,12 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
+    transition: box-shadow 0.3s;
+    border-radius: 15px;
+}
+
+.container_pointer:hover {
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3);
 }
 
 .container_positional {
@@ -409,7 +420,7 @@
         border: none;
         border-bottom-right-radius: 15px;
         border-left: solid 1px #ffd031;
-        z-index: 1000;
+        z-index: 500;
         padding: 5px 20px;
     }
 
@@ -422,7 +433,7 @@
     }
 
     .data_partita{
-        z-index: 1000;
+        z-index: 500;
         border-top-left-radius: 0px;
         padding: 5px 20px;
     }
@@ -455,7 +466,7 @@
     }
 
     .data_partita{
-        z-index: 1000;
+        z-index: 500;
     }
 
     .data_mese{

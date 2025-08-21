@@ -20,6 +20,10 @@ body {
   background-position: top left; /* l'immagine parte dall'angolo in alto a sinistra del div */
 }
 
+.sticky-top {
+  z-index: 999 !important;
+}
+
 .section-title {
   color: white !important;
   font-weight: normal !important;
