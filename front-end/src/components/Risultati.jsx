@@ -90,7 +90,7 @@ const Risultati = () => {
                             </div>
                         
                             <div className={styles.score}>
-                                <span className={styles.score_text}> {foundMatch ? partita.risultato : "?-?"} </span>
+                                <span className={styles.score_text}> {foundMatch ? partita.risultato.replace(/\s+/g, "") : "?-?"} </span>
                             </div>
 
                             <div className={`${styles.team_info} right`}>

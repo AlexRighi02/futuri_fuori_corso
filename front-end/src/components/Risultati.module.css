@@ -41,7 +41,6 @@
 }
 
 .div_toSpace {
-    transform: translateY(5px);
     z-index: 1000;
 }
 
@@ -386,28 +385,50 @@
 
     .container_positional {
         justify-content: center;
+        background-color: white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .luogo_partita{
+        display: none;
+    }
+
+    .div_toSpace{
+        display: flex;
+    }
+
+    .data_mese{
+        transform: translateY(8px);
+        margin-left: 5px;
+        font-weight: bold;
     }
 
     .orario_partita{
+        background-color: #ffd751;
         border: none;
-        border-top-right-radius: 15px;
-        width: 425px;
+        border-bottom-right-radius: 15px;
+        border-left: solid 1px #ffd031;
+        z-index: 1000;
+        padding: 5px 20px;
+    }
+
+    .orario_partita span{
+        transform: translateY(3px);
+    }
+
+    .data_numero{
+        font-size: 20px;
     }
 
     .data_partita{
-        border-bottom-left-radius: 0px;
-        width: 75px;
-        padding-left: 8px;
-        padding-right: 8px;  
         z-index: 1000;
+        border-top-left-radius: 0px;
+        padding: 5px 20px;
     }
 
     .div_toAlign{
-        transform: translateY(-30px) translateX(2px);
-    }
-
-    .div_toRight{
-        transform: translateX(176px)
+        transform: translateY(-5px) translateX(2px);
     }
 }
 
@@ -419,7 +440,7 @@
     }
 
     .div_toAlign{
-        transform: translateY(-30px) translateX(1px);
+        transform: translateY(-5px) translateX(1px);
     }
 }
 
@@ -434,26 +455,15 @@
     }
 
     .data_partita{
-        width: 89px;
-        padding-left: 8px;
-        padding-right: 8px;
         z-index: 1000;
-        margin-right: 1px;
     }
 
     .data_mese{
-        transform: translateY(22px);
         margin-left: 5px;
     }
 
-    .orario_partita{
-        border: none;
-        border-top-right-radius: 15px;
-        width: 295px;
-    }
-
     .div_toRight {
-        transform: translateX(125px) translateY(-4px);
+        transform: translateY(0px);
     }
 
     .div_toAlign{
@@ -463,10 +473,6 @@
     .div_toSpace{
         display: flex;
         
-    }
-
-    .container_positional{
-        padding-bottom: 1px;
     }
 
     .luogo_partita {
@@ -524,20 +530,12 @@
     }
 
     .data_numero {
-        font-size: 28px;
+        font-size: 18px;
         transform: scaleY(1.1);
     }
 
     .data_mese{
         font-size: 11px;
-        transform: translateY(20px);
-        font-weight: 400;
-    }
-
-    .data_partita{
-        padding-left: 8px;
-        padding-right: 8px;
-        width: 74px;
     }
 
     .luogo_partita {
@@ -546,18 +544,12 @@
         transform: translateY(-2px);
     }
 
-    .orario_partita{
-        padding-left: 8px;
-        padding-right: 8px; 
-        width: 258px;   
-    }
-
     .orario_partita span{ 
         font-size: 11px;
     }
 
     .div_toRight{        
-        transform: translateX(105px) translateY(-5px);
+        transform: translateX(0px) translateY(0px);
     }
 
     .div_toAlign{
