@@ -14,12 +14,6 @@
     -1px 1px 0px black;
 }
 
-.navContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center !important;
-}
-
 .link {
   display: inline-block;
   color: #fff !important;
@@ -80,7 +74,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-40%);
-  top: 3px;
+  top: 0px;
 }
 
 .navTendina {
@@ -157,10 +151,21 @@
   width: 100%; /* Allunga la linea centrale */
 }
 
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  transform: translate(-12px, 0px);
+}
+
 
 /* Voglio fare più breakpoint: 992px, 768px, 576px */
 
 @media (max-width: 992px) {
+
+  .navContainer {
+    transform: none;
+  }
 
   .navMenu {
     display: none !important;

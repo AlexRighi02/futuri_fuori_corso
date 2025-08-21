@@ -7,20 +7,18 @@ import Risultati from './Risultati';
 
 const Home = () => {
     return (
-        <>
-            <div id="toBlur">
-                <Carosello_FFC />
-                <div id="container_carosello">
-                    <Carosello_Avversari />
-                </div>
-                <App />
+        <div id="toBlur">
+            <Carosello_FFC />
 
-                <div id="risultati">
-                    <Risultati />
-                </div>
-
+            <div id="risultati">
+                <Risultati />
             </div>
-        </>
+            
+            <div id="container_carosello">
+                <Carosello_Avversari />
+            </div>
+            <App />        
+        </div>
     );
 };
 

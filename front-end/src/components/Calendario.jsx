@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Calendario.css"; // importa il CSS
+import styles from "./Calendario.module.css"; // importa il CSS
 
 const Calendario = () => {
     const [data, setData] = useState([]);

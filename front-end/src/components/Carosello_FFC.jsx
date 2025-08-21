@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function Carosello_FFC() {
   const toCalendar = () => {
     // Logica per andare al calendario
-    console.log('Navigating to calendar...');
+    window.location.href = '/calendario';
   };
 
   const toRose = () => {

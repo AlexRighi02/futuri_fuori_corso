@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const Classifica = ({ classifica }) => {
     const nomeSquadra = "avellino banfi"; // Nome della squadra da evidenziare
-    const squadre_promosse = 2;
+    const squadre_promosse = 1;
     const squadre_playoff = 4;
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

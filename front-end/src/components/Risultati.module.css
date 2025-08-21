@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.results_container {
+    margin: 0 auto;
+}
+
+.data_partita{
+    display: flex;
+    flex-direction: column;   /* i due span vanno uno sotto l’altro */
+    justify-content: center;  /* centrati verticalmente */
+    align-items: center;      /* centrati orizzontalmente */
+    background-color: #ffd751;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.luogo_partita {
+    width: 30px;
+    height: 30px;
+}
+
+.orario_partita{
+    display: flex;
+    flex-direction: column;   /* i due span vanno uno sotto l’altro */
+    justify-content: center;  /* centrati verticalmente */
+    align-items: center;      /* centrati orizzontalmente */
+    background-color: white;
+    text-align: center;
+    border-right: solid 1px rgb(227, 226, 226);
+    border-left: solid 1px rgb(227, 226, 226);
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+
+.orario_partita span{ 
+    font-size: 17px;
+    transform: translateY(4px);
+}
+
+.div_toSpace {
+    transform: translateY(5px);
+    z-index: 1000;
+}
+
+.data_partita span, .orario_partita span {
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    letter-spacing: 0.4px;
+}
+
+.data_mese{
+    font-size: 17px;
+    transform: translateY(-16px);
+    font-weight: 400;
+}
+
+.data_numero {
+    font-size: 48px;
+    transform: scaleY(1.1);
+    font-weight: 600;
+}
+
+.section_title {
+    font-size: calc(33px * 1.618) !important;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 45px;
+    color: white;
+    margin-top: 70px;
+}
+
+.result_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    width: 900px
+}
+
+.container_center {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.team_info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 175px;
+}
+
+.team_logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.logoContainer{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px rgb(0 5 12);
+}
+
+.team_name {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.score {
+    text-align: center;
+    width: 165px;
+}
+
+.score_text {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 7px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.div_toAlign{
+    transform: translateX(-86px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container_pointer {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.container_positional {
+    display: flex;
+}
+
+@media (max-width: 1500px) {
+    .score_text {
+        font-size: 45px;
+        letter-spacing: 6px;
+    }
+
+    .team_name {
+        font-size: 16px;
+    }
+
+    .logoContainer{
+        width: 75px;
+        height: 75px;
+    }
+
+    .team_logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .result_card {
+        padding: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 750px;
+    }
+
+    .section_title {
+        font-size: calc(30px * 1.618) !important;
+        margin-bottom: 43px;
+        margin-top: 70px;
+    }
+
+    .data_numero {
+        font-size: 43px;
+        transform: scaleY(1.1);
+    }
+
+    .data_mese{
+        font-size: 16px;
+        transform: translateY(-15px);
+        font-weight: 400;
+    }
+
+    .data_partita{
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .luogo_partita {
+        width: 27px;
+        height: 27px;
+        transform: translateY(-1px);
+    }
+
+    .orario_partita{
+        padding-left: 17px;
+        padding-right: 17px;    
+    }
+
+    .orario_partita span{ 
+        font-size: 16px;
+        transform: translateY(1px);
+    }
+
+    .div_toAlign{
+        transform: translateX(-76px);
+    }
+}
+
+@media (max-width: 1220px) {
+    .score_text {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .team_name {
+        font-size: 14px;
+    }
+
+    .logoContainer{
+        width: 65px;
+        height: 65px;
+    }
+
+    .team_logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .result_card {
+        padding: 15px;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 650px;
+    }
+
+    .section_title {
+        font-size: calc(26px * 1.618) !important;
+        margin-bottom: 37px;
+        margin-top: 60px;
+    }
+
+    .data_numero {
+        font-size: 37px;
+        transform: scaleY(1.1);
+    }
+
+    .data_mese{
+        font-size: 14px;
+        transform: translateY(-12px);
+        font-weight: 400;
+    }
+
+    .data_partita{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .luogo_partita {
+        width: 22px;
+        height: 22px;
+        transform: translateY(-2px);
+    }
+
+    .orario_partita{
+        padding-left: 14px;
+        padding-right: 14px;    
+    }
+
+    .orario_partita span{ 
+        font-size: 14px;
+        transform: translateY(2px);
+    }
+
+    .div_toAlign{
+        transform: translateX(-66px);
+    }
+}
+
+@media (max-width: 992px) {
+    .score_text {
+        font-size: 35px;
+        letter-spacing: 4px;
+    }
+
+    .team_info {
+        width: 140px;
+    }
+
+    .score{
+        width: 120px;
+    }
+
+    .team_name {
+        font-size: 13px;
+    }
+
+    .logoContainer{
+        width: 57px;
+        height: 57px;
+    }
+
+    .team_logo {
+        width: 57px;
+        height: 57px;
+    }
+
+    .result_card {
+        padding: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 550px;
+    }
+
+    .section_title {
+        font-size: calc(22px * 1.618) !important;
+        margin-bottom: 28px;
+        margin-top: 55px;
+    }
+
+    .data_numero {
+        font-size: 32px;
+        transform: scaleY(1.1);
+    }
+
+    .data_mese{
+        font-size: 13px;
+        transform: translateY(-12px);
+        font-weight: 400;
+    }
+
+    .data_partita{
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .luogo_partita {
+        width: 20px;
+        height: 20px;
+        transform: translateY(-2px);
+    }
+
+    .orario_partita{
+        padding-left: 11px;
+        padding-right: 11px;    
+    }
+
+    .orario_partita span{ 
+        font-size: 13px;
+        transform: translateY(-2px);
+    }
+
+    .div_toAlign{
+        transform: translateX(-55px);
+    }
+}
+
+@media (max-width: 810px) {
+    .result_card {
+        width: 500px;
+    }
+
+    .container_pointer{
+        flex-direction: column;
+    }
+
+    .result_card{
+        border-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .container_positional {
+        justify-content: center;
+    }
+
+    .orario_partita{
+        border: none;
+        border-top-right-radius: 15px;
+        width: 425px;
+    }
+
+    .data_partita{
+        border-bottom-left-radius: 0px;
+        width: 75px;
+        padding-left: 8px;
+        padding-right: 8px;  
+        z-index: 1000;
+    }
+
+    .div_toAlign{
+        transform: translateY(-30px) translateX(2px);
+    }
+
+    .div_toRight{
+        transform: translateX(176px)
+    }
+}
+
+@media (max-width: 700px) {
+    .section_title {
+        font-size: calc(18px * 1.618) !important;
+        margin-bottom: 27px;
+        margin-top: 45px;
+    }
+
+    .div_toAlign{
+        transform: translateY(-30px) translateX(1px);
+    }
+}
+
+@media (max-width: 570px) {
+    .result_card {
+        width: 385px;
+        padding-top: 20px;
+    }
+
+    .score{
+        width: 90px;
+    }
+
+    .data_partita{
+        width: 89px;
+        padding-left: 8px;
+        padding-right: 8px;
+        z-index: 1000;
+        margin-right: 1px;
+    }
+
+    .data_mese{
+        transform: translateY(22px);
+        margin-left: 5px;
+    }
+
+    .orario_partita{
+        border: none;
+        border-top-right-radius: 15px;
+        width: 295px;
+    }
+
+    .div_toRight {
+        transform: translateX(125px) translateY(-4px);
+    }
+
+    .div_toAlign{
+        transform: translateX(5px);
+    }
+
+    .div_toSpace{
+        display: flex;
+        
+    }
+
+    .container_positional{
+        padding-bottom: 1px;
+    }
+
+    .luogo_partita {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section_title {
+        font-size: calc(15px * 1.618) !important;
+        margin-bottom: 21px;
+        margin-top: 33px;
+    }
+}
+
+@media (max-width: 410px) {
+    .score_text {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .team_info{
+        width: 125px;
+    }
+
+    .score {
+        width: 80px;
+    }
+
+    .team_name {
+        font-size: 11px;
+    }
+
+    .logoContainer{
+        width: 54px;
+        height: 54px;
+    }
+
+    .team_logo {
+        width: 54px;
+        height: 54px;
+    }
+
+    .result_card {
+        padding: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 333px;
+    }
+
+    .section_title {
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+
+    .data_numero {
+        font-size: 28px;
+        transform: scaleY(1.1);
+    }
+
+    .data_mese{
+        font-size: 11px;
+        transform: translateY(20px);
+        font-weight: 400;
+    }
+
+    .data_partita{
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 74px;
+    }
+
+    .luogo_partita {
+        width: 17px;
+        height: 17px;
+        transform: translateY(-2px);
+    }
+
+    .orario_partita{
+        padding-left: 8px;
+        padding-right: 8px; 
+        width: 258px;   
+    }
+
+    .orario_partita span{ 
+        font-size: 11px;
+    }
+
+    .div_toRight{        
+        transform: translateX(105px) translateY(-5px);
+    }
+
+    .div_toAlign{
+        transform: translateX(0px);
+    }
+}
