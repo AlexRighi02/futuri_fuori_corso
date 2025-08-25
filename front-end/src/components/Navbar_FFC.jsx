@@ -37,13 +37,20 @@ const Navbar_FFC = () => {
 
   useEffect(() => {
     const handleResize = () => {
+      const sideMenu = document.querySelector(".sideMenu");
+      const toBlur = document.getElementById("toBlur");
+
+      if (!sideMenu || !toBlur) return; // Se manca uno dei due, esci
+
       if (window.innerWidth > 992) {
         // chiudi automaticamente il menu
-        document.querySelector(".sideMenu").style.transform = "translateX(100%)";
-        document.getElementById("toBlur").style.filter = "none";
+        sideMenu.style.transform = "translateX(100%)";
+        toBlur.style.filter = "none";
+
         setTimeout(() => {
-          document.querySelector(".sideMenu").style.display = "none";
+          if (sideMenu) sideMenu.style.display = "none";
         }, 500);
+
         isMenuOpen = false;
       }
     };

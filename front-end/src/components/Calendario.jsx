@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "./Calendario.module.css"; // importa il CSS
+import styles from "./Calendario.module.css"; // importa il CSS come module
 
 const Calendario = () => {
     const [data, setData] = useState([]);
@@ -16,7 +16,7 @@ const Calendario = () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const result = await response.json();
-            setData(result.data); // usa la proprietà partite
+            setData(result.data);
         } catch (err) {
             setError(err.message);
             console.error("Fetch error:", err);
@@ -31,21 +31,20 @@ const Calendario = () => {
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
-    if (!data || data.length === 0) return <div>No data available</div>;
-
-    console.log(data)
+    if (!data || !data.partite || data.partite.length === 0)
+        return <div>No data available</div>;
 
     return (
-        <div className="calendario-container">
-            <h2 className="section-title">CALENDARIO</h2>
-            <div className="card-grid">
+        <div className={styles.calendarioContainer}>
+            <h2 className={styles.sectionTitle}>CALENDARIO</h2>
+            <div className={styles.cardGrid}>
                 {data.partite.map((partita, index) => (
-                    <div key={partita.codice} className="card">
+                    <div key={partita.codice} className={styles.card}>
                         <h3>{index + 1}ª Giornata</h3>
                         <p>
                             {partita.squadre[0].nome} vs {partita.squadre[1].nome}
                         </p>
-                        <div className="logos">
+                        <div className={styles.logos}>
                             <img src={partita.squadre[0].logo} alt={partita.squadre[0].nome} />
                             <img src={partita.squadre[1].logo} alt={partita.squadre[1].nome} />
                         </div>
