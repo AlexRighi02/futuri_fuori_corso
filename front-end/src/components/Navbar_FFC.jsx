@@ -40,7 +40,7 @@ const Navbar_FFC = () => {
       const sideMenu = document.querySelector(".sideMenu");
       const toBlur = document.getElementById("toBlur");
 
-      if (!sideMenu || !toBlur) return; // Se manca uno dei due, esci
+      //if (!sideMenu || !toBlur) return; // Se manca uno dei due, esci
 
       if (window.innerWidth > 992) {
         // chiudi automaticamente il menu
