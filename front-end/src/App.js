@@ -20,7 +20,7 @@ const App = () => {
         {errore && <p style={{ color: 'red' }}>Errore: {errore}</p>}
         {!errore && (
           !data
-            ? <p>Caricamento...</p>
+            ? <p></p>
             : data.errore
               ? <p style={{ color: 'red' }}>Errore: {data.errore}</p>
               : <Classifica classifica={data.data.classifica} />
