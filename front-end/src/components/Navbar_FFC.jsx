@@ -4,22 +4,34 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router-dom";
 import styles from "./Navbar_FFC.module.css";
 
+let elements_toBlur = document.getElementsByClassName("toBlur");
+
 const Navbar_FFC = () => {
 
   let isMenuOpen = false;
+  
+
   const clickMenu = () => {
     console.log(isMenuOpen);
     isMenuOpen = !isMenuOpen;
 
     if (isMenuOpen) {
       document.querySelector(".sideMenu").style.display = "block";
-      document.getElementById("toBlur").style.filter = "blur(5px)";
+
+      for (let i = 0; i < elements_toBlur.length; i++) {
+        elements_toBlur[i].style.backdropFilter = "blur(5px)";
+        elements_toBlur[i].style.filter = "blur(5px)";
+      }
+
       setTimeout(() => {
         document.querySelector(".sideMenu").style.transform = "translateX(0)";
       }, 0);
     } else {
       document.querySelector(".sideMenu").style.transform = "translateX(100%)";
-      document.getElementById("toBlur").style.filter = "none";
+      for (let i = 0; i < elements_toBlur.length; i++) {
+        elements_toBlur[i].style.backdropFilter = "none";
+        elements_toBlur[i].style.filter = "none";
+      }
       setTimeout(() => {
         document.querySelector(".sideMenu").style.display = "none";
       }, 500);
@@ -29,23 +41,30 @@ const Navbar_FFC = () => {
   const closeMenu = () => {
     isMenuOpen = false;
     document.querySelector(".sideMenu").style.transform = "translateX(100%)";
-    document.getElementById("toBlur").style.filter = "none";
+    for (let i = 0; i < elements_toBlur.length; i++) {
+      elements_toBlur[i].style.backdropFilter = "none";
+      elements_toBlur[i].style.filter = "none";
+    }
     setTimeout(() => {
       document.querySelector(".sideMenu").style.display = "none";
     }, 500);
   };
 
+  const link_insta = () => {
+    window.open("https://www.instagram.com/futuri_fuori_corso/", "_blank");
+  };
+
   useEffect(() => {
     const handleResize = () => {
       const sideMenu = document.querySelector(".sideMenu");
-      const toBlur = document.getElementById("toBlur");
-
-      //if (!sideMenu || !toBlur) return; // Se manca uno dei due, esci
 
       if (window.innerWidth > 992) {
         // chiudi automaticamente il menu
         sideMenu.style.transform = "translateX(100%)";
-        toBlur.style.filter = "none";
+        for (let i = 0; i < elements_toBlur.length; i++) {
+          elements_toBlur[i].style.backdropFilter = "none";
+          elements_toBlur[i].style.filter = "none";
+        }
 
         setTimeout(() => {
           if (sideMenu) sideMenu.style.display = "none";
@@ -76,7 +95,7 @@ const Navbar_FFC = () => {
         </Nav>
 
         <Navbar.Brand href="#">
-          <img src="/img/LogoFFC.svg" alt="Logo" className={styles.logo} />
+          <img src="/img/LogoFFC.svg" alt="Logo" className={styles.logo} onClick={link_insta} />
         </Navbar.Brand>
 
         <Nav className={`${styles.navMenu}`}>
@@ -97,10 +116,10 @@ const Navbar_FFC = () => {
             <i className="bi bi-x-lg"></i>
           </div>
           <Nav className={`${styles.sideNav} ${styles.blurredChild}`} >
-            <Nav.Link as={Link} to="/" className={styles.link}>HOME</Nav.Link>
-            <Nav.Link as={Link} to="/calendario" className={styles.link}>CALENDARIO</Nav.Link>
-            <Nav.Link as={Link} to="/rosa" className={styles.link}>ROSA</Nav.Link>
-            <Nav.Link as={Link} to="/chi-siamo" className={styles.link}>CHI SIAMO</Nav.Link>
+            <Nav.Link as={Link} to="/" className={styles.link} onClick={closeMenu}>HOME</Nav.Link>
+            <Nav.Link as={Link} to="/calendario" className={styles.link} onClick={closeMenu}>CALENDARIO</Nav.Link>
+            <Nav.Link as={Link} to="/rosa" className={styles.link} onClick={closeMenu}>ROSA</Nav.Link>
+            <Nav.Link as={Link} to="/chi-siamo" className={styles.link} onClick={closeMenu}>CHI SIAMO</Nav.Link>
           </Nav>
         </div>
       </Container>

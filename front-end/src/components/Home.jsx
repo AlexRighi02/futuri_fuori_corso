@@ -7,7 +7,7 @@ import Risultati from './Risultati';
 
 const Home = () => {
     return (
-        <div id="toBlur">
+        <div className="toBlur">
             <Carosello_FFC />
 
             <div id="risultati">

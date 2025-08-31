@@ -1,14 +1,17 @@
 import Carousel from 'react-bootstrap/Carousel';
+import { useNavigate } from "react-router-dom";
 
 function Carosello_FFC() {
+  const navigate = useNavigate();
+
   const toCalendar = () => {
     // Logica per andare al calendario
-    window.location.href = '/calendario';
+    navigate('/calendario');
   };
 
   const toRose = () => {
     // Logica per andare alla rosa
-    console.log('Navigating to rose...');
+    navigate('/rosa');
   };
 
   return (

@@ -13,9 +13,8 @@ const App = () => {
   }, []);
 
   return (
-
-    
-    <div>
+  
+  <div>
       <div id="risultato">
         {errore && <p style={{ color: 'red' }}>Errore: {errore}</p>}
         {!errore && (
@@ -25,12 +24,8 @@ const App = () => {
               ? <p style={{ color: 'red' }}>Errore: {data.errore}</p>
               : <Classifica classifica={data.data.classifica} />
         )}
-      </div>
-      
+      </div>      
     </div>
-  );
-
-  
+  );  
 };
-
 export default App;
