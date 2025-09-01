@@ -13,7 +13,7 @@ import ChiSiamo from './components/ChiSiamo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router>      
       <Navbar_FFC />
       <Routes>
         <Route path="/" element={<Home />} />

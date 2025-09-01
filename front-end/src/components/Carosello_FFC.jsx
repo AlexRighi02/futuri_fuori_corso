@@ -17,10 +17,10 @@ function Carosello_FFC() {
   return (
     <Carousel interval={5000}>
       <Carousel.Item>
-        <img className="d-block w-100" src={process.env.PUBLIC_URL + '/img/Carosello_FFC_1.png'} onClick={toCalendar} style={{ cursor: 'pointer' }}/>
+        <img className="d-block w-100" src={process.env.PUBLIC_URL + '/img/Carosello_FFC_1.png'} onClick={toCalendar} style={{ cursor: 'pointer' }} alt='Carosello FFC 1'/>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={process.env.PUBLIC_URL + '/img/Carosello_FFC_2.png'} onClick={toRose} style={{ cursor: 'pointer' }}/>
+        <img className="d-block w-100" src={process.env.PUBLIC_URL + '/img/Carosello_FFC_2.png'} onClick={toRose} style={{ cursor: 'pointer' }} alt='Carosello FFC 2'/>
       </Carousel.Item>
     </Carousel>
   );

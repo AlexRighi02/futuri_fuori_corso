@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Classifica from './components/Classifica';
+import Classifica_ranking from './components/Classifica_ranking';
 
-const App = () => {
+const Classifica = () => {
   const [data, setData] = useState(null);
   const [errore, setErrore] = useState(null);
 
@@ -22,10 +22,10 @@ const App = () => {
             ? <p></p>
             : data.errore
               ? <p style={{ color: 'red' }}>Errore: {data.errore}</p>
-              : <Classifica classifica={data.data.classifica} />
+              : <Classifica_ranking classifica={data.data.classifica} />
         )}
       </div>      
     </div>
   );  
 };
-export default App;
+export default Classifica;

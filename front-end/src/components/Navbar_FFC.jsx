@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router-dom";
@@ -18,9 +18,9 @@ const Navbar_FFC = () => {
     if (isMenuOpen) {
       document.querySelector(".sideMenu").style.display = "block";
 
-      for (let i = 0; i < elements_toBlur.length; i++) {
-        elements_toBlur[i].style.backdropFilter = "blur(5px)";
-        elements_toBlur[i].style.filter = "blur(5px)";
+      for (const el of elements_toBlur) {
+        el.style.backdropFilter = "blur(5px)";
+        el.classList.add("is-blurred");
       }
 
       setTimeout(() => {
@@ -28,9 +28,9 @@ const Navbar_FFC = () => {
       }, 0);
     } else {
       document.querySelector(".sideMenu").style.transform = "translateX(100%)";
-      for (let i = 0; i < elements_toBlur.length; i++) {
-        elements_toBlur[i].style.backdropFilter = "none";
-        elements_toBlur[i].style.filter = "none";
+      for (const el of elements_toBlur) {
+        el.style.backdropFilter = "none";
+        el.classList.remove("is-blurred");
       }
       setTimeout(() => {
         document.querySelector(".sideMenu").style.display = "none";
@@ -41,10 +41,14 @@ const Navbar_FFC = () => {
   const closeMenu = () => {
     isMenuOpen = false;
     document.querySelector(".sideMenu").style.transform = "translateX(100%)";
-    for (let i = 0; i < elements_toBlur.length; i++) {
-      elements_toBlur[i].style.backdropFilter = "none";
-      elements_toBlur[i].style.filter = "none";
+
+    scrollToRoot();
+
+    for (const el of elements_toBlur) {
+      el.style.backdropFilter = "none";
+      el.classList.remove("is-blurred");
     }
+
     setTimeout(() => {
       document.querySelector(".sideMenu").style.display = "none";
     }, 500);
@@ -54,6 +58,8 @@ const Navbar_FFC = () => {
     window.open("https://www.instagram.com/futuri_fuori_corso/", "_blank");
   };
 
+  const [rootRef, setRootRef] = useState(null);
+
   useEffect(() => {
     const handleResize = () => {
       const sideMenu = document.querySelector(".sideMenu");
@@ -61,9 +67,10 @@ const Navbar_FFC = () => {
       if (window.innerWidth > 992) {
         // chiudi automaticamente il menu
         sideMenu.style.transform = "translateX(100%)";
+        
         for (let i = 0; i < elements_toBlur.length; i++) {
           elements_toBlur[i].style.backdropFilter = "none";
-          elements_toBlur[i].style.filter = "none";
+          elements_toBlur[i].classList.remove('is-blurred');
         }
 
         setTimeout(() => {
@@ -77,21 +84,30 @@ const Navbar_FFC = () => {
     // Aggiungo listener
     window.addEventListener("resize", handleResize);
 
+    const rootDiv = document.getElementById("root");
+    if (rootDiv) {
+      setRootRef(rootDiv);
+    }
+
     // Pulizia del listener
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-
+  const scrollToRoot = () => {
+    if (rootRef) {
+      rootRef.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <Navbar expand="lg" className={`${styles.navbar} sticky-top`} style={{ backgroundImage: 'url("/img/WallPaper.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <Container fluid className={`${styles.navContainer} blurred`}>
 
         <Nav className={`${styles.navMenu}`}>
-          <Nav.Link as={Link} to="/" className={styles.link}>HOME</Nav.Link>
-          <Nav.Link as={Link} to="/calendario" className={styles.link}>CALENDARIO</Nav.Link>
+          <Nav.Link as={Link} to="/" className={styles.link} onClick={scrollToRoot}>HOME</Nav.Link>
+          <Nav.Link as={Link} to="/calendario" className={styles.link} onClick={scrollToRoot}>CALENDARIO</Nav.Link>
         </Nav>
 
         <Navbar.Brand href="#">
@@ -99,8 +115,8 @@ const Navbar_FFC = () => {
         </Navbar.Brand>
 
         <Nav className={`${styles.navMenu}`}>
-          <Nav.Link as={Link} to="/rosa" className={styles.link}>ROSA</Nav.Link>
-          <Nav.Link as={Link} to="/chi-siamo" className={styles.link}>CHI SIAMO</Nav.Link>
+          <Nav.Link as={Link} to="/rosa" className={styles.link} onClick={scrollToRoot}>ROSA</Nav.Link>
+          <Nav.Link as={Link} to="/chi-siamo" className={styles.link} onClick={scrollToRoot}>CHI SIAMO</Nav.Link>
         </Nav>
 
         <Nav className={styles.navTendina}>

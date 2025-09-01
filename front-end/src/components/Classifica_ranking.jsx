@@ -1,7 +1,7 @@
-import styles from './Classifica.module.css';
+import styles from './Classifica_ranking.module.css';
 import { useState, useEffect } from "react";
 
-const Classifica = ({ classifica }) => {
+const Classifica_ranking = ({ classifica }) => {
     const nomeSquadra = "avellino banfi"; // Nome della squadra da evidenziare
     const squadre_promosse = 1;
     const squadre_playoff = 4;
@@ -66,4 +66,4 @@ const Classifica = ({ classifica }) => {
     );
 };
 
-export default Classifica;
+export default Classifica_ranking;
