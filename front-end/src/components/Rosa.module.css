@@ -38,7 +38,8 @@
   font-weight: bold;
   color: white;
   text-shadow: 0 0 5px black;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
+  margin-right: 25px;
 }
 
 .playerNumber {
@@ -55,9 +56,9 @@
 }
 
 .container{
-    width: 100%;
-    max-width: 1500px;
-    padding: 10px;
+  width: 100%;
+  max-width: 1500px;
+  padding: 10px;
 }
 
 .title_rosa {
@@ -66,7 +67,6 @@
   font-weight: bold;
   font-size: calc(33px * 1.618) !important;
 }
-
 
 .hover_img {
   transition: all 0.5s ease;
@@ -88,4 +88,226 @@
 .no_hover_number {
   transition: all 0.5s ease;
   color: white;
+}
+
+@media (max-width: 1500px) {
+  .title_rosa {
+    font-size: calc(30px * 1.618) !important;
+    margin-bottom: 27px;
+  }
+
+  h3{
+    font-size: 26px;
+    margin-bottom: 18px !important;
+  }
+
+  .container{
+    max-width: 1110px;
+  }
+
+  .section {
+    margin-bottom: 67px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .title_rosa {
+    font-size: calc(26px * 1.618) !important;
+    margin-bottom: 25px;
+  }
+
+  h3{
+    font-size: 24px;
+    margin-bottom: 16px !important;
+  }
+}
+
+@media (max-width: 1130px) {
+  .playerCard {
+    width: 300px;
+  }
+
+  .cardImg {
+    height: 440px;
+  }
+
+  .container {
+    max-width: 990px;
+  }
+
+  .section {
+    margin-bottom: 63px;
+  }
+}
+
+@media (max-width: 1005px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .playerCard {
+    width: 340px;
+  }
+
+  .cardImg {
+    height: 500px;
+  }
+
+  .section {
+    margin-bottom: 59px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .title_rosa {
+    font-size: calc(22px * 1.618) !important;
+    margin-bottom: 23px;
+  }
+
+  h3{
+    font-size: 22px;
+    margin-bottom: 14px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .title_rosa {
+    padding-top: 45px;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 22px !important;
+  }
+
+  .playerCard {
+    width: 300px;
+  }
+
+  .cardImg {
+    height: 440px;
+  }
+
+  .container {
+    max-width: 660px;
+  }
+
+  .section {
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title_rosa {
+    font-size: calc(18px * 1.618) !important;
+    margin-bottom: 21px !important;
+  }
+
+  h3{
+    font-size: 20px;
+    margin-bottom: 12px !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .playerCard {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .cardImg {
+    height: 650px;
+  }
+
+  .section {
+    margin-bottom: 52px;
+  }
+}
+
+@media (max-width: 610px) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 578px) {
+  .title_rosa {
+    padding-top: 40px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .section {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  .title_rosa {
+    font-size: calc(15px * 1.618) !important;
+    margin-bottom: 20px !important;
+    max-width: 250px;
+  }
+  
+  h3{
+    font-size: 18px;
+    margin-bottom: 10px !important;
+  }
+
+  .cardImg {
+    height: 600px;
+  }
+}
+
+@media (max-width: 460px) {
+  .cardImg {
+    height: 530px;
+  }
+
+  .section {
+    margin-bottom: 45px;
+  }
+
+  .playerCard {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 430px) {
+  .cardImg {
+    height: 500px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cardImg {
+    height: 470px;
+  }
+}
+
+@media (max-width: 380px) {
+  .title_rosa {
+    padding-top: 45px;
+  }
+
+  .cardImg {
+    height: 445px;
+  }
+}
+
+@media (max-width: 380px) {
+    .cardImg {
+    height: 405px;
+  }
 }

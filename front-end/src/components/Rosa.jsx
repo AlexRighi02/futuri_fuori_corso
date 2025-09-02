@@ -7,61 +7,61 @@ const players = {
     {
       name: "Emanuele Giglioli",
       number: 1,
-      img: "",
+      img: "img/img_rosa/emanuele_giglioli.jpg",
     }
   ],
   difensori: [
     {
       name: "Giuseppe Malangone",
       number: 3,
-      img: "",
+      img: "img/img_rosa/giuseppe_malangone.jpg",
     },
     {
-      name: "Giuseppe Diblasi",
+      name: "Giuseppe Di Blasi",
       number: 4,
-      img: "",
+      img: "img/img_rosa/giuseppe_di_blasi.jpg",
     },
     {
       name: "Gabriel Aleotti",
       number: 14,
-      img: "",
+      img: "img/img_rosa/gabriel_aleotti.jpg",
     },
     {
       name: "Andrea Montepietra",
       number: 21,
-      img: "",
+      img: "img/img_rosa/andrea_montepietra.jpg",
     },
   ],
   centrocampisti: [
     {
       name: "Giuseppe Esposito",
       number: 5,
-      img: "",
+      img: "img/img_rosa/giuseppe_esposito.jpg",
     },
     {
       name: "Carlo Santo",
       number: 7,
-      img: "",
+      img: "img/img_rosa/carlo_santo.jpg",
     },
     {
       name: "Andrea Mancin",
       number: 11,
-      img: "",
+      img: "img/img_rosa/andrea_mancin.jpg",
     },
     {
       name: "Lorenzo Di Michele",
       number: 18,
-      img: "",
+      img: "img/img_rosa/lorenzo_di_michele.jpg",
     },  
     {
       name: "Andrea Donelli",
       number: 22,
-      img: "",
+      img: "img/img_rosa/andrea_donelli.jpg",
     },
     {
       name: "Federico Boschi",
       number: 23,
-      img: "",
+      img: "img/img_rosa/federico_boschi.jpg",
     },
     {
       name: "Ludovico Contino",
@@ -71,7 +71,7 @@ const players = {
     {
       name: "Tommaso Panciroli",
       number: 77,
-      img: "",
+      img: "img/img_rosa/tommaso_panciroli.jpg",
     },
   ],
   attaccanti: [
@@ -83,13 +83,25 @@ const players = {
     {
       name: "Martino Castellari",
       number: 10,
-      img: "",
+      img: "img/img_rosa/martino_castellari.jpg",
     },
     {
       name: "Luca Ceroni",
       number: 19,
-      img: "",
-    },      
+      img: "img/img_rosa/luca_ceroni.jpg",
+    },
+  ],
+  staff: [
+    {
+      name: "Gioele Malvica",
+      number: "A",
+      img: "img/img_rosa/gioele_malvica.jpg",
+    },
+    {
+      name: "Thomas G. Aracri",
+      number: "VA",
+      img: "img/img_rosa/thomas_grande_aracri.jpg",
+    },
   ],
 };
 
@@ -118,7 +130,7 @@ const PlayerCard = ({ player }) => {
 
 const Section = ({ title, players }) => (
   <div className={styles.section}>
-    <h3 className="text-white mb-3">{title}</h3>
+    <h3 className="text-white">{title}</h3>
     <div className="d-flex flex-wrap gap-3">
       {players.map((p, idx) => (
         <PlayerCard key={idx} player={p} />
@@ -140,6 +152,7 @@ const Rosa = () => {
             <Section title="DIFENSORI" players={players.difensori} />
             <Section title="CENTROCAMPISTI" players={players.centrocampisti} />
             <Section title="ATTACCANTI" players={players.attaccanti} />
+            <Section title="STAFF" players={players.staff} />
           </div>
         </div>
       </div>
