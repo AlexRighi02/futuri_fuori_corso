@@ -9,13 +9,20 @@ body {
   font-size: 19px;
   letter-spacing: 1px;
   font-family: 'Bree Serif', Georgia, serif;
-  min-height: 100dvh;
-  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   overflow-x: hidden;
-  height: 100vh;
+
+  /* fallback vecchi browser */
+  min-height: 100vh;
+
+  /* fallback per Safari iOS vecchi */
+  min-height: -webkit-fill-available;
+
+  /* soluzione moderna (iOS 16+, Android 12+, Chrome/Firefox recenti) */
+  min-height: 100dvh;
+
   background-image: url('../public/img/Sfondo_FFC_1.png');
   background-size: 100% auto;     /* larghezza = 100% del div, altezza proporzionata */
   background-position: top left; /* l'immagine parte dall'angolo in alto a sinistra del div */
