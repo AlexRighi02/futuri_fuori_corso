@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 .appContainer {
   min-height: 100vh;
 }
@@ -309,5 +311,608 @@
 @media (max-width: 380px) {
     .cardImg {
     height: 405px;
+  }
+}
+
+
+
+
+/* Overlay: sfondo scuro che copre tutta la pagina */
+.overlayCard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* sfondo nero semi-trasparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* sopra al resto */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Contenitore interno */
+.overlayContent {
+  background: #1e1e1e;
+  padding: 45px 65px;
+  width: 1300px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  animation: slideUp 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+}
+
+/* Immagine del player */
+.overlayImg {
+  height: 735px;
+  width: 500px;  
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border: solid 0.5px white;
+}
+
+/* Nome */
+.overlayName {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  text-align: left;
+  color: white;
+}
+
+.upperRight{
+  display: flex;
+  height: 110px;
+  border-bottom: solid 1px white;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.instaImg {
+  width: 24px;
+  height: 24px;
+}
+
+.containerInsta{
+  display: flex;
+  justify-content: right;
+  margin-top: 5px;
+  margin-right: 21px;
+}
+
+.overlayContainerHeader {
+  width: 550px;
+}
+
+.overlayRuolo {
+  text-align: left;
+  font-size: 18px;
+  color: rgb(241 189 7);
+  margin-bottom: 0px;
+}
+
+.overlayNation {
+  width: 33px;
+  height: 33px;
+  border: solid 0.1px white;
+  border-radius: 50%;
+  transform: translateY(1px);
+}
+
+.overlayContainerSymbol{
+  display: flex;
+  height: 50px;
+}
+
+.numberPlayer {
+  font-weight: bold;
+  margin-right: 20px;
+  color: rgb(241 189 7);
+}
+
+.numero{
+  font-size: 43px;
+  transform: translate(9px, -18px);
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.containerDescription {
+  margin-top: 17px;
+  margin-left: 40px;
+  max-height: 570px;
+  overflow-y: hidden; /* niente scrollbar */
+  padding-right: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.containerDescriptionOverflow {
+  overflow-y: auto; /* scrollbar visibile */
+  margin-left: 60px;
+  transform: translateX(-20px);
+}
+
+/* Chrome, Edge, Safari */
+.containerDescriptionOverflow::-webkit-scrollbar {
+  width: 6px;               /* larghezza sottile */
+}
+
+.containerDescriptionOverflow::-webkit-scrollbar-track {
+  background: transparent;   /* niente sfondo */
+}
+
+.containerDescriptionOverflow::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;       /* arrotondato */
+  transition: background 0.3s ease;
+}
+
+.containerDescriptionOverflow::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
+/* Firefox */
+.containerDescriptionOverflow {
+  scrollbar-width: thin;          /* sottile */
+  scrollbar-color: white transparent;
+}
+
+.overlayContainerHeader, .overlayContainerSymbol {
+  margin-top: 22px;
+}
+
+/* Bottone Chiudi */
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #bbb;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.closeBtn:hover {
+  color: white;
+}
+
+/* Animazioni */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .overlayContent{
+    padding: 35px 50px;
+    width: 1100px;
+  }
+
+  .closeBtn {
+    font-size: 24px;
+  }
+
+  .overlayImg {
+    height: 650px;
+    width: 443px;
+  }
+
+  .upperRight{
+    margin-left: 30px;
+  }
+
+  .overlayContainerHeader {
+    width: 450px;
+  }
+
+  .containerDescription{
+    margin-left: 30px;
+    max-height: 494px;
+  }
+
+  .containerDescriptionOverflow {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .overlayContent{
+    padding: 32px 45px;
+    width: 960px;
+  }
+
+  .closeBtn {
+    font-size: 24px;
+  }
+
+  .overlayImg {
+    height: 550px;
+    width: 375px;
+  }
+
+  .upperRight{
+    margin-left: 30px;
+    height: 95px ;
+  }
+
+  .overlayContainerHeader {
+    width: 380px;
+  }
+
+  .containerDescription{
+    margin-left: 30px;
+    max-height: 404px;
+  }
+
+  .containerDescriptionOverflow {
+    margin-left: 50px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .overlayName{
+    font-size: 25px;
+  }
+
+  .overlayRuolo{
+    font-size: 15px;
+  }
+
+  .numero{
+    font-size: 37px;
+    transform: translate(9px, -15px);
+  }
+
+  .overlayNation{
+    width: 28px;
+    height: 28px;
+    transform: translateY(2px);
+  }
+}
+
+@media (max-width: 992px) {
+  .overlayContent{
+    padding: 32px 45px;
+    width: 840px;
+  }
+
+  .closeBtn {
+    font-size: 20px;
+  }
+
+  .overlayImg {
+    height: 440px;
+    width: 300px;
+  }
+
+  .overlayContainerHeader {
+    width: 340px;
+  }
+
+  .containerDescription{
+    margin-left: 30px;
+    margin-top: 12px;
+    max-height: 304px;
+  }
+
+  .containerDescriptionOverflow {
+    margin-left: 50px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 875px) {
+  .overlayContent{
+    padding: 28px 37px;
+    width: 690px;
+  }
+
+  .closeBtn {
+    font-size: 18px;
+  }
+
+  .overlayImg {
+    height: 365px;
+    width: 250px;
+  }
+
+  .overlayRuolo {
+    font-size: 13px;
+  }
+
+  .overlayContainerHeader {
+    width: 265px;
+  }
+
+  .containerDescription{
+    margin-left: 30px;
+    margin-top: 12px;
+    max-height: 249px;
+  }
+
+  .containerDescriptionOverflow {
+    margin-left: 40px;
+  }
+
+  .description {
+    font-size: 11px;
+  }
+
+  .overlayName {
+    font-size: 20px;
+  }
+
+  .upperRight {
+    margin-left: 20px;
+    height: 80px;
+  }
+
+  .overlayContainerSymbol, .overlayContainerHeader {
+    margin-top: 17px;
+  } 
+
+  .numero {
+    font-size: 32px;
+    transform: translate(11px, -12px);
+  }
+
+  .overlayNation {
+    width: 25px;
+    height: 25px;
+    transform: translateY(2px);
+  }
+}
+
+@media (max-width: 710px) {
+  .overlayContent{
+    flex-direction: column;
+    width: 510px;
+  }
+
+  .closeBtn {
+    font-size: 18px;
+    top: 8px;
+    right: 8px;
+  }
+
+  .overlayImg {
+    height: 400px;
+    width: 400px;
+  }
+
+  .overlayContainerHeader {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .containerDescription{
+    margin-left: 0px;
+    margin-top: 15px;
+    max-height: 220px;
+  }
+
+  .containerDescription {
+    margin-left: 20px;
+  }
+
+  .containerDescriptionOverflow {
+    margin-left: 40px;
+  }  
+
+  .description {
+    font-size: 11px;
+  }
+
+  .overlayName{
+    font-size: 22px;
+  }
+
+  .overlayRuolo{
+    font-size: 14px;
+  }
+
+  .overlayContainerSymbol{
+    margin-top: 17px;
+  }
+
+  .numberPlayer {
+    margin-right: 10px;
+  }
+
+  .numero{
+    font-size: 28px;
+    transform: translate(7px, -10px);
+  }
+
+  .overlayNation{
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 540px) {
+  .overlayContent{
+    width: 400px;
+    padding: 25px;
+    padding-top: 30px;
+  }
+
+  .closeBtn {
+    font-size: 16px;
+    top: 6px;
+    right: 6px;
+  }
+
+  .overlayImg {
+    height: 330px;
+    width: 330px;
+  }
+
+  .upperRight {
+    height: 64px;
+  }
+
+  .overlayContainerHeader {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .containerDescription{
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  .containerDescription {
+    margin-left: 20px;
+  }
+
+  .containerDescriptionOverflow {
+    margin-left: 40px;
+  }  
+
+  .description {
+    font-size: 10px;
+  }
+
+  .overlayName{
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .overlayRuolo{
+    font-size: 12px;
+  }
+
+  .overlayContainerHeader{
+    margin-top: 12px;
+  }
+
+  .overlayContainerSymbol {
+    margin-top: 13px;
+  }
+
+  .numberPlayer {
+    margin-right: 10px;
+  }
+
+  .numero{
+    font-size: 25px;
+    transform: translate(7px, -8px);
+  }
+
+  .overlayNation{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .overlayContent{
+    width: 345px;
+    padding: 25px 15px;
+    padding-top: 30px;
+  }
+
+  .closeBtn {
+    font-size: 16px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .overlayImg {
+    height: 280px;
+    width: 280px;
+  }
+
+  .upperRight {
+    height: 60px;
+  }
+
+  .overlayContainerHeader {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .containerDescription{
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .containerDescription {
+    margin-left: 20px;
+  }
+
+  .containerDescriptionOverflow {
+    margin-left: 40px;
+  }  
+
+  .description {
+    font-size: 10px;
+  }
+
+  .overlayName{
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+
+  .overlayRuolo{
+    font-size: 11px;
+  }
+
+  .overlayContainerHeader{
+    margin-top: 12px;
+  }
+
+  .overlayContainerSymbol {
+    margin-top: 13px;
+  }
+
+  .numberPlayer {
+    margin-right: 10px;
+  }
+
+  .numero{
+    font-size: 25px;
+    transform: translate(7px, -8px);
+  }
+
+  .overlayNation{
+    width: 20px;
+    height: 20px;
   }
 }

@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router-dom";
@@ -129,7 +129,7 @@ const Navbar_FFC = () => {
 
         <div className="sideMenu" style={{ backgroundImage: 'url("/img/WallPaper.png")', backgroundSize: 'cover' }}>
           <div className={styles.closeIcon} onClick={closeMenu}>
-            <i className="bi bi-x-lg"></i>
+            ✕
           </div>
           <Nav className={`${styles.sideNav} ${styles.blurredChild}`} >
             <Nav.Link as={Link} to="/" className={styles.link} onClick={closeMenu}>HOME</Nav.Link>
