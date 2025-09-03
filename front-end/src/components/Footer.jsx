@@ -52,18 +52,18 @@ const Footer = () => {
                             <p className={styles.privacy_corpo}>
                                 Informativa resa ai sensi del Regolamento UE 2016/679 (GDPR). Tutti i dati sono raccolti e trattati conformemente e in rispetto alla normativa vigente. <br />
                                 <br />
-                                TITOLARE DEL TRATTAMENTO: Alex Righi <br />
-                                E-MAIL: alex.righi@outlook.it <br />
+                                <strong className={styles.privacy_bold}>TITOLARE DEL TRATTAMENTO:</strong> Alex Righi <br />
+                                <strong className={styles.privacy_bold}>E-MAIL:</strong> alex.righi@outlook.it <br />
                                 <br />
-                                DATI RACCOLTI: Mail di contatto, nomi, richieste <br />
+                                <strong className={styles.privacy_bold}>DATI RACCOLTI:</strong> Mail di contatto, nomi, richieste <br />
                                 <br />
-                                FINALITÀ DEL TRATTAMENTO: <br />
+                                <strong className={styles.privacy_bold}>FINALITÀ DEL TRATTAMENTO:</strong> <br />
                                 I dati raccolti vengono utilizzati esclusivamente per evadere le richieste dell'utente e per la gestione delle attività strettamente legate alla squadra “FC Futuri Fuori Corso” e all'associazione sportiva dilettantistica “ASD Taneto 20.14”.
                                 <br /> <br />
-                                CONSERVAZIONE DEI DATI: <br />
+                                <strong className={styles.privacy_bold}>CONSERVAZIONE DEI DATI:</strong> <br />
                                 I dati raccolti vengono conservati esclusivamente per il tempo necessario a evadere i servizi richiesti e non saranno ceduti a terzi, né utilizzati per finalità diverse da quelle indicate.
                                 <br /> <br />
-                                DIRITTI DELL'INTERESSATO: <br />
+                                <strong className={styles.privacy_bold}>DIRITTI DELL'INTERESSATO:</strong> <br />
                                 L'utente può chiedere in qualunque momento l'accesso, la rettifica o la cancellazione dei propri dati inviando una richiesta scritta a calcio.ffc@gmail.com.
                             </p>
                         </div>

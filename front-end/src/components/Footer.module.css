@@ -167,15 +167,22 @@
 }
 
 .privacy_modal {
-    background: #fff;
+    background: #1e1e1e;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     position: relative;
-    width: 1100px;
-    height: 80%;
+    width: 800px;
+    height: 70%;
     border: solid 0.5px white;
     overflow-y: auto;
+}
+
+.privacy_modal::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none; /* non blocca i click */
 }
 
 .close_button {
@@ -191,13 +198,12 @@
 
 .privacy_content {
     text-align: left;
-    line-height: 1.6;
     transform: translateY(15px); 
 }
 
 .privacy_corpo {
-    margin-top: 40px;
-    font-size: 15px;
+    margin-top: 20px;
+    font-size: 14px;
     font-weight: normal;
     font-family: "Montserrat", sans-serif;
 }
@@ -205,29 +211,26 @@
 .privacy_title {
     font-family: "Montserrat", sans-serif;
     font-size: 33px;
+    font-weight: bold;
+    color: rgb(241 189 9);
 }
 
-@media (max-width: 1180px) {
+.privacy_bold {
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: rgb(241 189 9);
+}
+
+@media (max-width: 855px) {
     .privacy_modal {
         width: 90%;
-        height: 80%;
     }
 
-    .privacy_corpo {
-        font-size: 14px;
-        margin-top: 30px;
+    .privacy_bold {
+        font-size: 12px;
     }
 
-    .close_button {
-        font-size: 18px;
-    }
-
-    .privacy_title {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 708px) {
     .privacy_corpo {
         font-size: 12px;
         margin-top: 25px;
@@ -238,10 +241,14 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .privacy_corpo {
         font-size: 11px;
         margin-top: 20px;
+    }
+
+    .privacy_bold {
+        font-size: 11px;
     }
 
     .privacy_title {
@@ -253,6 +260,10 @@
     .privacy_corpo {
         font-size: 10px;
         margin-top: 18px;
+    }
+
+    .privacy_bold {
+        font-size: 10px;
     }
 
     .privacy_title {
