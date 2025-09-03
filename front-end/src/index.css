@@ -9,7 +9,8 @@ body {
   font-size: 19px;
   letter-spacing: 1px;
   font-family: 'Bree Serif', Georgia, serif;
-
+  min-height: 100dvh;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
