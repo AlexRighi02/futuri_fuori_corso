@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./Risultati.module.css"; // importa il CSS come module
 import styles2 from "./Rosa.module.css"; // importa il CSS come module
 import styles3 from "./Calendario.module.css"; // importa il CSS come module
 import PartitaContainer from './PartitaContainer'; // ⬅️ importa il nuovo componente
