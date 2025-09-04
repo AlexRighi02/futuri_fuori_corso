@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import styles from "./Calendario.module.css"; // importa il CSS come module
+import styles from "./Risultati.module.css"; // importa il CSS come module
+import styles2 from "./Rosa.module.css"; // importa il CSS come module
+import PartitaContainer from './PartitaContainer'; // ⬅️ importa il nuovo componente
 
 const Calendario = () => {
     const [data, setData] = useState([]);
@@ -37,27 +39,11 @@ const Calendario = () => {
     return (
         <div className="toBlur">
             <div className={styles.calendarioContainer}>
-                <h2 className={styles.sectionTitle}>CALENDARIO</h2>
-                <div className={styles.cardGrid}>
-                    {data.partite.map((partita, index) => (
-                        <div key={partita.codice} className={styles.card}>
-                            <h3>{index + 1}ª Giornata</h3>
-                            <p>
-                                {partita.squadre[0].nome} vs {partita.squadre[1].nome}
-                            </p>
-                            <div className={styles.logos}>
-                                <img src={partita.squadre[0].logo} alt={partita.squadre[0].nome} />
-                                <img src={partita.squadre[1].logo} alt={partita.squadre[1].nome} />
-                            </div>
-                            <p>Data: {partita.data}</p>
-                            <p>Ora: {partita.ora}</p>
-                            <p>Risultato: {partita.risultato}</p>
-                            <a href={partita.link_dettaglio} target="_blank" rel="noopener noreferrer">
-                                Dettaglio
-                            </a>
-                        </div>
-                    ))}
-                </div>
+                <h1 className={styles2.title_rosa}>CALENDARIO</h1>
+                
+                {data.partite.map((partita, index) => (
+                    <PartitaContainer key={index} partita={partita} />
+                ))}
             </div>
         </div>
     );

@@ -17,7 +17,7 @@ const players = {
   difensori: [
     {
       name: "Giuseppe Malangone",
-      number: 3,
+      number: 21,
       img: "img/img_rosa/giuseppe_malangone.jpg",
       nation: "Italia",
       insta: "https://www.instagram.com/giuse.malangone_?igsh=Zmo4cjZ0anV5aGFn",
@@ -41,7 +41,7 @@ const players = {
     },
     {
       name: "Andrea Montepietra",
-      number: 21,
+      number: 3,
       img: "img/img_rosa/andrea_montepietra.jpg",
       nation: "Italia",
       insta: "https://www.instagram.com/andreamontepietra?igsh=MTI3Y3cwZG0xcTNtMg==",
