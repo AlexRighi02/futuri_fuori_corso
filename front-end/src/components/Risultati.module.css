@@ -15,7 +15,7 @@
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    width: 77px;
+    width: 80px;
 }
 
 .luogo_partita {
@@ -357,6 +357,7 @@ strong {
     .data_partita{
         padding-left: 11px;
         padding-right: 11px;
+        width: 72px;
     }
 
     .luogo_partita {
@@ -453,6 +454,10 @@ strong {
 
     .div_toAlign{
         transform: translateY(-5px) translateX(1px);
+    }
+
+    .container_center {
+        margin-bottom: 10px;
     }
 }
 

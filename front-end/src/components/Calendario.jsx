@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Risultati.module.css"; // importa il CSS come module
 import styles2 from "./Rosa.module.css"; // importa il CSS come module
+import styles3 from "./Calendario.module.css"; // importa il CSS come module
 import PartitaContainer from './PartitaContainer'; // ⬅️ importa il nuovo componente
 
 const Calendario = () => {
@@ -38,12 +41,42 @@ const Calendario = () => {
 
     return (
         <div className="toBlur">
-            <div className={styles.calendarioContainer}>
-                <h1 className={styles2.title_rosa}>CALENDARIO</h1>
-                
-                {data.partite.map((partita, index) => (
-                    <PartitaContainer key={index} partita={partita} />
-                ))}
+            <div className={styles3.calendarioContainer}>
+                <div>
+                    <h1 className={`${styles2.title_rosa} ${styles3.no_bottom}`}>CALENDARIO</h1>
+                    <div className={styles3.container}>
+                    {data.partite.map((partita, index) => {
+                        let mesePrecedente = null;
+                        let meseCorrente = null;
+                        if (index != 0) {                    
+                            mesePrecedente = data.partite[index - 1].data.split('/')[1];
+                            meseCorrente = partita.data.split('/')[1];
+                        }
+                        else {
+                            meseCorrente = partita.data.split('/')[1];
+                        }
+                        
+                        const mesiItaliani = [
+                            "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
+                            "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"
+                        ];
+                        const mese = (mesiItaliani[parseInt(meseCorrente, 10) - 1]).toUpperCase();
+
+                        return (
+                        <React.Fragment key={index}>
+                            {(index === 0 || meseCorrente !== mesePrecedente) && (
+                                <h3 className={`${styles3.meseLabel} text-white`}>
+                                    {mese}
+                                </h3>
+                            )}
+                            <PartitaContainer partita={partita} className={styles3.partitaContainer} />
+                        </React.Fragment>
+                        );
+                    })}
+
+                    <div className={styles3.toSpace}></div>
+                    </div>
+                </div>
             </div>
         </div>
     );
