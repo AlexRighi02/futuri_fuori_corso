@@ -123,6 +123,7 @@ strong {
 .team_name {
     font-weight: 500;
     font-size: 17px;
+    text-align: center;
 }
 
 .score {
@@ -254,7 +255,7 @@ strong {
 
     .result_card {
         padding: 15px;
-        padding-left: 12px;
+        padding-left: 15px;
         padding-right: 12px;
         width: 650px;
     }
