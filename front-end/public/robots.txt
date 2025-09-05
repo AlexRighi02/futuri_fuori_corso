@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://futuri-fuori-corso.fly.dev/sitemap.xml
