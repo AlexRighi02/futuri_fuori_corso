@@ -98,7 +98,7 @@ export default function PartitaContainer({
             </div>
 
             <div className={styles.score}>
-              <span className={styles.score_text}>{foundMatch ? risultatoPulito : '?-?'}</span>
+              <span className={styles.score_text}>{foundMatch ? risultatoPulito : '-'}</span>
             </div>
 
             <div className={`${styles.team_info} right`}>
