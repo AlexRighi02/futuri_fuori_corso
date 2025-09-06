@@ -54,9 +54,9 @@ const Navbar_FFC = () => {
     }, 500);
   };
 
-  const link_insta = () => {
-    window.open("https://www.instagram.com/futuri_fuori_corso/", "_blank");
-  };
+  // const link_insta = () => {
+  //   window.open("https://www.instagram.com/futuri_fuori_corso/", "_blank");
+  // };
 
   const [rootRef, setRootRef] = useState(null);
 
@@ -111,7 +111,7 @@ const Navbar_FFC = () => {
         </Nav>
 
         <Navbar.Brand href="#">
-          <img src="/img/LogoFFC.svg" alt="Logo" className={styles.logo} onClick={link_insta} />
+          <img src="/img/LogoFFC.svg" alt="Logo" className={styles.logo} />
         </Navbar.Brand>
 
         <Nav className={`${styles.navMenu}`}>

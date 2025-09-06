@@ -121,7 +121,7 @@ const players = {
       img: "img/img_rosa/alex_righi.jpg",
       nation: "Italia",
       insta: "https://www.instagram.com/righialex?igsh=MXZqZnJkMnRseDRoNQ==",
-      description: "Orgoglioso povigliese d'origine, è stato tra i primi ad aver creduto in questo grande sogno. Calciatore, tennista, sciatore, corridore, educatore, lavoratore, viaggiatore, esperto cuoco di carbonara: la cosa più difficile di tutte è trovarlo in casa sul divano. Approda agli FFC con un palmarès che gli permetterebbe di fare un tris a Tiki Taka Toe accanto a giocatori del calibro di Borriello, Candreva e Vieri. No, non per i gol segnati. E nemmeno per le conquiste extracalcistiche. Povigliese, FC 70, San Sisto, San Marco, Real Maleducati…quante altre magliette ha intenzione di collezionare nell'armadio? La realtà è che Alex è il giocatore che ogni allenatore desidera e il compagno di squadra che chiunque vorrebbe, anche se lui non la pensa così. Sempre pronto ad aiutare e sostenere tutti, in campo si sacrifica esattamente come nella vita: corsa, tagli, movimenti, passaggi, giro palla e tanta qualità pronta a venir fuori. Anche se non ha ancora ben chiaro in che posizione il mister abbia intenzione di schierarlo, è pronto a essere il leone (il riferimento alla chioma è voluto) della fascia destra e raggiungere gli obiettivi stagionali. Sappiate che c'è un giro di scommesse sul numero di gol che metterà a segno entro fine stagione. L'unica vera domanda è: quanto reggeranno le sue caviglie? E soprattutto: quanto manca alla Festa della birra?"
+      description: "Orgoglioso povigliese d'origine, è stato tra i primi ad aver creduto in questo grande sogno. Calciatore, tennista, sciatore, corridore, educatore, lavoratore, viaggiatore, esperto cuoco di carbonara: la cosa più difficile di tutte è trovarlo in casa sul divano. Approda agli FFC con un palmarès che gli permetterebbe di fare un tris a Tiki Taka Toe accanto a giocatori del calibro di Borriello, Candreva e Vieri. No, non per i gol segnati. E nemmeno per le conquiste extracalcistiche. Audax Poviglio, Gattatico, Viadana, FC 70, Povigliese, San Sisto, Virtus Campegine, Real Maleducati… quante altre magliette ha intenzione di collezionare nell'armadio? La realtà è che Alex è il giocatore che ogni allenatore desidera e il compagno di squadra che chiunque vorrebbe, anche se lui non la pensa così. Sempre pronto ad aiutare e sostenere tutti, in campo si sacrifica esattamente come nella vita: corsa, tagli, movimenti, passaggi, giro palla e tanta qualità pronta a venir fuori. Anche se non ha ancora ben chiaro in che posizione il mister abbia intenzione di schierarlo, è pronto a essere il leone (il riferimento alla chioma è voluto) della fascia destra e raggiungere gli obiettivi stagionali. Sappiate che c'è un giro di scommesse sul numero di gol che metterà a segno entro fine stagione. L'unica vera domanda è: quanto reggeranno le sue caviglie? E soprattutto: quanto manca alla Festa della birra?"
     },
     {
       name: "Martino Castellari",
@@ -129,7 +129,9 @@ const players = {
       img: "img/img_rosa/martino_castellari.jpg",
       nation: "Italia",
       insta: "https://www.instagram.com/marti0198?igsh=cmQzMWNlMGhwNjZz",
-      description: "Dinamismo, passaggi, corsa, finalizzazione e…pali. Tanti pali. Almeno uno a partita, questo è praticamente certo. Una statistica matematica beffarda e impietosa, soprattutto per lui poi che la materia l'ha sempre amata molto. Il capitano dei Real Maleducati approda ufficialmente (in realtà è proprio uno dei Fondatori, anche se per questioni di statura non il Gigante) tra le fila degli FFC, pronto provare a scalare la classifica cannonieri del CSI sia in Bronze che in Silver League. Il problem solver più competente della provincia reggiana è un compagno di squadra puro, sincero, schietto, pronto a spendersi in tutto e per tutto ovunque ci sia bisogno: che sia in campo per giocare, sui social per memare o in dirigenza per gestire questioni organizzative, se chiami Marti puoi star certo di trovarlo pronto e disponibile. Tra una gara di insulti fantasiosi con Lollo (è in netto vantaggio, ndr) e una un po' meno piacevole di sfighe con Beppe (qui se la giocano), la sua stagione promette faville. A Taneto, tutti i lunedì, quando c'è la partita, Marti muore. Cioè, prima di entrare in campo era già morto, perché si vede che non stava molto bene il giorno prima e allora…comunque, sempre a Taneto, no? Tutti i lunedì, quando c'è la partita, Lollo entra in campo e comincia a correre, per evitare di fare la fine di Marti che è morto il giorno prima. Poi, correndo, vede che c'è Marti morto dal giorno prima lì e visto che…dice: “cosa corro a fare? Mi fermo e gli faccio due tunnel…”. Comunque, dove voglio arrivare: non è importante che tu sei…Dibla o Giglio, l'importante è che, se me la passi, me lo dici prima…"
+      description: `Dinamismo, passaggi, corsa, finalizzazione e…pali. Tanti pali. Almeno uno a partita, questo è praticamente certo. Una statistica matematica beffarda e impietosa, soprattutto per lui poi che la materia l'ha sempre amata molto. Il capitano dei Real Maleducati approda ufficialmente (in realtà è proprio uno dei Fondatori, anche se per questioni di statura non il Gigante) tra le fila degli FFC, pronto provare a scalare la classifica cannonieri del CSI sia in Bronze che in Silver League. Il problem solver più competente della provincia reggiana è un compagno di squadra puro, sincero, schietto, pronto a spendersi in tutto e per tutto ovunque ci sia bisogno: che sia in campo per giocare, sui social per memare o in dirigenza per gestire questioni organizzative, se chiami Marti puoi star certo di trovarlo pronto e disponibile. Tra una gara di insulti fantasiosi con Lollo (è in netto vantaggio, ndr) e una un po' meno piacevole di sfighe con Beppe (qui se la giocano), la sua stagione promette faville. 
+       
+      A Taneto, tutti i lunedì, quando c'è la partita, Marti muore. Cioè, prima di entrare in campo era già morto, perché si vede che non stava molto bene il giorno prima e allora…comunque, sempre a Taneto, no? Tutti i lunedì, quando c'è la partita, Lollo entra in campo e comincia a correre, per evitare di fare la fine di Marti che è morto il giorno prima. Poi, correndo, vede che c'è Marti morto dal giorno prima lì e visto che…dice: “cosa corro a fare? Mi fermo e gli faccio due tunnel…”. Comunque, dove voglio arrivare: non è importante che tu sei…Dibla o Giglio, l'importante è che, se me la passi, me lo dici prima…`
     },
     {
       name: "Luca Ceroni",
@@ -151,7 +153,7 @@ const players = {
     },
     {
       name: "Thomas G. Aracri",
-      number: "VA",
+      number: "PA",
       img: "img/img_rosa/thomas_grande_aracri.jpg",
       nation: "Italia",
       insta: "https://www.instagram.com/thomasgrandearacri._?igsh=MTFnY3J2MXl5eTVtbA==",
@@ -265,22 +267,22 @@ const OverlayCard = ({ player, onClose }) => {
                   (players.portieri.some((p) => p.name === player.name)
                     ? "PORTIERE"
                     : players.difensori.some((p) => p.name === player.name)
-                    ? "DIFENSORE"
+                    ? player.name === "Giuseppe Malangone" ? "DIFENSORE (CAPITANO)" : "DIFENSORE"
                     : players.centrocampisti.some((p) => p.name === player.name)
                     ? "CENTROCAMPISTA"
                     : players.attaccanti.some((p) => p.name === player.name)
-                    ? "ATTACCANTE"
+                    ? player.name === "Alex Righi" ? "ATTACCANTE (VICE CAPITANO)" : "ATTACCANTE"
                     : players.staff.some((p) => p.name === player.name)
                     ? player.number === "A"
                       ? "ALLENATORE"
-                      : "VICE ALLENATORE"
+                      : "PREPARATORE ATLETICO"
                     : "")}
               </p>
             </div>
             <div className={styles.overlayContainerSymbol}>
               <div className={styles.numberPlayer}>
                 <p className={styles.numero}>
-                  {player.number !== "A" && player.number !== "VA"
+                  {player.number !== "A" && player.number !== "PA"
                     ? player.number
                     : ""}
                 </p>
@@ -307,7 +309,7 @@ const OverlayCard = ({ player, onClose }) => {
               isOverflowing ? styles.containerDescriptionOverflow : ""
             }`}
           >
-            <p className={styles.description}>{player.description}</p>
+            <p className={styles.description} style={{ whiteSpace: "pre-line" }}>{player.description}</p>
           </div>
         </div>
 

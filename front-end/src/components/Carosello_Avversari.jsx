@@ -1,43 +1,35 @@
 import styles from './Carosello_Avversari.module.css';
 
-function Carosello_Marquee() {
-  const images = [
-    '/img/img_avversari/focumeu.png',
-    '/img/img_avversari/taneto.png',
-    '/img/img_avversari/realmaleducati.png',
-    '/img/img_avversari/no_logo.png',
-    '/img/img_avversari/no_logo.png',
-    '/img/img_avversari/no_logo.png',
-    '/img/img_avversari/no_logo.png'
-  ];
-
-  const names = [
-    'Focumeu',
-    'Taneto',
-    'Real maleducati',
-    'SQUADRA 1',
-    'SQUADRA 2',
-    'SQUADRA 3',
-    'SQUADRA 4'
-  ];
-
-  const loopImages = [...images, ...images]; // duplico le immagini
+function Carosello_Marquee({ 
+  images = [], 
+  names = [], 
+  imageWidth = 150,
+  imageHeight = 150,
+  marginTop = 30,
+  title = "BRONZE LEAGUE 2025/26",
+  subtitle = "GIRONE A"
+}) {
+  const loopImages = [...images, ...images];
   const loopNames = [...names, ...names];
 
   return (
-    <div className={styles.marqueeWrapper}>
+    <div className={styles.marqueeWrapper} style={{ "--margin-top": `${marginTop}px` }}>
       <div className={styles.titleWrapper}>
-        <h1 className={styles.title_campionato}>BRONZE LEAGUE 2025/26</h1>
-        <h2 className={styles.title_girone}>GIRONE A</h2>
+        <h1 className={styles.title_campionato}>{title}</h1>
+        {subtitle && <h2 className={styles.title_girone}>{subtitle}</h2>}
       </div>
       <div className={styles.marqueeContent}>
         {loopImages.map((src, index) => (
-          <div className={styles.item} key={index}>
+          <div className={styles.item} style={{ "--logo-size": `${imageWidth}px`, "--logo-height": `${imageHeight}px` }} key={index}>
             <div className={styles.imageWrapper}>
-              <img src={process.env.PUBLIC_URL + src} className={styles.logo_avversari} />
+              <img 
+                src={process.env.PUBLIC_URL + src} 
+                className={styles.logo_avversari} 
+                alt={loopNames[index]} 
+              />
             </div>
             <div className={styles.textWrapper}>
-              <p>{loopNames[index].toUpperCase()}</p>
+              <p>{loopNames[index]?.toUpperCase()}</p>
             </div>
           </div>
         ))}

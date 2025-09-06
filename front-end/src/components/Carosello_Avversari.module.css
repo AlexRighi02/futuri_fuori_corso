@@ -25,9 +25,17 @@
 }
 
 .marqueeContent {
+  margin-top: var(--margin-top, 30px);
   display: flex;
   width: max-content; /* importante: larghezza contenuto adattiva */
   animation: marquee 30s linear infinite; /* scorrimento lineare infinito */
+}
+
+.title_girone {
+  font-size: 33px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 30px;
 }
 
 .item {
@@ -49,7 +57,8 @@
 
 
 .logo_avversari {
-  width: 150px;
+  width: var(--logo-size, 150px);
+  height: var(--logo-height, 150px);
   transition: transform 0.3s ease-in-out; /* effetto dolce */
   margin-left: 120px;
   margin-right: 120px;
@@ -57,7 +66,7 @@
 
 .textWrapper p{
   text-align: left;
-  font-size: 30px;
+  font-size: calc(var(--logo-size, 150px) * 0.2);
   color: white;
   margin-bottom: 0px;
 }
@@ -79,12 +88,7 @@
   margin-bottom: 0px;
 }
 
-.title_girone {
-  font-size: 33px;
-  font-weight: normal;
-  color: white;
-  margin-bottom: 60px;
-}
+
 
 @media (max-width: 1500px) {
   .titleWrapper {
@@ -97,20 +101,25 @@
 
   .title_girone {
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+  }
+
+  .marqueeContent {
+    margin-top: calc(var(--margin-top, 30px) * 0.83333);
   }
 }
 
 @media (max-width: 1220px) {
   .logo_avversari {
-    width: 130px;
+    width: calc(var(--logo-size, 150px) * 0.87);
+    height: calc(var(--logo-height, 150px) * 0.87);
     transition: transform 0.3s ease-in-out; /* effetto dolce */
     margin-left: 80px;
     margin-right: 80px;
   }
 
   .textWrapper p{
-    font-size: 25px;
+    font-size: calc(var(--logo-size, 150px) * 0.166);
   }
 
   .titleWrapper {
@@ -123,19 +132,24 @@
 
   .title_girone {
     font-size: 26px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+  }
+
+  .marqueeContent {
+    margin-top: calc(var(--margin-top, 30px) * 0.83333);
   }
 }
 
 @media (max-width: 992px) {
   .logo_avversari {
-    width: 100px;
+    width: calc(var(--logo-size, 150px) * 0.66);
+    height: calc(var(--logo-height, 150px) * 0.66);
     margin-left: 50px;
     margin-right: 50px;
   }
 
   .textWrapper p{
-    font-size: 20px;
+    font-size: calc(var(--logo-size, 150px) * 0.133);
   }
 
   .titleWrapper {
@@ -148,19 +162,24 @@
 
   .title_girone {
     font-size: 22px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+  }
+
+  .marqueeContent {
+    margin-top: calc(var(--margin-top, 30px) * 0.6666);
   }
 }
 
 @media (max-width: 700px) {
   .logo_avversari {
-    width: 80px;
+    width: calc(var(--logo-size, 150px) * 0.53);
+    height: calc(var(--logo-height, 150px) * 0.53);
     margin-left: 32px;
     margin-right: 32px;
   }
 
   .textWrapper p{
-    font-size: 16px;
+    font-size: calc(var(--logo-size, 150px) * 0.11);
   }
 
   .titleWrapper {
@@ -173,19 +192,24 @@
 
   .title_girone {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+  }
+
+  .marqueeContent {
+    margin-top: calc(var(--margin-top, 30px) * 0.5);
   }
 }
 
 @media (max-width: 500px) {
   .logo_avversari {
-    width: 60px;
+    width: calc(var(--logo-size, 150px) * 0.4);
+    height: calc(var(--logo-height, 150px) * 0.4);
     margin-left: 18px;
     margin-right: 18px;
   }
 
   .textWrapper p{
-    font-size: 13px;
+    font-size: calc(var(--logo-size, 150px) * 0.09);
   }
 
   .titleWrapper {
@@ -198,7 +222,11 @@
 
   .title_girone {
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .marqueeContent {
+    margin-top: calc(var(--margin-top, 30px) * 0.3333);
   }
 }
 
