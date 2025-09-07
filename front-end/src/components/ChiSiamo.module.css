@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 .containerSponsor {
    padding-bottom: 50px;
 }
@@ -17,12 +19,74 @@
 }
 
 .container_chi_siamo {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   color: white;
-   text-align: justify;
-   width: 100%;
+    color: white;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.marginAll{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.img_chi_siamo {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: solid 1px white;
+}
+
+.svg{
+    padding: 50px;
+    border: none;
+    width: 416px;
+    height: 500px;
+}
+
+.insta{
+    border: none;
+    width: 375px;
+    height: 375px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.insta:hover {
+    transform: scale(1.05);
+}
+
+.row_left, .row_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.container_row_left, .container_row_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_right, .text_left {
+    width: 700px;
+    text-align: left;
+}
+
+.text_right{
+    margin-left: 60px;
+}
+
+.text_left{
+    margin-right: 60px;
+}
+
+.p_right, .p_left {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    color: white;
 }
 
 @media (max-width: 1500px) {
