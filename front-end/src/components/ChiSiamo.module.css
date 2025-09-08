@@ -8,16 +8,6 @@
    text-align: center;
 }
 
-.text {
-    width: 1300px;
-    border: solid 1px white;
-    padding: 40px 80px;
-    border-radius: 20px;
-    margin: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .container_chi_siamo {
     color: white;
     width: 100%;
@@ -25,8 +15,13 @@
 }
 
 .marginAll{
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+
+.marginAll_2{
+    transform: translateY(-10px);
+    padding-bottom: 40px;
 }
 
 .img_chi_siamo {
@@ -59,9 +54,7 @@
 .row_left, .row_right {
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    
+    justify-content: center;    
 }
 
 .container_row_left, .container_row_right {
@@ -71,16 +64,16 @@
 }
 
 .text_right, .text_left {
-    width: 700px;
-    text-align: left;
+    width: 900px;
+    text-align: justify;
 }
 
 .text_right{
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 .text_left{
-    margin-right: 60px;
+    margin-right: 80px;
 }
 
 .p_right, .p_left {
@@ -89,24 +82,152 @@
     color: white;
 }
 
+.toShow{
+    display: none;
+}
+
+.toHide{
+    display: flex;
+}
+
 @media (max-width: 1500px) {
     .containerSponsor {
         padding-bottom: 50px;
     }
+}
 
-    .text {
-        width: 1100px;
-        margin-top: 0;
+@media (max-width: 1600px) {    
+    .img_chi_siamo {
+        width: 425px;
+        height: 510px;
+    }
+
+    .insta{
+        width: 350px;
+        height: 350px;
+    }
+
+    .svg{
+        padding: 45px;
+        width: 366px;
+        height: 440px;
+    }
+
+    .marginAll{
+        padding-top: 55px;
+        padding-bottom: 40px;
+    }
+
+    .marginAll_2{
+        transform: translateY(-10px);
+        padding-bottom: 13px;
+    }
+
+    .text_right, .text_left {
+        width: 800px;
+    }
+
+    .text_right{
+        margin-left: 65px;
+    }
+
+    .text_left{
+        margin-right: 65px;
+    }
+
+    .p_right, .p_left {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1380px) {    
+    .img_chi_siamo {
+        width: 350px;
+        height: 420px;
+    }
+
+    .insta{
+        width: 325px;
+        height: 325px;
+    }
+
+    .svg{
+        padding: 40px;
+        width: 300px;
+        height: 360px;
+    }
+
+    .marginAll{
+        padding-top: 55px;
+        padding-bottom: 40px;
+    }
+
+    .marginAll_2{
+        transform: translateY(-10px);
+        padding-bottom: 0px;
+    }
+
+    .marginAll_3{
+        padding-top: 17px;
+        padding-bottom: 10px;
+    }
+
+    .text_right, .text_left {
+        width: 700px;
+    }
+
+    .text_right{
+        margin-left: 57px;
+    }
+
+    .text_left{
+        margin-right: 57px;
+    }
+
+    .p_right, .p_left {
+        font-size: 16px;
     }
 }
 
 @media (max-width: 1220px) {
     .containerSponsor {
         padding-bottom: 40px;
+    }    
+}
+
+@media (max-width: 1200px) {
+    .text_right, .text_left {
+        width: 600px;
     }
 
-    .text {
-        width: 900px;
+    .marginAll_3{
+        padding-top: 40px;
+        padding-bottom: 35px;
+    }
+
+    .marginAll_2{
+        transform: translateY(-10px);
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .text_right, .text_left {
+        width: 500px;
+    }
+
+    .marginAll{
+        padding-top: 30px;
+        padding-bottom: 27px;
+    }
+
+    .marginAll_3{
+        padding-top: 43px;
+        padding-bottom: 35px;
+    }
+
+    .marginAll_2{
+        padding-bottom: 33px;
     }
 }
 
@@ -115,9 +236,94 @@
         padding-bottom: 30px;
     }
 
-    .text {
-        width: 650px;
-        padding: 30px 60px;
+    .text_right, .text_left {
+        width: 375px;
+    }
+
+    .p_right, .p_left {
+        font-size: 14px;
+    }
+
+    .text_right{
+        margin-left: 45px;
+    }
+
+    .text_left{
+        margin-right: 45px;
+    }
+
+    .marginAll{
+        padding-top: 35px;
+        padding-bottom: 27px;
+    }
+
+    .marginAll_2{
+        padding-bottom: 27px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .img_chi_siamo {
+        width: 300px;
+        height: 360px;
+    }
+
+    .insta{
+        width: 300px;
+        height: 300px;
+    }
+
+    .svg{
+        padding: 30px;
+        width: 270px;
+        height: 324px;
+    }
+
+    .text_right, .text_left {
+        width: 350px;
+    }
+
+    .p_right, .p_left {
+        font-size: 13px;
+        line-height: 18.5px;
+    }
+
+    .text_right{
+        margin-left: 33px;
+    }
+
+    .text_left{
+        margin-right: 33px;
+    }
+
+    .marginAll{
+        padding-top: 27px;
+        padding-bottom: 12px;
+    }
+
+    .marginAll_2{
+        padding-bottom: 25px;
+    }
+
+    .marginAll_3{
+        padding-top: 28px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 750px) {
+    .toShow{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toHide{
+        display: none;
+    }
+    
+    .container_row_left, .container_row_right {
+        flex-direction: column;
     }
 }
 
@@ -125,35 +331,18 @@
     .containerSponsor {
         padding-bottom: 25px;
     }
-
-    .text {
-        width: 500px;
-        padding: 30px 40px;
-    }
 }
 
 @media (max-width: 550px) {
-    .text {
-        width: 460px;
-        padding: 20px 30px;
-    }
+
 }
 
 @media (max-width: 500px) {
     .containerSponsor {
         padding-bottom: 20px;
     }
-
-    .text {
-        width: 400px;
-        padding: 20px 30px;
-    }
 }
 
 @media (max-width: 430px) {
 
-    .text {
-        width: 345px;
-        padding: 15px 20px;
-    }
 }
