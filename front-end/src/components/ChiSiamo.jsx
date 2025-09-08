@@ -18,7 +18,7 @@ const ChiSiamo = () => {
               <img src="/img/img_chi_siamo/squadra.jpg" alt="Chi Siamo" className={styles.img_chi_siamo} />
             </div>
             <div className={styles.text_right}>
-              <h3 className="text-white">LA SQUADRA</h3>
+              <h3 className={`${styles.h3_responsive} text-white`}> LA SQUADRA</h3>
               <p className={styles.p_right}>
                 FC Futuri Fuori Corso è una squadra di calcio a 7, con sede in provincia di Reggio Emilia e affiliata all'ASD Taneto 20.14, che nasce nel 2025 dal desiderio di alcuni amici di 
                 costruire un gruppo unico, speciale, sincero, nel quale ognuno possa sentirsi parte di un tutto, vivendo il campo come una sana opportunità di crescere fianco a fianco. <br/>
@@ -30,6 +30,7 @@ const ChiSiamo = () => {
           </div>
         </div>
 
+        <hr className={styles.linea}/>
 
         <div className={`${styles.row_right} ${styles.toHide}`}>
           <div className={`${styles.container_row_right} ${styles.marginAll}`}>
@@ -52,10 +53,10 @@ const ChiSiamo = () => {
         <div className={`${styles.row_left} ${styles.toShow}`}>
           <div className={styles.container_row_left}>          
             <div className={styles.img_left}>
-              <img src="/img/LogoFFC.svg" alt="Logo" className={`${styles.img_chi_siamo} ${styles.svg}`} />
+              <img src="/img/LogoFFC.svg" alt="Logo" className={`${styles.img_chi_siamo} ${styles.pepe} ${styles.svg}`} />
             </div>
             <div className={styles.text_left}>
-              <h3 className="text-white">NOME E STEMMA</h3>
+              <h3 className={`${styles.h3_responsive} text-white`}> NOME E STEMMA</h3>
               <p className={styles.p_left}>
                 Il nostro nome parla da solo. È il terrore di chiunque si appresta a iniziare un percorso universitario, la mesta consapevolezza di chi ormai si arrende all'inevitabile e 
                 ineluttabile compimento del proprio funesto destino… la gufata di chi ha anni di fantacalcio alle spalle ed è consapevole della sua potenza. Tutto infatti nasce anni fa, tra
@@ -68,14 +69,15 @@ const ChiSiamo = () => {
           </div>
         </div>   
 
+        <hr className={styles.linea}/>
 
         <div className={styles.row_left}>
-          <div className={styles.container_row_left}>          
+          <div className={`${styles.container_row_left} ${styles.margin_mission}`}>          
             <div className={styles.img_left}>
-              <img src="/img/img_chi_siamo/mission.jpg" alt="Mission" className={styles.img_chi_siamo} />
+              <img src="/img/img_chi_siamo/mission.jpg" alt="Mission" className={`${styles.img_chi_siamo} ${styles.mission}`} />
             </div>
             <div className={styles.text_right}>
-              <h3 className="text-white">MISSION</h3>
+              <h3 className={`${styles.h3_responsive} text-white`}> MISSION</h3>
               <p className={styles.p_right}>
                 Se lo sport per definizione è uno dei più grandi strumenti per unire e abbattere le barriere, la missione dei Futuri Fuori Corso è quella di mettere al centro il suo nucleo fondamentale, 
                 la sua essenza vera, quella spesso dimenticata o messa in secondo piano rispetto alla qualità tecnica del singolo: stare bene insieme. <br/>
@@ -87,6 +89,7 @@ const ChiSiamo = () => {
           </div>
         </div>
 
+        <hr className={styles.linea}/>
 
         <div className={`${styles.row_right} ${styles.toHide}`}>
           <div className={`${styles.container_row_right} ${styles.marginAll_3}`}>
@@ -107,10 +110,10 @@ const ChiSiamo = () => {
         <div className={`${styles.row_left} ${styles.toShow}`}>
           <div className={styles.container_row_left}>          
             <div className={styles.img_left}>
-              <img src="/img/img_chi_siamo/campionato.jpg" alt="CSI" className={`${styles.img_chi_siamo} ${styles.svg}`} />
+              <img src="/img/img_chi_siamo/campionato.jpg" alt="CSI" className={`${styles.img_chi_siamo} ${styles.csi} ${styles.svg}`} />
             </div>
             <div className={styles.text_left}>
-              <h3 className="text-white">CAMPIONATO</h3>
+              <h3 className={`${styles.h3_responsive} text-white`}> CAMPIONATO</h3>
               <p className={styles.p_left}>
                 Nella stagione 2025/2026 la squadra partecipa alla Bronze League del campionato provinciale di calcio a 7 organizzato dal CSI di Reggio Emilia, grazie al sostegno di numerosi e preziosi 
                 partner e alla gentile concessione di Matt Furie per l'utilizzo del nostro amato Pepe. In realtà, tutte queste persone non sono esattamente consapevoli di aver reso possibile, col loro 
@@ -121,6 +124,7 @@ const ChiSiamo = () => {
           </div>
         </div>
 
+        <hr className={styles.linea}/>
 
         <div className={styles.row_left}>
           <div className={`${styles.container_row_left} ${styles.marginAll_2}`}>          
@@ -128,7 +132,7 @@ const ChiSiamo = () => {
               <img src="/img/img_chi_siamo/stadio.jpg" alt="Stadio" className={styles.img_chi_siamo} />
             </div>
             <div className={styles.text_right}>
-              <h3 className="text-white">STADIO</h3>
+              <h3 className={`${styles.h3_responsive} text-white`}> STADIO</h3>
               <p className={styles.p_right}>
                 Giochiamo le partite in casa all'ormai ribattezzato “Tannetum Stadium” di Taneto di Gattatico (RE), in Via Tonelli, n. 20. Anche se vedere giocare calciatori del calibro di Fede, Tommi e 
                 Ludo è uno spettacolo da mille e una notte, una gioia per gli occhi a dir poco poetica che non dimenticherete, vi assicuriamo che non facciamo pagare il biglietto. Per vedere Dibla, Done e 
@@ -138,6 +142,7 @@ const ChiSiamo = () => {
           </div>
         </div>
 
+        <hr className={styles.linea}/>
 
         <div className={`${styles.row_right} ${styles.toHide}`}>
           <div className={`${styles.container_row_right}`}>
@@ -157,14 +162,14 @@ const ChiSiamo = () => {
           </div>
         </div>
         <div className={styles.row_left}>
-          <div className={`${styles.row_left} ${styles.toShow} ${styles.marginAll_2}`}>          
+          <div className={`${styles.row_left} ${styles.toShow}`}>          
             <div className={styles.img_left}>
               <a href="https://www.instagram.com/futuri_fuori_corso/" target="_blank" rel="noopener noreferrer">
                 <img src="/img/img_chi_siamo/insta.jpg" alt="Instagram" className={`${styles.img_chi_siamo} ${styles.insta}`} />
               </a>
             </div>
             <div className={styles.text_right}>
-              <h3 className="text-white">I NOSTRI SOCIAL</h3>
+              <h3 className={`${styles.h3_responsive} text-white`}> I NOSTRI SOCIAL</h3>
               <p className={styles.p_left}>
                 Se volete divertirvi, seguirci, scoprire quante str…epitose novità creiamo ogni giorno per passare il tempo, potete trovarci sempre attivi sulla nostra pagina instagram, curata instancabilmente 
                 da diversi nostri ragazzi, che per riuscire a stoppare un pallone devono andare a fare un'immersione nella vasca a Lourdes, ma in quanto a inventarsi contenuti stupidi sono veramente i numeri uno. 

@@ -12,6 +12,7 @@
     color: white;
     width: 100%;
     padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .marginAll{
@@ -65,7 +66,7 @@
 
 .text_right, .text_left {
     width: 900px;
-    text-align: justify;
+    text-align: left;
 }
 
 .text_right{
@@ -90,9 +91,23 @@
     display: flex;
 }
 
+.linea {
+    border: none;
+    border-top: 1px solid white;
+    width: 600px;
+    margin: 1rem auto;
+    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 @media (max-width: 1500px) {
     .containerSponsor {
         padding-bottom: 50px;
+    }
+
+    .container_chi_siamo {
+        padding-top: 0;
     }
 }
 
@@ -187,6 +202,10 @@
     .p_right, .p_left {
         font-size: 16px;
     }
+
+    .container_chi_siamo {
+        padding-bottom: 35px;
+    }
 }
 
 @media (max-width: 1220px) {
@@ -229,6 +248,18 @@
     .marginAll_2{
         padding-bottom: 33px;
     }
+
+    .p_right, .p_left {
+        margin-top: 10px;
+    }
+
+    .h3_responsive{
+        margin-bottom: 11px !important;
+    }
+
+    .container_chi_siamo {
+        padding-bottom: 45px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -259,6 +290,10 @@
 
     .marginAll_2{
         padding-bottom: 27px;
+    }
+
+    .container_chi_siamo {
+        padding-bottom: 38px;
     }
 }
 
@@ -310,6 +345,10 @@
         padding-top: 28px;
         padding-bottom: 40px;
     }
+
+    .container_chi_siamo {
+        padding-bottom: 35px;
+    }
 }
 
 @media (max-width: 750px) {
@@ -321,9 +360,58 @@
     .toHide{
         display: none;
     }
-    
+
     .container_row_left, .container_row_right {
         flex-direction: column;
+        width: 600px;
+        transform: none;
+    }
+
+    .text_right, .text_left {
+        width: 600px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .img_chi_siamo {
+        width: 600px;
+    }
+
+    .insta{
+        width: 300px;
+        height: 270px;
+    }
+
+    .svg{
+        padding: 30px;
+        width: 270px;
+        height: 324px;
+    }    
+
+    .linea {
+        display: block;
+    }
+
+    .mission{
+        object-position: center -20px;
+    }
+
+    .margin_mission{
+        margin-top: 43px;
+    }
+
+    .p_right, .p_left {
+        margin-bottom: 40px;
+        margin-top: 9px;
+    }
+
+    .marginAll_2{
+        padding-top: 44px;
+        padding-bottom: 0px;
+    }
+
+    .h3_responsive{
+        margin-bottom: 5px !important;
     }
 }
 
@@ -331,18 +419,222 @@
     .containerSponsor {
         padding-bottom: 25px;
     }
+
+    .container_row_left, .container_row_right {
+        width: 500px;
+    }
+
+    .text_right, .text_left {
+        width: 500px;
+    }
+
+    .img_chi_siamo {
+        width: 500px;
+    }
+
+    .linea {
+        width: 500px;
+    }
+
+    .insta{
+        width: 300px;
+    }
+
+    .svg{
+        width: 270px;
+    }  
 }
 
-@media (max-width: 550px) {
+@media (max-width: 620px) {
 
+    .container_row_left, .container_row_right {
+        width: 450px;
+    }
+
+    .text_right, .text_left {
+        width: 450px;
+    }
+
+    .img_chi_siamo {
+        width: 450px;
+    }
+
+    .linea {
+        width: 450px;
+    }
+
+    .insta{
+        width: 300px;
+        height: 270px;
+    }
+
+    .svg{
+        padding: 30px;
+        width: 270px;
+        height: 324px;
+    } 
+
+    .p_right, .p_left {
+        margin-top: 7px;
+    }
+
+    .h3_responsive{
+        margin-bottom: 4px !important;
+    }
+
+    .container_chi_siamo {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 530px) {
+    .container_row_left, .container_row_right {
+        width: 400px;
+    }
+
+    .text_right, .text_left {
+        width: 400px;
+    }
+
+    .img_chi_siamo {
+        width: 400px;
+    }
+
+    .linea {
+        width: 400px;
+    }
+
+    .insta{
+        width: 270px;
+        height: 230px;
+        margin-top: 10px;
+    }
+
+    .svg{
+        padding: 20px;
+        width: 240px;
+        height: 288px;
+    } 
+
+    .p_right, .p_left {
+        font-size: 12px;
+        line-height: 16.5px;
+    }
+
+    .pepe{
+        margin-top: 12px;
+    }
+
+    .csi{
+        margin-top: 12px;
+    }
+
+    .container_chi_siamo {
+        padding-bottom: 27px;
+    }
 }
 
 @media (max-width: 500px) {
     .containerSponsor {
         padding-bottom: 20px;
     }
+
+    .container_chi_siamo {
+        padding-bottom: 24px;
+    }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 460px) {
+    .container_row_left, .container_row_right {
+        width: 350px;
+    }
 
+    .text_right, .text_left {
+        width: 350px;
+    }
+
+    .img_chi_siamo {
+        width: 350px;
+        height: 300px;
+    }
+
+    .linea {
+        width: 350px;
+    }
+
+    .insta{
+        width: 270px;
+        height: 230px;
+        margin-top: 10px;
+    }
+
+    .svg{
+        padding: 20px;
+        width: 240px;
+        height: 288px;
+    } 
+
+    .p_right, .p_left {
+        font-size: 12px;
+        line-height: 16.5px;
+    }
+
+    .pepe{
+        margin-top: 12px;
+    }
+
+    .csi{
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 410px) {
+    .container_row_left, .container_row_right {
+        width: 300px;
+    }
+
+    .text_right, .text_left {
+        width: 300px;
+    }
+
+    .img_chi_siamo {
+        width: 300px;
+        height: 250px;
+    }
+
+    .linea {
+        width: 300px;
+    }
+
+    .insta{
+        width: 270px;
+        height: 230px;
+        margin-top: 0px;
+    }
+
+    .svg{
+        padding: 20px;
+        width: 240px;
+        height: 288px;
+    } 
+
+    .p_right, .p_left {
+        margin-bottom: 31px;
+    }
+
+    .pepe{
+        margin-top: 2px;
+    }
+
+    .csi{
+        margin-top: 2px;
+    }
+
+    .margin_mission{
+        margin-top: 35px;
+    }
+
+    .marginAll_2{
+        padding-top: 35px;
+    }
 }
