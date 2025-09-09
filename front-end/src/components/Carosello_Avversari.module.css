@@ -28,7 +28,12 @@
   margin-top: var(--margin-top, 30px);
   display: flex;
   width: max-content; /* importante: larghezza contenuto adattiva */
-  animation: marquee 30s linear infinite; /* scorrimento lineare infinito */
+  animation: marquee 20s linear infinite;
+}
+
+.personalized_margin{
+  margin-top: 45px;
+  animation: marquee 25s linear infinite;
 }
 
 .title_girone {
@@ -60,8 +65,8 @@
   width: var(--logo-size, 150px);
   height: var(--logo-height, 150px);
   transition: transform 0.3s ease-in-out; /* effetto dolce */
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: var(--margin-between, 120px);
+  margin-right: var(--margin-between, 120px);
 }
 
 .textWrapper p{
@@ -109,13 +114,19 @@
   }
 }
 
+@media (max-width: 1380px) {
+  .personalized_margin{
+    margin-top: 35px;
+  }
+}
+
 @media (max-width: 1220px) {
   .logo_avversari {
     width: calc(var(--logo-size, 150px) * 0.87);
     height: calc(var(--logo-height, 150px) * 0.87);
     transition: transform 0.3s ease-in-out; /* effetto dolce */
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: calc(var(--margin-between, 120px) * 0.667);
+    margin-right: calc(var(--margin-between, 120px) * 0.667);
   }
 
   .textWrapper p{
@@ -140,12 +151,18 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .personalized_margin{
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: 992px) {
   .logo_avversari {
     width: calc(var(--logo-size, 150px) * 0.66);
     height: calc(var(--logo-height, 150px) * 0.66);
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: calc(var(--margin-between, 120px) * 0.42);
+    margin-right: calc(var(--margin-between, 120px) * 0.42);
   }
 
   .textWrapper p{
@@ -170,12 +187,19 @@
   }
 }
 
+@media (max-width: 850px) {
+  .personalized_margin{
+    margin-top: 25px;
+  }
+}
+
+
 @media (max-width: 700px) {
   .logo_avversari {
     width: calc(var(--logo-size, 150px) * 0.53);
     height: calc(var(--logo-height, 150px) * 0.53);
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: calc(var(--margin-between, 120px) * 0.27);
+    margin-right: calc(var(--margin-between, 120px) * 0.27);
   }
 
   .textWrapper p{
@@ -200,12 +224,19 @@
   }
 }
 
+@media (max-width: 530px) {
+  .personalized_margin{
+    margin-top: 23px;
+  }
+}
+
+
 @media (max-width: 500px) {
   .logo_avversari {
     width: calc(var(--logo-size, 150px) * 0.4);
     height: calc(var(--logo-height, 150px) * 0.4);
-    margin-left: 18px;
-    margin-right: 18px;
+    margin-left: calc(var(--margin-between, 120px) * 0.15);
+    margin-right: calc(var(--margin-between, 120px) * 0.15);
   }
 
   .textWrapper p{

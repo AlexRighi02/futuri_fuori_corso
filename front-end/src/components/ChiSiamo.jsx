@@ -1,7 +1,6 @@
 import styles from "./ChiSiamo.module.css";
-import styles2 from "./Carosello_Avversari.module.css";
 import styles3 from "./Rosa.module.css";
-import Carosello_Avversari from './Carosello_Avversari';
+import CaroselloAvversari from './Carosello_Avversari';
 
 
 const ChiSiamo = () => {
@@ -182,20 +181,22 @@ const ChiSiamo = () => {
 
 
       <div className={styles.containerSponsor}>
-        <Carosello_Avversari
+        <CaroselloAvversari
             images={[
-                '/img/img_sponsor/green_arreda.png',
-                '/img/img_sponsor/vittorio_malangone.png',
-                '/img/img_sponsor/playa.png',
-                '/img/img_sponsor/decathlon.png',
-                '/img/img_sponsor/finelli.png',
+              '/img/img_sponsor/vittorio_malangone.png',
+              '/img/img_sponsor/finelli.png',
+              '/img/img_sponsor/green_arreda.png',
+              '/img/img_sponsor/playa.png',
+              '/img/img_sponsor/decathlon.png',
             ]}
             names={[]}
-            imageWidth={300}
-            imageHeight={100}
+            imageWidth={450}
+            imageHeight={150}
             title="I NOSTRI PARTNER"
             subtitle=""
             marginTop={35}
+            marginBetween={110}
+            marginPersonalized={true}
         />
       </div>
     </div>

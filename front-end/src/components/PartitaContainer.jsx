@@ -9,7 +9,7 @@ const MESI = ['GEN','FEB','MAR','APR','MAG','GIU','LUG','AGO','SET','OTT','NOV',
 // Parsing robusto di "gg/mm/aaaa" (o "g/m/aa"); fallback sicuri
 function parseGiornoMese(dateStr) {
   if (!dateStr || typeof dateStr !== 'string') return { giorno: '', meseAbbr: '' };
-  const m = dateStr.match(/^(\d{1,2})[\/\-.](\d{1,2})/);
+  const m = dateStr.match(/^(\d{1,2})[/. -](\d{1,2})/);
   if (!m) return { giorno: dateStr, meseAbbr: '' };
   const giorno = m[1].padStart(2, '0');
   const meseIdx = Math.min(11, Math.max(0, parseInt(m[2], 10) - 1));

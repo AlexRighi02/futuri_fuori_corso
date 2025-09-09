@@ -47,7 +47,7 @@ const Calendario = () => {
                     {data.partite.map((partita, index) => {
                         let mesePrecedente = null;
                         let meseCorrente = null;
-                        if (index != 0) {                    
+                        if (index !== 0) {                    
                             mesePrecedente = data.partite[index - 1].data.split('/')[1];
                             meseCorrente = partita.data.split('/')[1];
                         }
