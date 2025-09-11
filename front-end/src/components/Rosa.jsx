@@ -267,11 +267,13 @@ const OverlayCard = ({ player, onClose }) => {
                   (players.portieri.some((p) => p.name === player.name)
                     ? "PORTIERE"
                     : players.difensori.some((p) => p.name === player.name)
-                    ? player.name === "Giuseppe Malangone" ? "DIFENSORE (CAPITANO)" : "DIFENSORE"
+                    //? player.name === "Giuseppe Malangone" ? "DIFENSORE (CAPITANO)" : "DIFENSORE"
+                    ? player.name === "Giuseppe Malangone" ? "DIFENSORE" : "DIFENSORE"
                     : players.centrocampisti.some((p) => p.name === player.name)
                     ? "CENTROCAMPISTA"
                     : players.attaccanti.some((p) => p.name === player.name)
-                    ? player.name === "Alex Righi" ? "ATTACCANTE (VICE CAPITANO)" : "ATTACCANTE"
+                    //? player.name === "Alex Righi" ? "ATTACCANTE (VICE CAPITANO)" : "ATTACCANTE"
+                    ? player.name === "Alex Righi" ? "ATTACCANTE" : "ATTACCANTE"
                     : players.staff.some((p) => p.name === player.name)
                     ? player.number === "A"
                       ? "ALLENATORE"
