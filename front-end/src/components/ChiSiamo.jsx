@@ -183,7 +183,7 @@ const ChiSiamo = () => {
       <div className={styles.containerSponsor}>
         <CaroselloAvversari
             images={[
-              '/img/img_sponsor/vittorio_malangone.png',
+              '/img/img_sponsor/vittorio_malangone.svg',
               '/img/img_sponsor/finelli.png',
               '/img/img_sponsor/green_arreda.png',
               '/img/img_sponsor/playa.png',
