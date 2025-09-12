@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Classifica_ranking from './components/Classifica_ranking';
+import ClassificaRanking from './components/Classifica_ranking';
 
 const Classifica = () => {
   const [data, setData] = useState(null);
@@ -22,7 +22,7 @@ const Classifica = () => {
             ? <p></p>
             : data.errore
               ? <p style={{ color: 'red' }}>Errore: {data.errore}</p>
-              : <Classifica_ranking classifica={data.data.classifica} />
+              : <ClassificaRanking classifica={data.data.classifica} />
         )}
       </div>      
     </div>

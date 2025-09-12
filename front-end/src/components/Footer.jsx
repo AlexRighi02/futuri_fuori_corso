@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { RemoveScroll } from "react-remove-scroll";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -39,7 +40,9 @@ const Footer = () => {
 
             {showPrivacy && (
                 <div className={styles.overlay}>
+                    
                     <div className={styles.privacy_modal} style={{ backgroundImage: 'url("/img/WallPaper_black.png")' }}>
+                    <RemoveScroll>
                         <button 
                           className={styles.close_button} 
                           onClick={() => setShowPrivacy(false)}
@@ -67,7 +70,8 @@ const Footer = () => {
                                 L'utente può chiedere in qualunque momento l'accesso, la rettifica o la cancellazione dei propri dati inviando una richiesta scritta a calcio.ffc@gmail.com.
                             </p>
                         </div>
-                    </div>
+                        </RemoveScroll>
+                    </div>                    
                 </div>
             )}
 

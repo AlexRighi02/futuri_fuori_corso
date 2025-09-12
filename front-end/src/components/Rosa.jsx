@@ -1,4 +1,5 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { RemoveScroll } from "react-remove-scroll";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Rosa.module.css";
 import InstagramIcon from "./InstagramIcon";
@@ -245,7 +246,9 @@ const OverlayCard = ({ player, onClose }) => {
 
   return (
     <div className={styles.overlayCard}>
+      <RemoveScroll>
       <div className={styles.overlayContent}>
+        
         <div className={styles.overlayContainerImg}>
           <img
             src={player.img}
@@ -301,7 +304,7 @@ const OverlayCard = ({ player, onClose }) => {
             <InstagramIcon
               href={player.insta}
               size={24}
-              color={"#6c757d"}
+              color={"#ff00bf"}
               hoverColor={"rgb(241 189 7)"}
             />
           </div>
@@ -318,7 +321,9 @@ const OverlayCard = ({ player, onClose }) => {
         <button className={styles.closeBtn} onClick={onClose}>
           ✕
         </button>
-      </div>
+        
+      </div>      
+      </RemoveScroll>
     </div>
   );
 };

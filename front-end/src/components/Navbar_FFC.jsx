@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router-dom";
@@ -7,15 +7,13 @@ import styles from "./Navbar_FFC.module.css";
 let elements_toBlur = document.getElementsByClassName("toBlur");
 
 const Navbar_FFC = () => {
-
-  let isMenuOpen = false;
-  
+  const isMenuOpen = useRef(false); // <-- cambiato qui
 
   const clickMenu = () => {
-    console.log(isMenuOpen);
-    isMenuOpen = !isMenuOpen;
+    console.log(isMenuOpen.current);
+    isMenuOpen.current = !isMenuOpen.current; // <-- uso .current
 
-    if (isMenuOpen) {
+    if (isMenuOpen.current) {
       document.querySelector(".sideMenu").style.display = "block";
 
       for (const el of elements_toBlur) {
@@ -38,11 +36,11 @@ const Navbar_FFC = () => {
     }
   };
 
-  const closeMenu = () => {
-    isMenuOpen = false;
+  const closeMenu = (n) => {
+    isMenuOpen.current = false;
     document.querySelector(".sideMenu").style.transform = "translateX(100%)";
 
-    scrollToRoot();
+    if (n===0) scrollToRoot();
 
     for (const el of elements_toBlur) {
       el.style.backdropFilter = "none";
@@ -54,10 +52,6 @@ const Navbar_FFC = () => {
     }, 500);
   };
 
-  // const link_insta = () => {
-  //   window.open("https://www.instagram.com/futuri_fuori_corso/", "_blank");
-  // };
-
   const [rootRef, setRootRef] = useState(null);
 
   useEffect(() => {
@@ -67,7 +61,7 @@ const Navbar_FFC = () => {
       if (window.innerWidth > 992) {
         // chiudi automaticamente il menu
         sideMenu.style.transform = "translateX(100%)";
-        
+
         for (let i = 0; i < elements_toBlur.length; i++) {
           elements_toBlur[i].style.backdropFilter = "none";
           elements_toBlur[i].classList.remove('is-blurred');
@@ -77,11 +71,10 @@ const Navbar_FFC = () => {
           if (sideMenu) sideMenu.style.display = "none";
         }, 500);
 
-        isMenuOpen = false;
+        isMenuOpen.current = false; // <-- uso .current
       }
     };
 
-    // Aggiungo listener
     window.addEventListener("resize", handleResize);
 
     const rootDiv = document.getElementById("root");
@@ -89,7 +82,6 @@ const Navbar_FFC = () => {
       setRootRef(rootDiv);
     }
 
-    // Pulizia del listener
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -121,25 +113,26 @@ const Navbar_FFC = () => {
 
         <Nav className={styles.navTendina}>
           <div className={styles.hamburger} onClick={clickMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div className={styles.containerSpan}><span className={styles.sp1_3}></span></div>
+            <div className={styles.containerSpan}><span className={styles.sp2}></span></div>
+            <div className={styles.containerSpan}><span className={styles.sp1_3}></span></div>
           </div>
         </Nav>
 
         <div className="sideMenu" style={{ backgroundImage: 'url("/img/WallPaper.png")', backgroundSize: 'cover' }}>
-          <div className={styles.closeIcon} onClick={closeMenu}>
+          <div className={styles.closeIcon} onClick={() => closeMenu(1)}>
             ✕
           </div>
           <Nav className={`${styles.sideNav} ${styles.blurredChild}`} >
-            <Nav.Link as={Link} to="/" className={styles.link} onClick={closeMenu}>HOME</Nav.Link>
-            <Nav.Link as={Link} to="/calendario" className={styles.link} onClick={closeMenu}>CALENDARIO</Nav.Link>
-            <Nav.Link as={Link} to="/rosa" className={styles.link} onClick={closeMenu}>ROSA</Nav.Link>
-            <Nav.Link as={Link} to="/chi-siamo" className={styles.link} onClick={closeMenu}>CHI SIAMO</Nav.Link>
+            <Nav.Link as={Link} to="/" className={styles.link} onClick={() => closeMenu(0)}>HOME</Nav.Link>
+            <Nav.Link as={Link} to="/calendario" className={styles.link} onClick={() => closeMenu(0)}>CALENDARIO</Nav.Link>
+            <Nav.Link as={Link} to="/rosa" className={styles.link} onClick={() => closeMenu(0)}>ROSA</Nav.Link>
+            <Nav.Link as={Link} to="/chi-siamo" className={styles.link} onClick={() => closeMenu(0)}>CHI SIAMO</Nav.Link>
           </Nav>
         </div>
       </Container>
     </Navbar>
   );
 };
+
 export default Navbar_FFC;

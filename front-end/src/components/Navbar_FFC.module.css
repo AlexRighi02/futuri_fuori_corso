@@ -132,23 +132,29 @@
 }
 
 /* Stato iniziale */
-.hamburger span:nth-child(1),
-.hamburger span:nth-child(3) {
+.sp1_3{
   width: 100%; /* Linee lunghe */
 }
 
-.hamburger span:nth-child(2) {
+.sp2 {
   width: 60%; /* Linea centrale più corta */
+  justify-content: right;
 }
 
+.hamburger:hover {
 /* Hover: invertiamo le lunghezze */
-.hamburger:hover span:nth-child(1),
-.hamburger:hover span:nth-child(3) {
-  width: 60%; /* Accorcia le linee sopra e sotto */
+  .sp1_3 {
+    width: 60%; /* Accorcia le linee sopra e sotto */
+  }
+
+  .sp2 {
+    width: 100%; /* Allunga la linea centrale */
+  }
 }
 
-.hamburger:hover span:nth-child(2) {
-  width: 100%; /* Allunga la linea centrale */
+.containerSpan{
+  display: flex;
+  justify-content: right;
 }
 
 .navContainer {
