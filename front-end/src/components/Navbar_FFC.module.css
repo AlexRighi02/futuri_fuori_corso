@@ -109,10 +109,21 @@
   top: 0px;
   height: 100vh;
   border-left: solid 2px rgb(241 189 9);
+  z-index: 999;
 
   /* Trasizione da destra */
   transform: translateX(100%); /* fuori dallo schermo a destra */
   transition: transform 0.5s ease;
+}
+
+.blurOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 998; /* sotto la sideMenu, sopra il resto */
 }
 
 .hamburger {

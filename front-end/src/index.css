@@ -73,7 +73,7 @@ code {
 }
 
 .is-blurred { filter: blur(5px); }
-.is-blurred, .is-blurred * { pointer-events: none !important; }
+.is-blurred, .is-blurred * { cursor: default !important }
 
 @media (max-width: 768px) {
   #sfondoSito {
