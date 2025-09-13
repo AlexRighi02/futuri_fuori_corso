@@ -17,24 +17,28 @@ const Home = () => {
             <div id="container_carosello">
                 <CaroselloAvversari 
                     images={[
+                        '/img/img_avversari/futuri_fuori_corso.png',
                         '/img/img_avversari/focumeu.png',
-                        '/img/img_avversari/taneto.png',
-                        '/img/img_avversari/realmaleducati.png',
+                        '/img/img_avversari/montecchio.png',
+                        '/img/img_avversari/trinita.png',                   
+                        '/img/img_avversari/gattatico_raptors.png',
                         '/img/img_avversari/no_logo.png',
+                        '/img/img_avversari/montecchio.png',
+                        '/img/img_avversari/the_mount.png',
                         '/img/img_avversari/no_logo.png',
-                        '/img/img_avversari/no_logo.png',
-                        '/img/img_avversari/no_logo.png',
-                        '/img/img_avversari/no_logo.png'
+                        '/img/img_avversari/trinita.png'
                     ]}
                     names={[
+                        'F.C. Futuri Fuori Corso',
                         'Focumeu',
-                        'Taneto',
-                        'Real maleducati',
-                        'Squadra 4',
-                        'Squadra 5',
-                        'Squadra 6',
-                        'Squadra 7',
-                        'Squadra 8'
+                        'U.S. Montecchio Calcio New Team',
+                        'ATS Trinità Elite',
+                        'Gattatico Raptors',
+                        'Indominus XI',
+                        'U.S. Montecchio Calcio Squadra A',
+                        'The Mount II',
+                        'AN Calcio a 7',
+                        'ATS Trinità'
                     ]}
                     imageWidth={150}
                     imageHeight={150}

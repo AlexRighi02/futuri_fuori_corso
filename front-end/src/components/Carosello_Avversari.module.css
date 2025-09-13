@@ -70,10 +70,11 @@
 }
 
 .textWrapper p{
-  text-align: left;
+  text-align: center;
   font-size: calc(var(--logo-size, 150px) * 0.2);
   color: white;
   margin-bottom: 0px;
+  max-width: 300px;
 }
 
 .bannerWrapper {
@@ -131,6 +132,7 @@
 
   .textWrapper p{
     font-size: calc(var(--logo-size, 150px) * 0.166);
+    max-width: 260px;
   }
 
   .titleWrapper {
@@ -167,6 +169,7 @@
 
   .textWrapper p{
     font-size: calc(var(--logo-size, 150px) * 0.133);
+    max-width: 210px;
   }
 
   .titleWrapper {
@@ -204,6 +207,7 @@
 
   .textWrapper p{
     font-size: calc(var(--logo-size, 150px) * 0.11);
+    max-width: 200px;
   }
 
   .titleWrapper {
@@ -241,6 +245,7 @@
 
   .textWrapper p{
     font-size: calc(var(--logo-size, 150px) * 0.09);
+    max-width: 170px;
   }
 
   .titleWrapper {
