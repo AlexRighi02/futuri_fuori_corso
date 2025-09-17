@@ -25,11 +25,12 @@ headers = {
   'TE': 'trailers'
 }
 
+headers.pop('Accept-Encoding', None)
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
 
 list_partite = soup.find_all('a', class_='btn btn-gara')
-
+print(soup)
 json_squadre = {"partite": []}
 
 for partita in list_partite:

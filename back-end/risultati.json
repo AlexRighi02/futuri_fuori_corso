@@ -1,3 +1,169 @@
 {
-    "partite": []
+    "partite": [
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                },
+                {
+                    "nome": "AN CALCIO A 7",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200986_435331.jpg"
+                }
+            ],
+            "data": "22/09/25",
+            "ora": "20:15",
+            "risultato": " - "
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "FOCUMEU",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200986_434724.jpg"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                }
+            ],
+            "data": "01/10/25",
+            "ora": "21:30",
+            "risultato": " - "
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                },
+                {
+                    "nome": "INDOMINUS XI",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04201006_435678.jpg"
+                }
+            ],
+            "data": "06/10/25",
+            "ora": "20:15",
+            "risultato": " - "
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200499_436385.jpg"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                }
+            ],
+            "data": "13/10/25",
+            "ora": "21:00",
+            "risultato": " - "
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                },
+                {
+                    "nome": "THE MOUNT II",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200938.jpg"
+                }
+            ],
+            "data": "20/10/25",
+            "ora": "20:15",
+            "risultato": " - "
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "GATTATICO CLUB RAPTORS",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200035_435544.jpg"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                }
+            ],
+            "data": "28/10/25",
+            "ora": "21:30",
+            "risultato": " - "
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA' ELITE",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200796_435625.jpg"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                }
+            ],
+            "data": "04/11/25",
+            "ora": "20:00",
+            "risultato": " - "
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA'",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200796.jpg"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                }
+            ],
+            "data": "13/11/25",
+            "ora": "20:15",
+            "risultato": " - "
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200499.jpg"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                }
+            ],
+            "data": "17/11/25",
+            "ora": "21:00",
+            "risultato": " - "
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "AN CALCIO A 7",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200986_435331.jpg"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                }
+            ],
+            "data": "24/11/25",
+            "ora": "21:30",
+            "risultato": " - "
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg"
+                },
+                {
+                    "nome": "FOCUMEU",
+                    "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200986_434724.jpg"
+                }
+            ],
+            "data": "01/12/25",
+            "ora": "20:15",
+            "risultato": " - "
+        }
+    ]
 }

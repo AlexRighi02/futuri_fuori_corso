@@ -11,6 +11,7 @@ const Risultati = () => {
   useEffect(() => {
     fetch('/risultati')
       .then((res) => {
+        console.log(res);
         if (!res.ok) throw new Error('Errore nel recupero dei risultati');
         return res.json();
       })
