@@ -2,7 +2,7 @@ import styles from './Classifica_ranking.module.css';
 import { useState, useEffect } from "react";
 
 const Classifica_ranking = ({ classifica }) => {
-    const nomeSquadra = "avellino banfi"; // Nome della squadra da evidenziare
+    const nomeSquadra = "F.C. FUTURI FUORI CORSO"; // Nome della squadra da evidenziare
     const squadre_promosse = 1;
     const squadre_playoff = 4;
 
@@ -10,7 +10,7 @@ const Classifica_ranking = ({ classifica }) => {
 
     useEffect(() => {
         const handleResize = () => {
-        setIsMobile(window.innerWidth < 768);
+            setIsMobile(window.innerWidth < 768);
         };
 
         window.addEventListener("resize", handleResize);
@@ -44,12 +44,12 @@ const Classifica_ranking = ({ classifica }) => {
                             <span className={`${index < squadre_promosse ? styles.promozione : ''} ${index >= squadre_promosse && index < squadre_promosse + squadre_playoff ? styles.playoff : ''}`}>{index + 1}</span>
                         </td>
                         <td className={styles.squadra}>
-                        <div className={styles.logoContainer}>
-                            <img src={squadra.logo} alt={squadra.squadra} className={styles.logo} />
-                        </div>
-                        <div className={styles.nomeSquadra}>
-                            {squadra.squadra.toUpperCase()}
-                        </div>
+                            <div className={styles.logoContainer}>
+                                <img src={squadra.logo} alt={squadra.squadra} className={styles.logo} />
+                            </div>
+                            <div className={styles.nomeSquadra}>
+                                {squadra.squadra.toUpperCase()}
+                            </div>
                         </td>
                         <td>{squadra.punti}</td>
                         <td>{squadra.giocate}</td>

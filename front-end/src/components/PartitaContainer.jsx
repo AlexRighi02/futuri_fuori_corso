@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './Risultati.module.css';
 
 // Abbreviazioni mesi (1..12)
-const MESI = ['GEN','FEB','MAR','APR','MAG','GIU','LUG','AGO','SET','OTT','NOV','DIC'];
+const MESI = ['GEN', 'FEB', 'MAR', 'APR', 'MAG', 'GIU', 'LUG', 'AGO', 'SET', 'OTT', 'NOV', 'DIC'];
 
 // Parsing robusto di "gg/mm/aaaa" (o "g/m/aa"); fallback sicuri
 function parseGiornoMese(dateStr) {
@@ -18,7 +18,7 @@ function parseGiornoMese(dateStr) {
 
 export default function PartitaContainer({
   partita,
-  nomeSquadra = 'REAL MALEDUCATI',
+  nomeSquadra = 'F.C. FUTURI FUORI CORSO',
   placeholderLogo = '/img/placeholder-team.png',
 }) {
   // Guardie: struttura minima

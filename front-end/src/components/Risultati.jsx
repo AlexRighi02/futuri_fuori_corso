@@ -29,8 +29,12 @@ const Risultati = () => {
   if (!data?.data?.partite?.length) return <p className="text-center mt-4">Nessun risultato disponibile</p>;
 
   // Tua logica per trovare l’ultima partita giocata con risultato
-  const lastIndex = data.data.partite.findLastIndex((p) => p.risultato !== '');
-  const partita = lastIndex !== -1 ? data.data.partite[lastIndex] : data.data.partite[0];
+  //console.log(data.data.partite);
+
+  const lastPlayedIndex = data.data.partite.findLastIndex((p) => /\d/.test(p.risultato)); // Controlla se c'è almeno un numero
+  const partita = lastPlayedIndex !== -1 ? data.data.partite[lastPlayedIndex] : data.data.partite[0];
+
+  //console.log(partita);
 
   return (
     <div className={styles.results_container}>

@@ -13,19 +13,19 @@ const Home = () => {
             <div id="risultati">
                 <Risultati />
             </div>
-            
+
             <div id="container_carosello">
-                <CaroselloAvversari 
+                <CaroselloAvversari
                     images={[
                         '/img/img_avversari/futuri_fuori_corso.png',
                         '/img/img_avversari/focumeu.png',
                         '/img/img_avversari/montecchio.png',
-                        '/img/img_avversari/trinita.png',                   
-                        '/img/img_avversari/gattatico_raptors.png',
-                        '/img/img_avversari/no_logo.png',
+                        '/img/img_avversari/ATS_Trinita_Elite.png',
+                        '/img/img_avversari/gattatico_club_raptors.png',
+                        '/img/img_avversari/Indominus_XI.png',
                         '/img/img_avversari/montecchio.png',
                         '/img/img_avversari/the_mount.png',
-                        '/img/img_avversari/no_logo.png',
+                        '/img/img_avversari/AN_calcio_a_7.png',
                         '/img/img_avversari/trinita.png'
                     ]}
                     names={[
@@ -33,7 +33,7 @@ const Home = () => {
                         'Focumeu',
                         'U.S. Montecchio Calcio New Team',
                         'ATS Trinità Elite',
-                        'Gattatico Raptors',
+                        'Gattatico Club Raptors',
                         'Indominus XI',
                         'U.S. Montecchio Calcio Squadra A',
                         'The Mount II',
@@ -47,7 +47,7 @@ const Home = () => {
                 />
 
             </div>
-            <Classifica />    
+            <Classifica />
         </div>
     );
 };

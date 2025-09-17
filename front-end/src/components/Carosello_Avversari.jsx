@@ -1,8 +1,8 @@
 import styles from './Carosello_Avversari.module.css';
 
-function Carosello_Marquee({ 
-  images = [], 
-  names = [], 
+function Carosello_Marquee({
+  images = [],
+  names = [],
   imageWidth = 150,
   imageHeight = 150,
   marginTop = 30,
@@ -12,10 +12,11 @@ function Carosello_Marquee({
   subtitle = "GIRONE A"
 }) {
   const loopImages = [...images, ...images];
+  console.log(loopImages)
   const loopNames = [...names, ...names];
 
   return (
-    <div className={styles.marqueeWrapper} style={{ "--margin-top": `${marginTop}px`, "--margin-between": `${marginBetween}px`}}>
+    <div className={styles.marqueeWrapper} style={{ "--margin-top": `${marginTop}px`, "--margin-between": `${marginBetween}px` }}>
       <div className={styles.titleWrapper}>
         <h1 className={styles.title_campionato}>{title}</h1>
         {subtitle && <h2 className={styles.title_girone}>{subtitle}</h2>}
@@ -24,10 +25,10 @@ function Carosello_Marquee({
         {loopImages.map((src, index) => (
           <div className={styles.item} style={{ "--logo-size": `${imageWidth}px`, "--logo-height": `${imageHeight}px` }} key={index}>
             <div className={styles.imageWrapper}>
-              <img 
-                src={process.env.PUBLIC_URL + src} 
-                className={styles.logo_avversari} 
-                alt={loopNames[index]} 
+              <img
+                src={process.env.PUBLIC_URL + src}
+                className={styles.logo_avversari}
+                alt={loopNames[index]}
               />
             </div>
             <div className={styles.textWrapper}>
