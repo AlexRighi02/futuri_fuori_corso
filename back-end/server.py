@@ -9,6 +9,21 @@ FRONTEND_BUILD = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__
 app = Flask(__name__, static_folder=FRONTEND_BUILD, static_url_path='')
 CORS(app)
 
+map_team = {
+    "F.C. FUTURI FUORI CORSO": "/img/img_avversari/futuri_fuori_corso.png",
+    "FOCUMEU": "/img/img_avversari/focumeu.png",
+    "U.S. MONTECCHIO NEW TEAM": "/img/img_avversari/new_team.png",
+    "ATS TRINITA' ELITE": "/img/img_avversari/trinita_elite.png",
+    "GATTATICO CLUB RAPTORS": "/img/img_avversari/gattatico_club_raptors.png",
+    "INDOMINUS XI": "/img/img_avversari/indominus.png",
+    "U.S. MONTECCHIO YOUNG": "/img/img_avversari/montecchio.png",
+    "THE MOUNT II": "/img/img_avversari/the_mount.png",
+    "AN CALCIO A 7": "/img/img_avversari/an_calcio.png",
+    "ATS TRINITA'": "/img/img_avversari/trinita.png"
+}
+
+
+
 @app.route('/')
 def home():
     return app.send_static_file('index.html')
@@ -25,6 +40,7 @@ def static_proxy(path):
 @app.route('/esegui', methods=['GET'])
 def esegui_script():
     try:
+        
         # Costruisce il percorso al file nella stessa directory
         file_path = os.path.join(os.path.dirname(__file__), 'classifica.json')
 
@@ -33,6 +49,10 @@ def esegui_script():
 
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
+        
+        for team in data["classifica"]:
+            nome_squadra = team["squadra"]
+            team['logo'] = map_team.get(nome_squadra.upper())
 
         return jsonify({'data': data})
 

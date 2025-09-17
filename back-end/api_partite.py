@@ -2,9 +2,18 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-# map_team = {
-#     "F.C. FUTURI FUORI CORSO": "../front_end/public/img/img_avversari/futuri_fuori_corso.png",
-# }
+map_team = {
+    "F.C. FUTURI FUORI CORSO": "/img/img_avversari/futuri_fuori_corso.png",
+    "FOCUMEU": "/img/img_avversari/focumeu.png",
+    "U.S. MONTECCHIO NEW TEAM": "/img/img_avversari/new_team.png",
+    "ATS TRINITA' ELITE": "/img/img_avversari/trinita_elite.png",
+    "GATTATICO CLUB RAPTORS": "/img/img_avversari/gattatico_club_raptors.png",
+    "INDOMINUS XI": "/img/img_avversari/indominus.png",
+    "U.S. MONTECCHIO YOUNG": "/img/img_avversari/montecchio.png",
+    "THE MOUNT II": "/img/img_avversari/the_mount.png",
+    "AN CALCIO A 7": "/img/img_avversari/an_calcio.png",
+    "ATS TRINITA'": "/img/img_avversari/trinita.png"
+}
 
 url = "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/S3854/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUdMSUgmNDI9Zg=="
 
@@ -30,7 +39,7 @@ response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
 
 list_partite = soup.find_all('a', class_='btn btn-gara')
-print(soup)
+
 json_squadre = {"partite": []}
 
 for partita in list_partite:
@@ -42,12 +51,12 @@ for partita in list_partite:
         nome_tag = block.find('span', class_='nome-squadra')
         nome = nome_tag.get_text(strip=True) if nome_tag else "N/A"
 
-        logo_tag = block.find('img')
-        logo = logo_tag['src'] if logo_tag else None
-
+        # logo_tag = block.find('img')
+        # logo = logo_tag['src'] if logo_tag else None
+        #print("ciao", map_team.get(nome.upper()))
         squadre.append({
             "nome": nome.upper(),
-            "logo": logo
+            "logo": map_team.get(nome.upper())
         })
 
     # Trova data e ora

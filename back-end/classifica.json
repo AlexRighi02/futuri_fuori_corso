@@ -41,7 +41,7 @@
         },
         {
             "squadra": "F.C. FUTURI FUORI CORSO",
-            "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200780_435352.jpg",
+            "logo": "/img/img_avversari/futuri_fuori_corso.png",
             "punti": 0,
             "giocate": 0,
             "vinte": 0,
@@ -66,7 +66,7 @@
             "differenza_reti": 0
         },
         {
-            "squadra": "GATTATTICO CLUB RAPTORS",
+            "squadra": "GATTATICO CLUB RAPTORS",
             "logo": "https://static.centrosportivoitaliano.it/modulistica/logo/04200035.jpg",
             "punti": 0,
             "giocate": 0,
