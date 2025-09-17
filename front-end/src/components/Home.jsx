@@ -19,7 +19,7 @@ const Home = () => {
                     images={[
                         '/img/img_avversari/futuri_fuori_corso.png',
                         '/img/img_avversari/focumeu.png',
-                        '/img/img_avversari/montecchio.png',
+                        '/img/img_avversari/new_team.png',
                         '/img/img_avversari/trinita_elite.png',
                         '/img/img_avversari/gattatico_club_raptors.png',
                         '/img/img_avversari/indominus.png',
