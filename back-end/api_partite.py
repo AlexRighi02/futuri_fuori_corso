@@ -1,6 +1,7 @@
 import requests
 import json
 from bs4 import BeautifulSoup
+import logging
 
 map_team = {
     "F.C. FUTURI FUORI CORSO": "/img/img_avversari/futuri_fuori_corso.png",
@@ -37,10 +38,11 @@ headers = {
 headers.pop('Accept-Encoding', None)
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
-print(soup)
-print(response.status_code)
-print(response.url)
-print(response.text[:2000])  # solo i primi 2000 caratteri
+logging.basicConfig(level=logging.INFO)
+
+logging.info("Status code: %s", response.status_code)
+logging.info("URL: %s", response.url)
+logging.info("HTML snippet: %s", response.text[:2000])
 
 
 list_partite = soup.find_all('a', class_='btn btn-gara')
