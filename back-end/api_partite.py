@@ -1,6 +1,7 @@
+'''
 import requests
-import json
 from bs4 import BeautifulSoup
+'''
 
 map_team = {
     "F.C. FUTURI FUORI CORSO": "/img/img_avversari/futuri_fuori_corso.png",
@@ -17,6 +18,7 @@ map_team = {
 
 url = "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/S3854/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUdMSUgmNDI9Zg=="
 
+'''
 payload = {}
 headers = {
   'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0',
@@ -40,6 +42,26 @@ print(response.text)
 soup = BeautifulSoup(response.text, 'html.parser')
 #print(soup)
 list_partite = soup.find_all('a', class_='btn btn-gara')
+'''
+import json
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from bs4 import BeautifulSoup
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+
+driver = webdriver.Chrome(options=chrome_options)
+driver.get(url)
+
+html = driver.page_source
+soup = BeautifulSoup(html, 'html.parser')
+
+list_partite = soup.find_all('a', class_='btn btn-gara')
+driver.quit()
+print(list_partite)
 
 json_squadre = {"partite": []}
 
