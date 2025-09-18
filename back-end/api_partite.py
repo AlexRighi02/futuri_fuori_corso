@@ -37,6 +37,11 @@ headers = {
 headers.pop('Accept-Encoding', None)
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
+print(soup)
+print(response.status_code)
+print(response.url)
+print(response.text[:2000])  # solo i primi 2000 caratteri
+
 
 list_partite = soup.find_all('a', class_='btn btn-gara')
 
