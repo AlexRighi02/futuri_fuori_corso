@@ -10,19 +10,24 @@ RUN npm install
 COPY front-end/ ./
 RUN npm run build
 
-
 # ===== STAGE 2: Back-end con Python e Flask =====
 FROM python:3.11-slim
 
-# Install Chromium e Chromedriver
+# Install Chromium e Chromedriver per Selenium + librerie di base
 RUN apt-get update && apt-get install -y --no-install-recommends \
     chromium \
     chromium-driver \
+    ca-certificates \
+    curl \
+    wget \
+    git \
+    build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 # Variabili d'ambiente per Selenium
 ENV CHROME_BIN=/usr/bin/chromium
 ENV CHROMEDRIVER_PATH=/usr/bin/chromedriver
+ENV PYTHONUNBUFFERED=1
 
 # Working directory per il back-end
 WORKDIR /app/back-end

@@ -16,7 +16,7 @@ map_team = {
 }
 
 url = "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/S3854/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUdMSUgmNDI9Zg=="
-output_file = "pagina.html"
+output_file = "sitoCSI.html"
 
 # Scarica la pagina con curl direttamente da Python
 subprocess.run([
