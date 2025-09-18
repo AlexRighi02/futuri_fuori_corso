@@ -37,10 +37,11 @@ headers = {
 headers.pop('Accept-Encoding', None)
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
-print('QUESTO è IL SOUP:')
+
 print(soup)
 
 list_partite = soup.find_all('a', class_='btn btn-gara')
+print(list_partite)
 
 json_squadre = {"partite": []}
 
