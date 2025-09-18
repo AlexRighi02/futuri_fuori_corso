@@ -29,9 +29,9 @@ subprocess.run([
 # Leggi l'HTML scaricato
 with open(output_file, "r", encoding="utf-8") as f:
     html = f.read()
+    print(html)
 
 soup = BeautifulSoup(html, "html.parser")
-print(soup)
 list_partite = soup.find_all("a", class_="btn btn-gara")
 
 # Da qui in poi rimane tutto uguale
