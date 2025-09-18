@@ -59,9 +59,10 @@ driver.get(url)
 html = driver.page_source
 soup = BeautifulSoup(html, 'html.parser')
 
+print(soup)
+
 list_partite = soup.find_all('a', class_='btn btn-gara')
 driver.quit()
-print(list_partite)
 
 json_squadre = {"partite": []}
 
