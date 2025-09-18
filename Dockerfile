@@ -10,34 +10,19 @@ RUN npm install
 COPY front-end/ ./
 RUN npm run build
 
-# ===== STAGE 2: Back-end con Python e Playwright =====
+
+# ===== STAGE 2: Back-end con Python e Flask =====
 FROM python:3.11-slim
 
-# Install librerie di sistema necessarie per Playwright
+# Install Chromium e Chromedriver
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    wget \
-    libnss3 \
-    libatk1.0-0 \
-    libatk-bridge2.0-0 \
-    libcups2 \
-    libdrm2 \
-    libxkbcommon0 \
-    libxcomposite1 \
-    libxdamage1 \
-    libxrandr2 \
-    libgbm1 \
-    libasound2 \
-    libpangocairo-1.0-0 \
-    libpango-1.0-0 \
-    libgtk-3-0 \
-    fonts-liberation \
-    libwoff1 \
-    xdg-utils \
+    chromium \
+    chromium-driver \
     && rm -rf /var/lib/apt/lists/*
 
-# Variabili d'ambiente per Playwright (chromium headless)
-ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+# Variabili d'ambiente per Selenium
+ENV CHROME_BIN=/usr/bin/chromium
+ENV CHROMEDRIVER_PATH=/usr/bin/chromedriver
 
 # Working directory per il back-end
 WORKDIR /app/back-end
@@ -45,9 +30,6 @@ WORKDIR /app/back-end
 # Copia i requirements e installa le dipendenze
 COPY back-end/requirements.txt /app/back-end/requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
-
-# Installa Playwright e i browser
-RUN pip install playwright && playwright install --with-deps
 
 # Copia il codice del back-end
 COPY back-end/ /app/back-end/
