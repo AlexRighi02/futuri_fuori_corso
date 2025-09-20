@@ -13,7 +13,7 @@ RUN npm run build
 
 
 # ===== STAGE 2: Back-end con Python + Playwright =====
-FROM mcr.microsoft.com/playwright/python:v1.47.0-focal
+FROM mcr.microsoft.com/playwright/python:v1.47.0-jammy
 
 WORKDIR /app/back-end
 
@@ -35,5 +35,5 @@ COPY --from=frontend-builder /app/front-end/build /app/front-end/build
 # Espone la porta
 EXPOSE $PORT
 
-# Usa un singolo worker per evitare problemi con Chromium
+# Gunicorn: 1 worker per compatibilità con Chromium
 CMD ["gunicorn", "server:app", "--workers", "1", "--threads", "8", "--bind", "0.0.0.0:8080"]
