@@ -121,6 +121,6 @@ def parse_html(html):
 # Debug locale
 if __name__ == "__main__":
     html = fetch_html()
+    print(html)
     risultati = parse_html(html)
     import json
-    print(json.dumps(risultati, indent=2, ensure_ascii=False))
