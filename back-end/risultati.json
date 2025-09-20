@@ -1,169 +1,169 @@
 {
-    "partite": [
+  "partite": [
+    {
+      "squadre": [
         {
-            "squadre": [
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                },
-                {
-                    "nome": "AN CALCIO A 7",
-                    "logo": "/img/img_avversari/an_calcio.png"
-                }
-            ],
-            "data": "22/09/25",
-            "ora": "20:15",
-            "risultato": " - "
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
         },
         {
-            "squadre": [
-                {
-                    "nome": "FOCUMEU",
-                    "logo": "/img/img_avversari/focumeu.png"
-                },
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                }
-            ],
-            "data": "01/10/25",
-            "ora": "21:30",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                },
-                {
-                    "nome": "INDOMINUS XI",
-                    "logo": "/img/img_avversari/indominus.png"
-                }
-            ],
-            "data": "06/10/25",
-            "ora": "20:15",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
-                {
-                    "nome": "U.S. MONTECCHIO NEW TEAM",
-                    "logo": "/img/img_avversari/new_team.png"
-                },
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                }
-            ],
-            "data": "13/10/25",
-            "ora": "21:00",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                },
-                {
-                    "nome": "THE MOUNT II",
-                    "logo": "/img/img_avversari/the_mount.png"
-                }
-            ],
-            "data": "20/10/25",
-            "ora": "20:15",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
-                {
-                    "nome": "GATTATICO CLUB RAPTORS",
-                    "logo": "/img/img_avversari/gattatico_club_raptors.png"
-                },
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                }
-            ],
-            "data": "28/10/25",
-            "ora": "21:30",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
-                {
-                    "nome": "ATS TRINITA' ELITE",
-                    "logo": "/img/img_avversari/trinita_elite.png"
-                },
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                }
-            ],
-            "data": "04/11/25",
-            "ora": "20:00",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
-                {
-                    "nome": "ATS TRINITA'",
-                    "logo": "/img/img_avversari/trinita.png"
-                },
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                }
-            ],
-            "data": "13/11/25",
-            "ora": "20:15",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
-                {
-                    "nome": "U.S. MONTECCHIO YOUNG",
-                    "logo": "/img/img_avversari/montecchio.png"
-                },
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                }
-            ],
-            "data": "17/11/25",
-            "ora": "21:00",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
-                {
-                    "nome": "AN CALCIO A 7",
-                    "logo": "/img/img_avversari/an_calcio.png"
-                },
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                }
-            ],
-            "data": "24/11/25",
-            "ora": "21:30",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_avversari/futuri_fuori_corso.png"
-                },
-                {
-                    "nome": "FOCUMEU",
-                    "logo": "/img/img_avversari/focumeu.png"
-                }
-            ],
-            "data": "01/12/25",
-            "ora": "20:15",
-            "risultato": " - "
+          "nome": "AN CALCIO A 7",
+          "logo": "/img/img_anteprima/an_calcio.png"
         }
-    ]
+      ],
+      "data": "22/09/25",
+      "ora": "20:15",
+      "risultato": " - "
+    },
+    {
+      "squadre": [
+        {
+          "nome": "FOCUMEU",
+          "logo": "/img/img_anteprima/focumeu.png"
+        },
+        {
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+        }
+      ],
+      "data": "01/10/25",
+      "ora": "21:30",
+      "risultato": " - "
+    },
+    {
+      "squadre": [
+        {
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+        },
+        {
+          "nome": "INDOMINUS XI",
+          "logo": "/img/img_anteprima/indominus.png"
+        }
+      ],
+      "data": "06/10/25",
+      "ora": "20:15",
+      "risultato": " - "
+    },
+    {
+      "squadre": [
+        {
+          "nome": "U.S. MONTECCHIO NEW TEAM",
+          "logo": "/img/img_anteprima/new_team.png"
+        },
+        {
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+        }
+      ],
+      "data": "13/10/25",
+      "ora": "21:00",
+      "risultato": " - "
+    },
+    {
+      "squadre": [
+        {
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+        },
+        {
+          "nome": "THE MOUNT II",
+          "logo": "/img/img_anteprima/the_mount.png"
+        }
+      ],
+      "data": "20/10/25",
+      "ora": "20:15",
+      "risultato": " - "
+    },
+    {
+      "squadre": [
+        {
+          "nome": "GATTATICO CLUB RAPTORS",
+          "logo": "/img/img_anteprima/gattatico_club_raptors.png"
+        },
+        {
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+        }
+      ],
+      "data": "28/10/25",
+      "ora": "21:30",
+      "risultato": " - "
+    },
+    {
+      "squadre": [
+        {
+          "nome": "ATS TRINITA' ELITE",
+          "logo": "/img/img_anteprima/trinita_elite.png"
+        },
+        {
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+        }
+      ],
+      "data": "04/11/25",
+      "ora": "20:00",
+      "risultato": " - "
+    },
+    {
+      "squadre": [
+        {
+          "nome": "ATS TRINITA'",
+          "logo": "/img/img_anteprima/trinita.png"
+        },
+        {
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+        }
+      ],
+      "data": "13/11/25",
+      "ora": "20:15",
+      "risultato": " - "
+    },
+    {
+      "squadre": [
+        {
+          "nome": "U.S. MONTECCHIO YOUNG",
+          "logo": "/img/img_anteprima/montecchio.png"
+        },
+        {
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+        }
+      ],
+      "data": "17/11/25",
+      "ora": "21:00",
+      "risultato": " - "
+    },
+    {
+      "squadre": [
+        {
+          "nome": "AN CALCIO A 7",
+          "logo": "/img/img_anteprima/an_calcio.png"
+        },
+        {
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+        }
+      ],
+      "data": "24/11/25",
+      "ora": "21:30",
+      "risultato": " - "
+    },
+    {
+      "squadre": [
+        {
+          "nome": "F.C. FUTURI FUORI CORSO",
+          "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+        },
+        {
+          "nome": "FOCUMEU",
+          "logo": "/img/img_anteprima/focumeu.png"
+        }
+      ],
+      "data": "01/12/25",
+      "ora": "20:15",
+      "risultato": " - "
+    }
+  ]
 }
