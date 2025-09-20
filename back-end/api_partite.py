@@ -56,6 +56,7 @@ def fetch_html():
                 print("⚠️ Attenzione: il selettore non è stato trovato (Cloudflare o pagina vuota)")
 
             html = page.content()
+            print(html)
             context.storage_state(path=STORAGE_STATE)
             browser.close()
 
@@ -120,6 +121,7 @@ def parse_html(html):
 
 # Debug locale
 if __name__ == "__main__":
+    print('ciao\n')
     html = fetch_html()
     print(html)
     risultati = parse_html(html)
