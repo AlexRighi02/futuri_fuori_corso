@@ -1,8 +1,8 @@
-from flask import Flask, jsonify, send_from_directory, request
+from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS
-import subprocess
-import json
 import os
+import json
+from api_partite import fetch_html, parse_html  # Import diretto
 
 FRONTEND_BUILD = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "front-end", "build")
 
@@ -22,13 +22,10 @@ map_team = {
     "ATS TRINITA'": "/img/img_avversari/trinita.png"
 }
 
-
-
 @app.route('/')
 def home():
     return app.send_static_file('index.html')
 
-# Route per qualsiasi altra pagina React
 @app.route('/<path:path>')
 def static_proxy(path):
     file_path = os.path.join(FRONTEND_BUILD, path)
@@ -40,10 +37,7 @@ def static_proxy(path):
 @app.route('/esegui', methods=['GET'])
 def esegui_script():
     try:
-        
-        # Costruisce il percorso al file nella stessa directory
         file_path = os.path.join(os.path.dirname(__file__), 'classifica.json')
-
         if not os.path.exists(file_path):
             return jsonify({'errore': 'File classifica.json non trovato'}), 500
 
@@ -55,31 +49,17 @@ def esegui_script():
             team['logo'] = map_team.get(nome_squadra.upper())
 
         return jsonify({'data': data})
-
     except Exception as e:
         return jsonify({'errore': str(e)}), 500
-    
-    
+
 @app.route('/risultati', methods=['GET'])
-def esegui_apir():
+def esegui_risultati():
     try:
-        result = subprocess.run(
-            ['python3', 'api_partite.py'],
-            check=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
-        )
-        if not os.path.exists('risultati.json'):
-            return jsonify({'errore': 'File partite.json non trovato'}), 500
-        with open('risultati.json', 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        return jsonify({'data': data, 'stdout': result.stdout, 'stderr': result.stderr})
-    except subprocess.CalledProcessError as e:
-        return jsonify({'errore': "Errore nell'esecuzione di api_partite.py", 'details': e.stderr + " " + e.stdout}), 500
+        html = fetch_html()              # Fetch della pagina con Playwright
+        risultati = parse_html(html)     # Parsing diretto
+        return jsonify({'data': risultati})
     except Exception as e:
         return jsonify({'errore': str(e)}), 500
-
 
 @app.route('/link_post.txt', methods=['GET'])
 def get_link_post():

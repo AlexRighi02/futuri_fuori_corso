@@ -1,5 +1,4 @@
 import os
-import json
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
@@ -17,15 +16,20 @@ map_team = {
 }
 
 URL = "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/S3854/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUdMSUgmNDI9Zg=="
-OUTPUT_HTML = "sitoCSI.html"
-RESULTS_JSON = "risultati.json"
 STORAGE_STATE = "storage_state.json"
 
 def fetch_html():
+    """Scarica la pagina usando Playwright e ritorna l'HTML."""
     with sync_playwright() as pw:
         browser = pw.chromium.launch(
             headless=True,
-            args=["--no-sandbox", "--disable-dev-shm-usage"]
+            args=[
+                "--no-sandbox",
+                "--disable-setuid-sandbox",
+                "--disable-dev-shm-usage",
+                "--disable-gpu",
+                "--disable-software-rasterizer"
+            ]
         )
 
         # Riutilizza cookie/sessione se già salvata
@@ -52,44 +56,32 @@ def fetch_html():
             print("⚠️ Attenzione: potresti essere ancora bloccato da Cloudflare")
 
         html = page.content()
-
-        # Salva HTML su file per debug
-        with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
-            f.write(html)
-
-        # Salva cookie per riuso
         context.storage_state(path=STORAGE_STATE)
-
         browser.close()
         return html
 
 def parse_html(html):
+    """Estrae le partite dall'HTML e ritorna un dict."""
     soup = BeautifulSoup(html, "html.parser")
     list_partite = soup.find_all("a", class_="btn btn-gara")
-
     json_squadre = {"partite": []}
 
     for partita in list_partite:
         squadre = []
-
-        # Trova i due blocchi di squadra
         team_blocks = partita.find_all('div', class_='d-flex align-items-center gap-2')
         for block in team_blocks:
             nome_tag = block.find('span', class_='nome-squadra')
             nome = nome_tag.get_text(strip=True) if nome_tag else "N/A"
-
             squadre.append({
                 "nome": nome.upper(),
                 "logo": map_team.get(nome.upper())
             })
 
-        # Trova data e ora
         datetime_block = partita.find('div', class_='d-flex flex-column')
         spans = datetime_block.find_all('span') if datetime_block else []
         data = spans[0].get_text(strip=True) if len(spans) > 0 else "N/A"
         ora = spans[1].get_text(strip=True) if len(spans) > 1 else "N/A"
 
-        # Trova risultato
         risultato_block = partita.find('div', class_='d-none d-sm-flex')
         risultato_spans = risultato_block.find_all('span') if risultato_block else []
         risultato_1 = risultato_spans[0].get_text(strip=True) if len(risultato_spans) > 0 else " "
@@ -105,12 +97,9 @@ def parse_html(html):
 
     return json_squadre
 
+# Debug locale
 if __name__ == "__main__":
     html = fetch_html()
     print(html)
     risultati = parse_html(html)
-
-    with open(RESULTS_JSON, "w", encoding="utf-8") as f:
-        json.dump(risultati, f, ensure_ascii=False, indent=4)
-
-    print("🎉 Partite salvate in risultati.json")
+    import json
