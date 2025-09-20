@@ -1,6 +1,9 @@
-selenium
-webdriver-manager
-beautifulsoup4
-flask
-flask-cors
-gunicorn
+# Web scraping
+selenium==4.25.0
+webdriver-manager==4.0.2
+beautifulsoup4==4.12.3
+
+# Web server
+flask==3.0.3
+flask-cors==5.0.0
+gunicorn==23.0.0

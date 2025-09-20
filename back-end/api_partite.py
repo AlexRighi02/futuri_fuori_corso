@@ -1,6 +1,7 @@
+import os
 import json
-import subprocess
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 map_team = {
     "F.C. FUTURI FUORI CORSO": "/img/img_avversari/futuri_fuori_corso.png",
@@ -15,64 +16,101 @@ map_team = {
     "ATS TRINITA'": "/img/img_avversari/trinita.png"
 }
 
-url = "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/S3854/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUdMSUgmNDI9Zg=="
-output_file = "sitoCSI.html"
+URL = "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/S3854/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUdMSUgmNDI9Zg=="
+OUTPUT_HTML = "sitoCSI.html"
+RESULTS_JSON = "risultati.json"
+STORAGE_STATE = "storage_state.json"
 
-# Scarica la pagina con curl direttamente da Python
-subprocess.run([
-    "curl",
-    "-A", "Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0",  # User-Agent
-    "-o", output_file,
-    url
-], check=True)
+def fetch_html():
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-dev-shm-usage"]
+        )
 
-# Leggi l'HTML scaricato
-with open(output_file, "r", encoding="utf-8") as f:
-    html = f.read()
-    print(html)
+        # Riutilizza cookie/sessione se già salvata
+        if os.path.exists(STORAGE_STATE):
+            context = browser.new_context(
+                storage_state=STORAGE_STATE,
+                user_agent="Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0",
+                locale="it-IT",
+                extra_http_headers={"Accept-Language": "it-IT,it;q=0.9"}
+            )
+        else:
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0",
+                locale="it-IT",
+                extra_http_headers={"Accept-Language": "it-IT,it;q=0.9"}
+            )
 
-soup = BeautifulSoup(html, "html.parser")
-list_partite = soup.find_all("a", class_="btn btn-gara")
+        page = context.new_page()
+        page.goto(URL, wait_until="networkidle", timeout=60000)
 
-# Da qui in poi rimane tutto uguale
-json_squadre = {"partite": []}
+        try:
+            page.wait_for_selector("a.btn.btn-gara", timeout=20000)
+        except Exception:
+            print("⚠️ Attenzione: potresti essere ancora bloccato da Cloudflare")
 
-for partita in list_partite:
-    squadre = []
+        html = page.content()
 
-    # Trova i due blocchi di squadra
-    team_blocks = partita.find_all('div', class_='d-flex align-items-center gap-2')
-    for block in team_blocks:
-        nome_tag = block.find('span', class_='nome-squadra')
-        nome = nome_tag.get_text(strip=True) if nome_tag else "N/A"
+        # Salva HTML su file per debug
+        with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+            f.write(html)
 
-        squadre.append({
-            "nome": nome.upper(),
-            "logo": map_team.get(nome.upper())
+        # Salva cookie per riuso
+        context.storage_state(path=STORAGE_STATE)
+
+        browser.close()
+        return html
+
+def parse_html(html):
+    soup = BeautifulSoup(html, "html.parser")
+    list_partite = soup.find_all("a", class_="btn btn-gara")
+
+    json_squadre = {"partite": []}
+
+    for partita in list_partite:
+        squadre = []
+
+        # Trova i due blocchi di squadra
+        team_blocks = partita.find_all('div', class_='d-flex align-items-center gap-2')
+        for block in team_blocks:
+            nome_tag = block.find('span', class_='nome-squadra')
+            nome = nome_tag.get_text(strip=True) if nome_tag else "N/A"
+
+            squadre.append({
+                "nome": nome.upper(),
+                "logo": map_team.get(nome.upper())
+            })
+
+        # Trova data e ora
+        datetime_block = partita.find('div', class_='d-flex flex-column')
+        spans = datetime_block.find_all('span') if datetime_block else []
+        data = spans[0].get_text(strip=True) if len(spans) > 0 else "N/A"
+        ora = spans[1].get_text(strip=True) if len(spans) > 1 else "N/A"
+
+        # Trova risultato
+        risultato_block = partita.find('div', class_='d-none d-sm-flex')
+        risultato_spans = risultato_block.find_all('span') if risultato_block else []
+        risultato_1 = risultato_spans[0].get_text(strip=True) if len(risultato_spans) > 0 else " "
+        risultato_2 = risultato_spans[1].get_text(strip=True) if len(risultato_spans) > 1 else " "
+        risultato = f"{risultato_1}-{risultato_2}"
+
+        json_squadre["partite"].append({
+            "squadre": squadre,
+            "data": data,
+            "ora": ora,
+            "risultato": risultato
         })
 
-    # Trova data e ora
-    datetime_block = partita.find('div', class_='d-flex flex-column')
-    spans = datetime_block.find_all('span') if datetime_block else []
-    data = spans[0].get_text(strip=True) if len(spans) > 0 else "N/A"
-    ora = spans[1].get_text(strip=True) if len(spans) > 1 else "N/A"
+    return json_squadre
 
-    # Trova risultato (nella parte sotto con due <span>)
-    risultato_block = partita.find('div', class_='d-none d-sm-flex')
-    risultato_spans = risultato_block.find_all('span') if risultato_block else []
-    risultato_1 = risultato_spans[0].get_text(strip=True) if len(risultato_spans) > 0 else " "
-    risultato_2 = risultato_spans[1].get_text(strip=True) if len(risultato_spans) > 1 else " "
-    risultato = f"{risultato_1}-{risultato_2}"
+if __name__ == "__main__":
+    html = fetch_html()
+    print(html)
+    risultati = parse_html(html)
 
-    json_squadre["partite"].append({
-        "squadre": squadre,
-        "data": data,
-        "ora": ora,
-        "risultato": risultato
-    })
+    with open(RESULTS_JSON, "w", encoding="utf-8") as f:
+        json.dump(risultati, f, ensure_ascii=False, indent=4)
 
-# Output finale
-with open("risultati.json", "w", encoding="utf-8") as f:
-    json.dump(json_squadre, f, ensure_ascii=False, indent=4)
-
-print("🎉 Partite salvate in risultati.json")
+    print("🎉 Partite salvate in risultati.json")
