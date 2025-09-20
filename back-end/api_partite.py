@@ -1,7 +1,5 @@
-import os
 import requests
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
 map_team = {
     "F.C. FUTURI FUORI CORSO": "/img/img_avversari/futuri_fuori_corso.png",
@@ -17,64 +15,17 @@ map_team = {
 }
 
 URL = "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/S3854/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUdMSUgmNDI9Zg=="
-STORAGE_STATE = "storage_state.json"
 
 
 def fetch_html():
-    """Scarica la pagina usando Playwright. Se fallisce, usa requests come fallback."""
-    html = None
+    """Scarica la pagina usando requests."""
     try:
-        with sync_playwright() as pw:
-            browser = pw.chromium.launch(
-                headless=True,
-                args=[
-                    "--no-sandbox",
-                    "--disable-setuid-sandbox",
-                    "--disable-dev-shm-usage",
-                    "--disable-gpu",
-                    "--disable-software-rasterizer"
-                ]
-            )
-
-            context_args = dict(
-                user_agent="Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0",
-                locale="it-IT",
-                extra_http_headers={"Accept-Language": "it-IT,it;q=0.9"}
-            )
-
-            if os.path.exists(STORAGE_STATE):
-                context_args["storage_state"] = STORAGE_STATE
-
-            context = browser.new_context(**context_args)
-            page = context.new_page()
-
-            page.goto(URL, wait_until="networkidle", timeout=60000)
-
-            try:
-                page.wait_for_selector("a.btn.btn-gara", timeout=20000)
-            except PlaywrightTimeoutError:
-                print("⚠️ Attenzione: il selettore non è stato trovato (Cloudflare o pagina vuota)")
-
-            html = page.content()
-            context.storage_state(path=STORAGE_STATE)
-            browser.close()
-
+        r = requests.get(URL, headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
+        r.raise_for_status()
+        return r.text
     except Exception as e:
-        print(f"❌ Errore Playwright: {e}")
-
-    # Fallback se Playwright fallisce
-    if not html:
-        print("⚠️ Uso fallback con requests...")
-        try:
-            r = requests.get(URL, headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
-            if r.status_code == 200:
-                html = r.text
-            else:
-                print(f"❌ Fallback HTTP {r.status_code}")
-        except Exception as e:
-            print(f"❌ Errore nel fallback requests: {e}")
-
-    return html
+        print(f"❌ Errore HTTP: {e}")
+        return ""
 
 
 def parse_html(html):
@@ -123,3 +74,4 @@ if __name__ == "__main__":
     html = fetch_html()
     risultati = parse_html(html)
     import json
+    print(json.dumps(risultati, ensure_ascii=False, indent=2))
