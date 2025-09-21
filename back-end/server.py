@@ -23,7 +23,6 @@ map_team = {
 }
 
 
-
 @app.route('/')
 def home():
     return app.send_static_file('index.html')
@@ -39,8 +38,7 @@ def static_proxy(path):
 
 @app.route('/esegui', methods=['GET'])
 def esegui_script():
-    try:
-        
+    try:        
         # Costruisce il percorso al file nella stessa directory
         file_path = os.path.join(os.path.dirname(__file__), 'classifica.json')
 
@@ -62,21 +60,18 @@ def esegui_script():
     
 @app.route('/risultati', methods=['GET'])
 def esegui_apir():
-    try:
-        result = subprocess.run(
-            ['python3', 'api_partite.py'],
-            check=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
-        )
-        if not os.path.exists('risultati.json'):
-            return jsonify({'errore': 'File partite.json non trovato'}), 500
-        with open('risultati.json', 'r', encoding='utf-8') as f:
+    try:        
+        # Costruisce il percorso al file nella stessa directory
+        file_path = os.path.join(os.path.dirname(__file__), 'risultati.json')
+
+        if not os.path.exists(file_path):
+            return jsonify({'errore': 'File risultati.json non trovato'}), 500
+
+        with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        return jsonify({'data': data, 'stdout': result.stdout, 'stderr': result.stderr})
-    except subprocess.CalledProcessError as e:
-        return jsonify({'errore': "Errore nell'esecuzione di api_partite.py", 'details': e.stderr + " " + e.stdout}), 500
+
+        return jsonify({'data': data})
+    
     except Exception as e:
         return jsonify({'errore': str(e)}), 500
 
