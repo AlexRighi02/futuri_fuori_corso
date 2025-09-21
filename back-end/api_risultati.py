@@ -3,16 +3,16 @@ import json
 from bs4 import BeautifulSoup
 
 map_team = {
-    "F.C. FUTURI FUORI CORSO": "/img/img_avversari/futuri_fuori_corso.png",
-    "FOCUMEU": "/img/img_avversari/focumeu.png",
-    "U.S. MONTECCHIO NEW TEAM": "/img/img_avversari/new_team.png",
-    "ATS TRINITA' ELITE": "/img/img_avversari/trinita_elite.png",
-    "GATTATICO CLUB RAPTORS": "/img/img_avversari/gattatico_club_raptors.png",
-    "INDOMINUS XI": "/img/img_avversari/indominus.png",
-    "U.S. MONTECCHIO YOUNG": "/img/img_avversari/montecchio.png",
-    "THE MOUNT II": "/img/img_avversari/the_mount.png",
-    "AN CALCIO A 7": "/img/img_avversari/an_calcio.png",
-    "ATS TRINITA'": "/img/img_avversari/trinita.png"
+    "F.C. FUTURI FUORI CORSO": "/img/img_anteprima/futuri_fuori_corso.png",
+    "FOCUMEU": "/img/img_anteprima/focumeu.png",
+    "U.S. MONTECCHIO NEW TEAM": "/img/img_anteprima/new_team.png",
+    "ATS TRINITA' ELITE": "/img/img_anteprima/trinita_elite.png",
+    "GATTATICO CLUB RAPTORS": "/img/img_anteprima/gattatico_club_raptors.png",
+    "INDOMINUS XI": "/img/img_anteprima/indominus.png",
+    "U.S. MONTECCHIO YOUNG": "/img/img_anteprima/montecchio.png",
+    "THE MOUNT II": "/img/img_anteprima/the_mount.png",
+    "AN CALCIO A 7": "/img/img_anteprima/an_calcio.png",
+    "ATS TRINITA'": "/img/img_anteprima/trinita.png"
 }
 
 url = "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/S3854/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUdMSUgmNDI9Zg=="
