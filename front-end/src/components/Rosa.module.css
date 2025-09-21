@@ -1034,6 +1034,12 @@
   .overlayImg {
     max-height: 600px;
   }
+
+  /* 
+  .containerDescription {
+    max-height: 444px;
+  }
+  */  
 }
 
 @media (max-height: 710px) {
@@ -1042,18 +1048,36 @@
   }
 
   .overlayContent{
-    max-height: 85vh;
+    max-height: 570px;
   }
+
+  /* 
+  .containerDescription {
+    max-height: 344px;
+  }
+  */  
 }
 
 @media (max-height: 630px) {
   .overlayImg {
     max-height: 450px;
   }
+
+  /* 
+  .containerDescription {
+    max-height: 294px;
+  }
+  */  
 }
 
 @media (max-height: 580px) {
   .overlayImg {
     max-height: 400px;
   }
+
+  /* 
+  .containerDescription {
+    max-height: 244px;
+  }
+  */  
 }
