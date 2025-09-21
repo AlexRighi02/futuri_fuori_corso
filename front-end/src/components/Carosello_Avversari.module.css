@@ -28,7 +28,7 @@
   margin-top: var(--margin-top, 30px);
   display: flex;
   width: max-content; /* importante: larghezza contenuto adattiva */
-  animation: marquee 20s linear infinite;
+  animation: marquee 22s linear infinite;
 }
 
 .personalized_margin{

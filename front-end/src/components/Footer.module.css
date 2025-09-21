@@ -173,9 +173,10 @@
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     position: relative;
     width: 800px;
-    height: 70%;
+    height: 645px;
     border: solid 0.5px white;
     overflow-y: auto;
+    margin: auto;
 }
 
 .privacy_modal::before {
@@ -268,5 +269,23 @@
 
     .privacy_title {
         font-size: 17px;
+    }
+}
+
+@media (max-height: 670px) {
+    .privacy_modal {
+        height: 570px;
+    }
+}
+
+@media (max-height: 590px) {
+    .privacy_modal {
+        height: 500px;
+    }
+}
+
+@media (max-height: 540px) {
+    .privacy_modal {
+        height: 460px;
     }
 }

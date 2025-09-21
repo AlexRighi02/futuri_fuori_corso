@@ -339,11 +339,16 @@
   padding: 45px 65px;
   width: 1300px;
   text-align: center;
-  color: white;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  color: white;  
   animation: slideUp 0.3s ease-in-out;
   position: relative;
   display: flex;
+  overflow-x: hidden;
+}
+
+.overlayScroll{
+  background: #1e1e1e;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
 /* Immagine del player */
@@ -441,27 +446,36 @@
   transform: translateX(-20px);
 }
 
+.overflowStyle {
+  overflow-y: auto; /* scrollbar visibile */
+}
+
 /* Chrome, Edge, Safari */
-.containerDescriptionOverflow::-webkit-scrollbar {
+.containerDescriptionOverflow::-webkit-scrollbar,
+.overflowStyle::-webkit-scrollbar {
   width: 6px;               /* larghezza sottile */
 }
 
-.containerDescriptionOverflow::-webkit-scrollbar-track {
+.containerDescriptionOverflow::-webkit-scrollbar-track,
+.overflowStyle::-webkit-scrollbar-track {
   background: transparent;   /* niente sfondo */
 }
 
-.containerDescriptionOverflow::-webkit-scrollbar-thumb {
+.containerDescriptionOverflow::-webkit-scrollbar-thumb,
+.overflowStyle::-webkit-scrollbar-thumb {
   background: white; 
   border-radius: 10px;       /* arrotondato */
   transition: background 0.3s ease;
 }
 
-.containerDescriptionOverflow::-webkit-scrollbar-thumb:hover {
+.containerDescriptionOverflow::-webkit-scrollbar-thumb:hover,
+.overflowStyle::-webkit-scrollbar-thumb:hover {
   background: white; 
 }
 
 /* Firefox */
-.containerDescriptionOverflow {
+.containerDescriptionOverflow,
+.overflowStyle {
   scrollbar-width: thin;          /* sottile */
   scrollbar-color: white transparent;
 }
@@ -478,13 +492,13 @@
   background: transparent;
   border: none;
   font-size: 28px;
-  color: #bbb;
+  color: white;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
 
 .closeBtn:hover {
-  color: white;
+  color: rgb(241 189 7);
 }
 
 /* Animazioni */
@@ -700,17 +714,25 @@
   .overlayContent{
     flex-direction: column;
     width: 510px;
+    padding: 0;
+    overflow-y: auto;
+  }
+
+  .overlayScroll{    
+    padding: 28px 10px;
   }
 
   .closeBtn {
     font-size: 18px;
     top: 8px;
     right: 8px;
+    transform: translateX(-17px);
   }
 
   .overlayImg {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 470px;
+    object-position: center top;
   }
 
   .overlayContainerHeader {
@@ -722,7 +744,7 @@
   .containerDescription{
     margin-left: 0px;
     margin-top: 15px;
-    max-height: 220px;
+    max-height: 200px;
   }
 
   .containerDescription {
@@ -764,22 +786,27 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 550px) {
   .overlayContent{
-    width: 400px;
-    padding: 25px;
+    width: 400px;    
+  }
+
+  .overlayScroll{    
+    padding: 12px;
     padding-top: 30px;
+    padding-bottom: 25px;
   }
 
   .closeBtn {
     font-size: 16px;
     top: 6px;
     right: 6px;
+    transform: translateX(-17px);
   }
 
   .overlayImg {
-    height: 330px;
-    width: 330px;
+    height: 275px;
+    width: 360px;
   }
 
   .upperRight {
@@ -841,10 +868,94 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 450px) {
   .overlayContent{
     width: 345px;
-    padding: 25px 15px;
+  }
+
+  .overlayScroll{    
+    padding: 25px 8px;
+    padding-top: 30px;
+  }
+
+  .closeBtn {
+    font-size: 16px;
+    top: 5px;
+    right: 5px;
+    transform: translateX(-20px);
+  }
+
+  .overlayImg {
+    height: 280px;
+    width: 300px;
+  }
+
+  .upperRight {
+    height: 60px;
+  }
+
+  .overlayContainerHeader {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .containerDescription{
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .containerDescription {
+    margin-left: 20px;
+  }
+
+  .containerDescriptionOverflow {
+    margin-left: 40px;
+  }  
+
+  .description {
+    font-size: 10px;
+  }
+
+  .overlayName{
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+
+  .overlayRuolo{
+    font-size: 11px;
+  }
+
+  .overlayContainerHeader{
+    margin-top: 12px;
+  }
+
+  .overlayContainerSymbol {
+    margin-top: 13px;
+  }
+
+  .numberPlayer {
+    margin-right: 10px;
+  }
+
+  .numero{
+    font-size: 25px;
+    transform: translate(7px, -8px);
+  }
+
+  .overlayNation{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .overlayContent{
+    width: 310px;
+  }
+
+  .overlayScroll{    
+    padding: 25px 8px;
     padding-top: 30px;
   }
 
@@ -915,5 +1026,34 @@
   .overlayNation{
     width: 20px;
     height: 20px;
+  }
+}
+
+
+@media (max-height: 840px) {
+  .overlayImg {
+    max-height: 600px;
+  }
+}
+
+@media (max-height: 710px) {
+  .overlayImg {
+    max-height: 500px;
+  }
+
+  .overlayContent{
+    max-height: 85vh;
+  }
+}
+
+@media (max-height: 630px) {
+  .overlayImg {
+    max-height: 450px;
+  }
+}
+
+@media (max-height: 580px) {
+  .overlayImg {
+    max-height: 400px;
   }
 }

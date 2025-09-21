@@ -40,9 +40,8 @@ const Footer = () => {
 
             {showPrivacy && (
                 <div className={styles.overlay}>
-                    
-                    <div className={styles.privacy_modal} style={{ backgroundImage: 'url("/img/WallPaper_black.png")' }}>
                     <RemoveScroll>
+                    <div className={styles.privacy_modal} style={{ backgroundImage: 'url("/img/WallPaper_black.png")' }}>
                         <button 
                           className={styles.close_button} 
                           onClick={() => setShowPrivacy(false)}
@@ -69,9 +68,9 @@ const Footer = () => {
                                 <strong className={styles.privacy_bold}>DIRITTI DELL'INTERESSATO:</strong> <br />
                                 L'utente può chiedere in qualunque momento l'accesso, la rettifica o la cancellazione dei propri dati inviando una richiesta scritta a calcio.ffc@gmail.com.
                             </p>
-                        </div>
-                        </RemoveScroll>
-                    </div>                    
+                        </div>                        
+                    </div>  
+                    </RemoveScroll>                  
                 </div>
             )}
 

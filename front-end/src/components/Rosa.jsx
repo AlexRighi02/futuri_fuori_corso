@@ -247,82 +247,87 @@ const OverlayCard = ({ player, onClose }) => {
   return (
     <div className={styles.overlayCard}>
       <RemoveScroll>
-      <div className={styles.overlayContent}>
-        
-        <div className={styles.overlayContainerImg}>
-          <img
-            src={player.img}
-            alt={player.name}
-            className={styles.overlayImg}
-          />
-        </div>
-        <div className={styles.columnDiv}>
-          <div className={styles.upperRight}>
-            <div className={styles.overlayContainerHeader}>
-              <h2 className={styles.overlayName}>
-                {player.name === "Thomas G. Aracri"
-                  ? "THOMAS GRANDE ARACRI"
-                  : player.name.toUpperCase()}
-              </h2>
-
-              <p className={styles.overlayRuolo}>
-                {player &&
-                  (players.portieri.some((p) => p.name === player.name)
-                    ? "PORTIERE"
-                    : players.difensori.some((p) => p.name === player.name)
-                    //? player.name === "Giuseppe Malangone" ? "DIFENSORE (CAPITANO)" : "DIFENSORE"
-                    ? player.name === "Giuseppe Malangone" ? "DIFENSORE" : "DIFENSORE"
-                    : players.centrocampisti.some((p) => p.name === player.name)
-                    ? "CENTROCAMPISTA"
-                    : players.attaccanti.some((p) => p.name === player.name)
-                    //? player.name === "Alex Righi" ? "ATTACCANTE (VICE CAPITANO)" : "ATTACCANTE"
-                    ? player.name === "Alex Righi" ? "ATTACCANTE" : "ATTACCANTE"
-                    : players.staff.some((p) => p.name === player.name)
-                    ? player.number === "A"
-                      ? "ALLENATORE"
-                      : "PREPARATORE ATLETICO"
-                    : "")}
-              </p>
-            </div>
-            <div className={styles.overlayContainerSymbol}>
-              <div className={styles.numberPlayer}>
-                <p className={styles.numero}>
-                  {player.number !== "A" && player.number !== "PA"
-                    ? player.number
-                    : ""}
-                </p>
-              </div>
-              <img
-                className={styles.overlayNation}
-                src={`img/nations_icon/${player.nation.toLowerCase()}.png`}
-                alt={player.nation}
-                title={player.nation}
+        <div className={styles.overlayScroll}>
+          <div
+                className={`${styles.overlayContent} ${
+                  styles.overflowStyle
+                }`}
+              >
+                <div className={styles.overlayContainerImg}>
+                  <img
+                    src={player.img}
+                    alt={player.name}
+                className={styles.overlayImg}
               />
             </div>
-          </div>
-          <div className={styles.containerInsta}>
-            <InstagramIcon
-              href={player.insta}
-              size={24}
-              color={"#ff00bf"}
-              hoverColor={"rgb(241 189 7)"}
-            />
-          </div>
-          <div
-            ref={descRef}
-            className={`${styles.containerDescription} ${
-              isOverflowing ? styles.containerDescriptionOverflow : ""
-            }`}
-          >
-            <p className={styles.description} style={{ whiteSpace: "pre-line" }}>{player.description}</p>
-          </div>
-        </div>
+            <div className={styles.columnDiv}>
+              <div className={styles.upperRight}>
+                <div className={styles.overlayContainerHeader}>
+                  <h2 className={styles.overlayName}>
+                    {player.name === "Thomas G. Aracri"
+                      ? "THOMAS GRANDE ARACRI"
+                      : player.name.toUpperCase()}
+                  </h2>
 
-        <button className={styles.closeBtn} onClick={onClose}>
-          ✕
-        </button>
-        
-      </div>      
+                  <p className={styles.overlayRuolo}>
+                    {player &&
+                      (players.portieri.some((p) => p.name === player.name)
+                        ? "PORTIERE"
+                        : players.difensori.some((p) => p.name === player.name)
+                        ? player.name === "Giuseppe Malangone" ? "DIFENSORE (CAPITANO)" : "DIFENSORE"
+                        //? player.name === "Giuseppe Malangone" ? "DIFENSORE" : "DIFENSORE"
+                        : players.centrocampisti.some((p) => p.name === player.name)
+                        ? "CENTROCAMPISTA"
+                        : players.attaccanti.some((p) => p.name === player.name)
+                        ? player.name === "Alex Righi" ? "ATTACCANTE (VICE CAPITANO)" : "ATTACCANTE"
+                        //? player.name === "Alex Righi" ? "ATTACCANTE" : "ATTACCANTE"
+                        : players.staff.some((p) => p.name === player.name)
+                        ? player.number === "A"
+                          ? "ALLENATORE"
+                          : "PREPARATORE ATLETICO"
+                        : "")}
+                  </p>
+                </div>
+                <div className={styles.overlayContainerSymbol}>
+                  <div className={styles.numberPlayer}>
+                    <p className={styles.numero}>
+                      {player.number !== "A" && player.number !== "PA"
+                        ? player.number
+                        : ""}
+                    </p>
+                  </div>
+                  <img
+                    className={styles.overlayNation}
+                    src={`img/nations_icon/${player.nation.toLowerCase()}.png`}
+                    alt={player.nation}
+                    title={player.nation}
+                  />
+                </div>
+              </div>
+              <div className={styles.containerInsta}>
+                <InstagramIcon
+                  href={player.insta}
+                  size={24}
+                  color={"#ff00bf"}
+                  hoverColor={"rgb(241 189 7)"}
+                />
+              </div>
+              <div
+                ref={descRef}
+                className={`${styles.containerDescription} ${
+                  isOverflowing ? styles.containerDescriptionOverflow : ""
+                }`}
+              >
+                <p className={styles.description} style={{ whiteSpace: "pre-line" }}>{player.description}</p>
+              </div>
+            </div>
+
+            <button className={styles.closeBtn} onClick={onClose}>
+              ✕
+            </button>
+            
+          </div>      
+        </div>
       </RemoveScroll>
     </div>
   );
