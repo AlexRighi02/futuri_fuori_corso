@@ -15,7 +15,7 @@ map_team = {
     "ATS TRINITA'": "/img/img_anteprima/trinita.png"
 }
 
-url = "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/S3854/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUdMSUgmNDI9Zg=="
+url = "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/S3874/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUdMS0gmNDI9Zg=="
 
 payload = {}
 headers = {
@@ -44,6 +44,10 @@ json_squadre = {"partite": []}
 
 for partita in list_partite:
     squadre = []
+    
+    # Partita è un link <a>
+    href = partita['href']
+    full_link = f"https://live.centrosportivoitaliano.it{href}"
 
     # Trova i due blocchi di squadra
     team_blocks = partita.find_all('div', class_='d-flex align-items-center gap-2')
@@ -66,17 +70,22 @@ for partita in list_partite:
     ora = spans[1].get_text(strip=True) if len(spans) > 1 else "N/A"
 
     # Trova risultato (nella parte sotto con due <span>)
-    risultato_block = partita.find('div', class_='d-none d-sm-flex')
-    risultato_spans = risultato_block.find_all('span') if risultato_block else []
-    risultato_1 = risultato_spans[0].get_text(strip=True) if len(risultato_spans) > 0 else " "
-    risultato_2 = risultato_spans[1].get_text(strip=True) if len(risultato_spans) > 1 else " "
-    risultato = f"{risultato_1}-{risultato_2}"
+    risultato_block = partita.select('div.d-flex.flex-column')[2]
+    risultato_spans = risultato_block.select('span')
+    risultato = ""
+    if len(risultato_spans) <= 2:
+        risultato = "-"
+    else:
+        risultato_1 = risultato_spans[1].get_text(strip=True)
+        risultato_2 = risultato_spans[3].get_text(strip=True)
+        risultato = f"{risultato_1}-{risultato_2}"
 
     json_squadre["partite"].append({
         "squadre": squadre,
         "data": data,
         "ora": ora,
-        "risultato": risultato
+        "risultato": risultato,
+        "link_dettaglio": full_link
     })
 
 # Output finale

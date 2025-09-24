@@ -3,62 +3,62 @@
         {
             "squadre": [
                 {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_anteprima/futuri_fuori_corso.png"
-                },
-                {
-                    "nome": "AN CALCIO A 7",
-                    "logo": "/img/img_anteprima/an_calcio.png"
+                    "nome": "THE MOUNT II",
+                    "logo": "/img/img_anteprima/the_mount.png"
                 }
             ],
             "data": "22/09/25",
             "ora": "20:15",
-            "risultato": " - "
+            "risultato": "4-2",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0102/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRFREYmNDI9Yw=="
         },
         {
             "squadre": [
-                {
-                    "nome": "FOCUMEU",
-                    "logo": "/img/img_anteprima/focumeu.png"
-                },
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_anteprima/futuri_fuori_corso.png"
-                }
-            ],
-            "data": "01/10/25",
-            "ora": "21:30",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_anteprima/futuri_fuori_corso.png"
-                },
                 {
                     "nome": "INDOMINUS XI",
                     "logo": "/img/img_anteprima/indominus.png"
+                },
+                {
+                    "nome": "THE MOUNT II",
+                    "logo": "/img/img_anteprima/the_mount.png"
+                }
+            ],
+            "data": "01/10/25",
+            "ora": "20:00",
+            "risultato": "-",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0204/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRGREgmNDI9Yw=="
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "THE MOUNT II",
+                    "logo": "/img/img_anteprima/the_mount.png"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM",
+                    "logo": "/img/img_anteprima/new_team.png"
                 }
             ],
             "data": "06/10/25",
             "ora": "20:15",
-            "risultato": " - "
+            "risultato": "-",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0301/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRHREUmNDI9Yw=="
         },
         {
             "squadre": [
                 {
-                    "nome": "U.S. MONTECCHIO NEW TEAM",
-                    "logo": "/img/img_anteprima/new_team.png"
+                    "nome": "GATTATICO CLUB RAPTORS",
+                    "logo": "/img/img_anteprima/gattatico_club_raptors.png"
                 },
                 {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+                    "nome": "THE MOUNT II",
+                    "logo": "/img/img_anteprima/the_mount.png"
                 }
             ],
-            "data": "13/10/25",
-            "ora": "21:00",
-            "risultato": " - "
+            "data": "14/10/25",
+            "ora": "21:30",
+            "risultato": "-",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0405/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRIREkmNDI9Yw=="
         },
         {
             "squadre": [
@@ -73,37 +73,24 @@
             ],
             "data": "20/10/25",
             "ora": "20:15",
-            "risultato": " - "
+            "risultato": "-",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0501/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRJREUmNDI9Yw=="
         },
         {
             "squadre": [
                 {
-                    "nome": "GATTATICO CLUB RAPTORS",
-                    "logo": "/img/img_anteprima/gattatico_club_raptors.png"
+                    "nome": "THE MOUNT II",
+                    "logo": "/img/img_anteprima/the_mount.png"
                 },
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_anteprima/futuri_fuori_corso.png"
-                }
-            ],
-            "data": "28/10/25",
-            "ora": "21:30",
-            "risultato": " - "
-        },
-        {
-            "squadre": [
                 {
                     "nome": "ATS TRINITA' ELITE",
                     "logo": "/img/img_anteprima/trinita_elite.png"
-                },
-                {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_anteprima/futuri_fuori_corso.png"
                 }
             ],
-            "data": "04/11/25",
-            "ora": "20:00",
-            "risultato": " - "
+            "data": "27/10/25",
+            "ora": "20:15",
+            "risultato": "-",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0604/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRKREgmNDI9Yw=="
         },
         {
             "squadre": [
@@ -112,28 +99,30 @@
                     "logo": "/img/img_anteprima/trinita.png"
                 },
                 {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+                    "nome": "THE MOUNT II",
+                    "logo": "/img/img_anteprima/the_mount.png"
                 }
             ],
-            "data": "13/11/25",
-            "ora": "20:15",
-            "risultato": " - "
+            "data": "06/11/25",
+            "ora": "20:45",
+            "risultato": "-",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0702/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRLREYmNDI9Yw=="
         },
         {
             "squadre": [
                 {
-                    "nome": "U.S. MONTECCHIO YOUNG",
-                    "logo": "/img/img_anteprima/montecchio.png"
+                    "nome": "THE MOUNT II",
+                    "logo": "/img/img_anteprima/the_mount.png"
                 },
                 {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+                    "nome": "U.S. MONTECCHIO YOUNG",
+                    "logo": "/img/img_anteprima/montecchio.png"
                 }
             ],
-            "data": "17/11/25",
-            "ora": "21:00",
-            "risultato": " - "
+            "data": "10/11/25",
+            "ora": "20:15",
+            "risultato": "-",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0803/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRMREcmNDI9Yw=="
         },
         {
             "squadre": [
@@ -142,28 +131,46 @@
                     "logo": "/img/img_anteprima/an_calcio.png"
                 },
                 {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_anteprima/futuri_fuori_corso.png"
+                    "nome": "THE MOUNT II",
+                    "logo": "/img/img_anteprima/the_mount.png"
                 }
             ],
-            "data": "24/11/25",
+            "data": "17/11/25",
             "ora": "21:30",
-            "risultato": " - "
+            "risultato": "-",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0903/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRNREcmNDI9Yw=="
         },
         {
             "squadre": [
                 {
-                    "nome": "F.C. FUTURI FUORI CORSO",
-                    "logo": "/img/img_anteprima/futuri_fuori_corso.png"
-                },
-                {
                     "nome": "FOCUMEU",
                     "logo": "/img/img_anteprima/focumeu.png"
+                },
+                {
+                    "nome": "THE MOUNT II",
+                    "logo": "/img/img_anteprima/the_mount.png"
+                }
+            ],
+            "data": "26/11/25",
+            "ora": "21:30",
+            "risultato": "-",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AR1002/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROZUVEREYmNDI9Yw=="
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "THE MOUNT II",
+                    "logo": "/img/img_anteprima/the_mount.png"
+                },
+                {
+                    "nome": "INDOMINUS XI",
+                    "logo": "/img/img_anteprima/indominus.png"
                 }
             ],
             "data": "01/12/25",
             "ora": "20:15",
-            "risultato": " - "
+            "risultato": "-",
+            "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AR1104/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROZUVFREgmNDI9Yw=="
         }
     ]
 }
