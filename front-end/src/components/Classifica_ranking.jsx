@@ -19,6 +19,7 @@ const Classifica_ranking = ({ classifica }) => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    console.log(classifica);
 
 
     return (
@@ -27,8 +28,8 @@ const Classifica_ranking = ({ classifica }) => {
                 <tr>
                     <th></th>
                     <th></th>
-                    <th>{isMobile ? 'PT' : 'PUNTI'}</th>
                     <th>{isMobile ? 'G' : 'GIOCATE'}</th>
+                    <th>{isMobile ? 'PT' : 'PUNTI'}</th>
                     <th>{isMobile ? 'V' : 'VINTE'}</th>
                     <th>{isMobile ? 'P' : 'PAREGGIATE'}</th>
                     <th>{isMobile ? 'S' : 'PERSE'}</th>
@@ -51,8 +52,8 @@ const Classifica_ranking = ({ classifica }) => {
                                 {squadra.squadra.toUpperCase()}
                             </div>
                         </td>
-                        <td>{squadra.punti}</td>
                         <td>{squadra.giocate}</td>
+                        <td>{squadra.punti}</td>
                         <td>{squadra.vinte}</td>
                         <td>{squadra.pareggiate}</td>
                         <td>{squadra.perse}</td>

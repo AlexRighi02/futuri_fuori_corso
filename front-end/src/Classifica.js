@@ -13,8 +13,8 @@ const Classifica = () => {
   }, []);
 
   return (
-  
-  <div>
+
+    <div>
       <div id="risultato">
         {errore && <p style={{ color: 'red' }}>Errore: {errore}</p>}
         {!errore && (
@@ -22,10 +22,10 @@ const Classifica = () => {
             ? <p></p>
             : data.errore
               ? <p style={{ color: 'red' }}>Errore: {data.errore}</p>
-              : <ClassificaRanking classifica={data.data.classifica} />
+              : <ClassificaRanking classifica={data.data} />
         )}
-      </div>      
+      </div>
     </div>
-  );  
+  );
 };
 export default Classifica;
