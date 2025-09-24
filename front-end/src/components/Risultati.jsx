@@ -29,6 +29,7 @@ const Risultati = () => {
   if (error) return <p className="text-center mt-4 text-red-500">{error}</p>;
   if (!data?.data?.partite?.length) return <p className="text-center mt-4">Nessun risultato disponibile</p>;
 
+  console.log(data.data.partite);
   // Tua logica per trovare l’ultima partita giocata con risultato
   //console.log(data.data.partite);
 
