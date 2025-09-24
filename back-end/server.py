@@ -52,6 +52,7 @@ def esegui_script():
         #    nome_squadra = team["squadra"]
         #    team['logo'] = map_team.get(nome_squadra.upper())
 
+        print(data)
         return jsonify({'data': data})
 
     except Exception as e:

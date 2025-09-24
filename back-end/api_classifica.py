@@ -1,7 +1,6 @@
 import requests
 import json
 from bs4 import BeautifulSoup
-
 from functools import cmp_to_key
 
 def costruisci_scontri_diretti(partite):
