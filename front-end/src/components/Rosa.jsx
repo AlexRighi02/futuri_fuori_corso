@@ -196,7 +196,7 @@ const OverlayCard = ({ player, onClose }) => {
       checkOverflow();
       // controlla di nuovo dopo che i font sono pronti (se supportato)
       if (document?.fonts?.ready) {
-        document.fonts.ready.then(() => checkOverflow()).catch(() => {});
+        document.fonts.ready.then(() => checkOverflow()).catch(() => { });
       }
     });
 
@@ -249,14 +249,13 @@ const OverlayCard = ({ player, onClose }) => {
       <RemoveScroll>
         <div className={styles.overlayScroll}>
           <div
-                className={`${styles.overlayContent} ${
-                  styles.overflowStyle
-                }`}
-              >
-                <div className={styles.overlayContainerImg}>
-                  <img
-                    src={player.img}
-                    alt={player.name}
+            className={`${styles.overlayContent} ${styles.overflowStyle
+              }`}
+          >
+            <div className={styles.overlayContainerImg}>
+              <img
+                src={player.img}
+                alt={player.name}
                 className={styles.overlayImg}
               />
             </div>
@@ -274,34 +273,45 @@ const OverlayCard = ({ player, onClose }) => {
                       (players.portieri.some((p) => p.name === player.name)
                         ? "PORTIERE"
                         : players.difensori.some((p) => p.name === player.name)
-                        ? player.name === "Giuseppe Malangone" ? "DIFENSORE (CAPITANO)" : "DIFENSORE"
-                        //? player.name === "Giuseppe Malangone" ? "DIFENSORE" : "DIFENSORE"
-                        : players.centrocampisti.some((p) => p.name === player.name)
-                        ? "CENTROCAMPISTA"
-                        : players.attaccanti.some((p) => p.name === player.name)
-                        ? player.name === "Alex Righi" ? "ATTACCANTE (VICE CAPITANO)" : "ATTACCANTE"
-                        //? player.name === "Alex Righi" ? "ATTACCANTE" : "ATTACCANTE"
-                        : players.staff.some((p) => p.name === player.name)
-                        ? player.number === "A"
-                          ? "ALLENATORE"
-                          : "PREPARATORE ATLETICO"
-                        : "")}
+                          ? player.name === "Giuseppe Malangone" ? "DIFENSORE (CAPITANO)" : "DIFENSORE"
+                          //? player.name === "Giuseppe Malangone" ? "DIFENSORE" : "DIFENSORE"
+                          : players.centrocampisti.some((p) => p.name === player.name)
+                            ? "CENTROCAMPISTA"
+                            : players.attaccanti.some((p) => p.name === player.name)
+                              ? player.name === "Alex Righi" ? "ATTACCANTE (VICE CAPITANO)" : "ATTACCANTE"
+                              //? player.name === "Alex Righi" ? "ATTACCANTE" : "ATTACCANTE"
+                              : players.staff.some((p) => p.name === player.name)
+                                ? player.number === "A"
+                                  ? "ALLENATORE"
+                                  : "PREPARATORE ATLETICO"
+                                : "")}
                   </p>
                 </div>
                 <div className={styles.overlayContainerSymbol}>
                   <div className={styles.numberPlayer}>
-                    <p className={styles.numero}>
-                      {player.number !== "A" && player.number !== "PA"
-                        ? player.number
-                        : ""}
-                    </p>
+                    {
+                      player.number !== "A" && player.number !== "PA"
+                        ? <p className={styles.numero}>{player.number}</p>
+                        : ""
+                    }
+
                   </div>
-                  <img
-                    className={styles.overlayNation}
-                    src={`img/nations_icon/${player.nation.toLowerCase()}.png`}
-                    alt={player.nation}
-                    title={player.nation}
-                  />
+                  {player.name === "Thomas G. Aracri" || player.name === "Gioele Malvica"
+                    ?
+                    <img
+                      className={`${styles.overlayNation} ${styles.Thom_Gio}`}
+                      src={`img/nations_icon/${player.nation.toLowerCase()}.png`}
+                      alt={player.nation}
+                      title={player.nation}
+                    />
+                    :
+                    <img
+                      className={styles.overlayNation}
+                      src={`img/nations_icon/${player.nation.toLowerCase()}.png`}
+                      alt={player.nation}
+                      title={player.nation}
+                    />
+                  }
                 </div>
               </div>
               <div className={styles.containerInsta}>
@@ -314,9 +324,8 @@ const OverlayCard = ({ player, onClose }) => {
               </div>
               <div
                 ref={descRef}
-                className={`${styles.containerDescription} ${
-                  isOverflowing ? styles.containerDescriptionOverflow : ""
-                }`}
+                className={`${styles.containerDescription} ${isOverflowing ? styles.containerDescriptionOverflow : ""
+                  }`}
               >
                 <p className={styles.description} style={{ whiteSpace: "pre-line" }}>{player.description}</p>
               </div>
@@ -325,21 +334,21 @@ const OverlayCard = ({ player, onClose }) => {
             <button className={styles.closeBtn} onClick={onClose}>
               ✕
             </button>
-            
-          </div>      
+
+          </div>
         </div>
       </RemoveScroll>
     </div>
   );
 };
 
-const PlayerCard = ({ player, onPlayerClick  }) => {
+const PlayerCard = ({ player, onPlayerClick }) => {
   const [isHovered, setIsHovered] = useState(false);
   const imgSrc = player.img === "" ? "img/unknown.png" : player.img;
 
   return (
     <div className={`card ${styles.playerCard}`} onMouseEnter={(e) => function_hover(e, setIsHovered)} onMouseLeave={(e) => function_hover(e, setIsHovered)} onClick={() => onPlayerClick(player)}>
-      <img src={imgSrc} className={`card-img ${styles.cardImg} ${isHovered ? styles.hover_img : styles.no_hover_img}`} alt={player.name}/>
+      <img src={imgSrc} className={`card-img ${styles.cardImg} ${isHovered ? styles.hover_img : styles.no_hover_img}`} alt={player.name} />
       <div className={`card-img-overlay d-flex ${styles.text_img}`}>
         <h5 className={styles.playerName}>{player.name.toUpperCase()}</h5>
         <span className={`${styles.playerNumber} ${isHovered ? styles.hover_number : styles.no_hover_number}`}> {player.number} </span>
@@ -367,9 +376,9 @@ const Rosa = () => {
       <div className={styles.appContainer}>
         <h1 className={`${styles.title_rosa} text-white mb-4`}>I NOSTRI FUTURI FUORI CORSO</h1>
         <div className={styles.overlay}>
-          
+
           <div className={`${styles.container}`}>
-            
+
             <Section title="PORTIERI" players={players.portieri} onPlayerClick={setSelectedPlayer} />
             <Section title="DIFENSORI" players={players.difensori} onPlayerClick={setSelectedPlayer} />
             <Section title="CENTROCAMPISTI" players={players.centrocampisti} onPlayerClick={setSelectedPlayer} />
@@ -378,7 +387,7 @@ const Rosa = () => {
           </div>
         </div>
       </div>
-      
+
       <OverlayCard player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />
     </div>
   );
