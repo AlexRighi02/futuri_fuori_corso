@@ -11,7 +11,8 @@
 }
 
 .playerCard {
-  width: 340px;        /* larghezza della card giocatore */
+  width: 340px;
+  /* larghezza della card giocatore */
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -21,14 +22,18 @@
 
 .cardImg {
   object-fit: cover;
-  height: 500px;       /* altezza della card giocatore */   
+  height: 500px;
+  /* altezza della card giocatore */
   width: 100%;
-  transition: transform 0.3s ease; /* animazione fluida */
-  cursor: pointer; /* opzionale, mostra che è interattivo */
+  transition: transform 0.3s ease;
+  /* animazione fluida */
+  cursor: pointer;
+  /* opzionale, mostra che è interattivo */
 }
 
 .cardImg:hover {
-  transform: scale(1.1); /* ingrandimento al passaggio del mouse */
+  transform: scale(1.1);
+  /* ingrandimento al passaggio del mouse */
 }
 
 .section {
@@ -57,7 +62,7 @@
   cursor: pointer;
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 1500px;
   padding: 10px;
@@ -99,12 +104,12 @@
     margin-bottom: 27px;
   }
 
-  h3{
+  h3 {
     font-size: 26px;
     margin-bottom: 18px !important;
   }
 
-  .container{
+  .container {
     max-width: 1110px;
   }
 
@@ -119,7 +124,7 @@
     margin-bottom: 25px;
   }
 
-  h3{
+  h3 {
     font-size: 24px;
     margin-bottom: 16px !important;
   }
@@ -168,7 +173,7 @@
     margin-bottom: 23px;
   }
 
-  h3{
+  h3 {
     font-size: 22px;
     margin-bottom: 14px !important;
   }
@@ -205,7 +210,7 @@
     margin-bottom: 21px !important;
   }
 
-  h3{
+  h3 {
     font-size: 20px;
     margin-bottom: 12px !important;
   }
@@ -262,8 +267,8 @@
     margin-bottom: 20px !important;
     max-width: 250px;
   }
-  
-  h3{
+
+  h3 {
     font-size: 18px;
     margin-bottom: 10px !important;
   }
@@ -310,7 +315,7 @@
 }
 
 @media (max-width: 380px) {
-    .cardImg {
+  .cardImg {
     height: 405px;
   }
 }
@@ -325,11 +330,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* sfondo nero semi-trasparente */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* sfondo nero semi-trasparente */
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999; /* sopra al resto */
+  z-index: 9999;
+  /* sopra al resto */
   animation: fadeIn 0.3s ease-in-out;
 }
 
@@ -339,14 +346,14 @@
   padding: 45px 65px;
   width: 1300px;
   text-align: center;
-  color: white;  
+  color: white;
   animation: slideUp 0.3s ease-in-out;
   position: relative;
   display: flex;
   overflow-x: hidden;
 }
 
-.overlayScroll{
+.overlayScroll {
   background: #1e1e1e;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
@@ -354,7 +361,7 @@
 /* Immagine del player */
 .overlayImg {
   height: 735px;
-  width: 500px;  
+  width: 500px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   border: solid 0.5px white;
@@ -369,7 +376,7 @@
   color: white;
 }
 
-.upperRight{
+.upperRight {
   display: flex;
   height: 110px;
   border-bottom: solid 1px white;
@@ -382,7 +389,7 @@
   height: 24px;
 }
 
-.containerInsta{
+.containerInsta {
   display: flex;
   justify-content: right;
   margin-top: 5px;
@@ -408,7 +415,7 @@
   transform: translateY(1px);
 }
 
-.overlayContainerSymbol{
+.overlayContainerSymbol {
   display: flex;
   height: 50px;
 }
@@ -419,7 +426,7 @@
   color: rgb(241 189 7);
 }
 
-.numero{
+.numero {
   font-size: 43px;
   transform: translate(9px, -18px);
 }
@@ -431,56 +438,71 @@
   font-size: 15px;
 }
 
+:root {
+  --max_x_width: 570px;
+  /* valore di default */
+  --max_x_height: 570px;
+  /* valore di default */
+}
+
 .containerDescription {
   margin-top: 17px;
   margin-left: 40px;
-  max-height: 570px;
-  overflow-y: hidden; /* niente scrollbar */
+  max-height: min(var(--max_x_height), var(--max_x_width));
+  overflow-y: hidden;
+  /* niente scrollbar */
   padding-right: 20px;
   transition: all 0.2s ease-in-out;
 }
 
 .containerDescriptionOverflow {
-  overflow-y: auto; /* scrollbar visibile */
+  overflow-y: auto;
+  /* scrollbar visibile */
   margin-left: 60px;
   transform: translateX(-20px);
 }
 
 .overflowStyle {
-  overflow-y: auto; /* scrollbar visibile */
+  overflow-y: auto;
+  /* scrollbar visibile */
 }
 
 /* Chrome, Edge, Safari */
 .containerDescriptionOverflow::-webkit-scrollbar,
 .overflowStyle::-webkit-scrollbar {
-  width: 6px;               /* larghezza sottile */
+  width: 6px;
+  /* larghezza sottile */
 }
 
 .containerDescriptionOverflow::-webkit-scrollbar-track,
 .overflowStyle::-webkit-scrollbar-track {
-  background: transparent;   /* niente sfondo */
+  background: transparent;
+  /* niente sfondo */
 }
 
 .containerDescriptionOverflow::-webkit-scrollbar-thumb,
 .overflowStyle::-webkit-scrollbar-thumb {
-  background: white; 
-  border-radius: 10px;       /* arrotondato */
+  background: white;
+  border-radius: 10px;
+  /* arrotondato */
   transition: background 0.3s ease;
 }
 
 .containerDescriptionOverflow::-webkit-scrollbar-thumb:hover,
 .overflowStyle::-webkit-scrollbar-thumb:hover {
-  background: white; 
+  background: white;
 }
 
 /* Firefox */
 .containerDescriptionOverflow,
 .overflowStyle {
-  scrollbar-width: thin;          /* sottile */
+  scrollbar-width: thin;
+  /* sottile */
   scrollbar-color: white transparent;
 }
 
-.overlayContainerHeader, .overlayContainerSymbol {
+.overlayContainerHeader,
+.overlayContainerSymbol {
   margin-top: 22px;
 }
 
@@ -506,6 +528,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -516,6 +539,7 @@
     transform: translateY(40px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -524,7 +548,7 @@
 
 
 @media (max-width: 1400px) {
-  .overlayContent{
+  .overlayContent {
     padding: 35px 50px;
     width: 1100px;
   }
@@ -538,7 +562,7 @@
     width: 443px;
   }
 
-  .upperRight{
+  .upperRight {
     margin-left: 30px;
   }
 
@@ -546,9 +570,12 @@
     width: 450px;
   }
 
-  .containerDescription{
+  :root {
+    --max_x_width: 494px;
+  }
+
+  .containerDescription {
     margin-left: 30px;
-    max-height: 494px;
   }
 
   .containerDescriptionOverflow {
@@ -557,7 +584,7 @@
 }
 
 @media (max-width: 1150px) {
-  .overlayContent{
+  .overlayContent {
     padding: 32px 45px;
     width: 960px;
   }
@@ -571,18 +598,21 @@
     width: 375px;
   }
 
-  .upperRight{
+  .upperRight {
     margin-left: 30px;
-    height: 95px ;
+    height: 95px;
   }
 
   .overlayContainerHeader {
     width: 380px;
   }
 
-  .containerDescription{
+  :root {
+    --max_x_width: 404px;
+  }
+
+  .containerDescription {
     margin-left: 30px;
-    max-height: 404px;
   }
 
   .containerDescriptionOverflow {
@@ -593,20 +623,20 @@
     font-size: 13px;
   }
 
-  .overlayName{
+  .overlayName {
     font-size: 25px;
   }
 
-  .overlayRuolo{
+  .overlayRuolo {
     font-size: 15px;
   }
 
-  .numero{
+  .numero {
     font-size: 37px;
     transform: translate(9px, -15px);
   }
 
-  .overlayNation{
+  .overlayNation {
     width: 28px;
     height: 28px;
     transform: translateY(2px);
@@ -614,7 +644,7 @@
 }
 
 @media (max-width: 992px) {
-  .overlayContent{
+  .overlayContent {
     padding: 32px 45px;
     width: 840px;
   }
@@ -632,10 +662,13 @@
     width: 340px;
   }
 
-  .containerDescription{
+  :root {
+    --max_x_width: 304px;
+  }
+
+  .containerDescription {
     margin-left: 30px;
     margin-top: 12px;
-    max-height: 304px;
   }
 
   .containerDescriptionOverflow {
@@ -649,7 +682,7 @@
 }
 
 @media (max-width: 875px) {
-  .overlayContent{
+  .overlayContent {
     padding: 28px 37px;
     width: 690px;
   }
@@ -671,10 +704,13 @@
     width: 265px;
   }
 
-  .containerDescription{
+  :root {
+    --max_x_width: 249px;
+  }
+
+  .containerDescription {
     margin-left: 30px;
     margin-top: 12px;
-    max-height: 249px;
   }
 
   .containerDescriptionOverflow {
@@ -694,9 +730,10 @@
     height: 80px;
   }
 
-  .overlayContainerSymbol, .overlayContainerHeader {
+  .overlayContainerSymbol,
+  .overlayContainerHeader {
     margin-top: 17px;
-  } 
+  }
 
   .numero {
     font-size: 32px;
@@ -711,14 +748,14 @@
 }
 
 @media (max-width: 710px) {
-  .overlayContent{
+  .overlayContent {
     flex-direction: column;
     width: 510px;
     padding: 0;
     overflow-y: auto;
   }
 
-  .overlayScroll{    
+  .overlayScroll {
     padding: 28px 10px;
   }
 
@@ -741,33 +778,32 @@
     text-align: center;
   }
 
-  .containerDescription{
-    margin-left: 0px;
-    margin-top: 15px;
-    max-height: 200px;
+  :root {
+    --max_x_width: 200px;
   }
 
   .containerDescription {
+    margin-top: 15px;
     margin-left: 20px;
   }
 
   .containerDescriptionOverflow {
     margin-left: 40px;
-  }  
+  }
 
   .description {
     font-size: 11px;
   }
 
-  .overlayName{
+  .overlayName {
     font-size: 21px;
   }
 
-  .overlayRuolo{
+  .overlayRuolo {
     font-size: 14px;
   }
 
-  .overlayContainerSymbol{
+  .overlayContainerSymbol {
     margin-top: 17px;
   }
 
@@ -775,23 +811,23 @@
     margin-right: 10px;
   }
 
-  .numero{
+  .numero {
     font-size: 28px;
     transform: translate(7px, -10px);
   }
 
-  .overlayNation{
+  .overlayNation {
     width: 22px;
     height: 22px;
   }
 }
 
 @media (max-width: 550px) {
-  .overlayContent{
-    width: 400px;    
+  .overlayContent {
+    width: 400px;
   }
 
-  .overlayScroll{    
+  .overlayScroll {
     padding: 12px;
     padding-top: 30px;
     padding-bottom: 25px;
@@ -819,33 +855,29 @@
     text-align: center;
   }
 
-  .containerDescription{
-    margin-left: 0px;
-    margin-top: 15px;
-  }
-
   .containerDescription {
+    margin-top: 15px;
     margin-left: 20px;
   }
 
   .containerDescriptionOverflow {
     margin-left: 40px;
-  }  
+  }
 
   .description {
     font-size: 10px;
   }
 
-  .overlayName{
+  .overlayName {
     font-size: 19px;
     margin-bottom: 0px;
   }
 
-  .overlayRuolo{
+  .overlayRuolo {
     font-size: 12px;
   }
 
-  .overlayContainerHeader{
+  .overlayContainerHeader {
     margin-top: 12px;
   }
 
@@ -857,23 +889,23 @@
     margin-right: 10px;
   }
 
-  .numero{
+  .numero {
     font-size: 25px;
     transform: translate(7px, -8px);
   }
 
-  .overlayNation{
+  .overlayNation {
     width: 20px;
     height: 20px;
   }
 }
 
 @media (max-width: 450px) {
-  .overlayContent{
+  .overlayContent {
     width: 345px;
   }
 
-  .overlayScroll{    
+  .overlayScroll {
     padding: 25px 8px;
     padding-top: 30px;
   }
@@ -900,33 +932,29 @@
     text-align: center;
   }
 
-  .containerDescription{
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-
   .containerDescription {
+    margin-top: 10px;
     margin-left: 20px;
   }
 
   .containerDescriptionOverflow {
     margin-left: 40px;
-  }  
+  }
 
   .description {
     font-size: 10px;
   }
 
-  .overlayName{
+  .overlayName {
     font-size: 17px;
     margin-bottom: 0px;
   }
 
-  .overlayRuolo{
+  .overlayRuolo {
     font-size: 11px;
   }
 
-  .overlayContainerHeader{
+  .overlayContainerHeader {
     margin-top: 12px;
   }
 
@@ -938,23 +966,23 @@
     margin-right: 10px;
   }
 
-  .numero{
+  .numero {
     font-size: 25px;
     transform: translate(7px, -8px);
   }
 
-  .overlayNation{
+  .overlayNation {
     width: 20px;
     height: 20px;
   }
 }
 
 @media (max-width: 390px) {
-  .overlayContent{
+  .overlayContent {
     width: 310px;
   }
 
-  .overlayScroll{    
+  .overlayScroll {
     padding: 25px 8px;
     padding-top: 30px;
   }
@@ -980,33 +1008,29 @@
     text-align: center;
   }
 
-  .containerDescription{
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-
   .containerDescription {
+    margin-top: 10px;
     margin-left: 20px;
   }
 
   .containerDescriptionOverflow {
     margin-left: 40px;
-  }  
+  }
 
   .description {
     font-size: 10px;
   }
 
-  .overlayName{
+  .overlayName {
     font-size: 17px;
     margin-bottom: 0px;
   }
 
-  .overlayRuolo{
+  .overlayRuolo {
     font-size: 11px;
   }
 
-  .overlayContainerHeader{
+  .overlayContainerHeader {
     margin-top: 12px;
   }
 
@@ -1018,12 +1042,12 @@
     margin-right: 10px;
   }
 
-  .numero{
+  .numero {
     font-size: 25px;
     transform: translate(7px, -8px);
   }
 
-  .overlayNation{
+  .overlayNation {
     width: 20px;
     height: 20px;
   }
@@ -1035,11 +1059,10 @@
     max-height: 600px;
   }
 
-  /* 
-  .containerDescription {
-    max-height: 444px;
+  :root {
+    --max_x_height: 444px;
   }
-  */  
+
 }
 
 @media (max-height: 710px) {
@@ -1047,15 +1070,14 @@
     max-height: 500px;
   }
 
-  .overlayContent{
+  .overlayContent {
     max-height: 570px;
   }
 
-  /* 
-  .containerDescription {
-    max-height: 344px;
+  :root {
+    --max_x_height: 344px;
   }
-  */  
+
 }
 
 @media (max-height: 630px) {
@@ -1063,11 +1085,10 @@
     max-height: 450px;
   }
 
-  /* 
-  .containerDescription {
-    max-height: 294px;
+  :root {
+    --max_x_height: 294px;
   }
-  */  
+
 }
 
 @media (max-height: 580px) {
@@ -1075,9 +1096,8 @@
     max-height: 400px;
   }
 
-  /* 
-  .containerDescription {
-    max-height: 244px;
+  :root {
+    --max_x_height: 244px;
   }
-  */  
+
 }
