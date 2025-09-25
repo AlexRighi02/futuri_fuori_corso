@@ -9,6 +9,15 @@ FRONTEND_BUILD = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__
 app = Flask(__name__, static_folder=FRONTEND_BUILD, static_url_path='')
 CORS(app)
 
+# --- Redirect dal dominio fly.io a quello aruba ---
+@app.before_request
+def redirect_flyio():
+    # Controlla se il dominio della richiesta è il fly.dev
+    if request.host == 'futuri-fuori-corso.fly.dev':
+        # Redirect permanente 301 verso il dominio ufficiale
+        return redirect(f'https://futurifuoricorso.it{request.path}', code=301)
+# -----------------------------------------------------
+
 map_team = {
     "F.C. FUTURI FUORI CORSO": "/img/img_anteprima/futuri_fuori_corso.png",
     "FOCUMEU": "/img/img_anteprima/focumeu.png",
