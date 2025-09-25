@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 
 const Classifica_ranking = ({ classifica }) => {
     const nomeSquadra = "F.C. FUTURI FUORI CORSO"; // Nome della squadra da evidenziare
-    const squadre_promosse = 1;
-    const squadre_playoff = 3;
+    const squadre_promosse = 0;
+    const squadre_playoff = 4;
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 

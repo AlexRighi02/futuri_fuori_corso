@@ -376,6 +376,10 @@
   color: white;
 }
 
+.bepso {
+  font-size: 29px;
+}
+
 .upperRight {
   display: flex;
   height: 110px;
@@ -632,6 +636,10 @@
     font-size: 25px;
   }
 
+  .bepso {
+    font-size: 24px;
+  }
+
   .overlayRuolo {
     font-size: 15px;
   }
@@ -735,6 +743,10 @@
     font-size: 20px;
   }
 
+  .bepso {
+    font-size: 19px;
+  }
+
   .upperRight {
     margin-left: 20px;
     height: 80px;
@@ -814,6 +826,10 @@
     font-size: 21px;
   }
 
+  .bepso {
+    font-size: 20px;
+  }
+
   .overlayRuolo {
     font-size: 14px;
   }
@@ -887,6 +903,10 @@
   .overlayName {
     font-size: 19px;
     margin-bottom: 0px;
+  }
+
+  .bepso {
+    font-size: 18px;
   }
 
   .overlayRuolo {
@@ -966,6 +986,10 @@
     margin-bottom: 0px;
   }
 
+  .bepso {
+    font-size: 16px;
+  }
+
   .overlayRuolo {
     font-size: 11px;
   }
@@ -1040,6 +1064,10 @@
   .overlayName {
     font-size: 17px;
     margin-bottom: 0px;
+  }
+
+  .bepso {
+    font-size: 16px;
   }
 
   .overlayRuolo {

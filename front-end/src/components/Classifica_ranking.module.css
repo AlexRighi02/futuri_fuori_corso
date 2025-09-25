@@ -79,7 +79,7 @@ tbody tr:nth-child(even) {
 tbody td {
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size: 23px;
+    font-size: 23px !important;
     text-shadow: 3px 3px 3px rgb(0 5 12);
 }
 
@@ -143,7 +143,7 @@ tbody td:first-child {
     tbody td {
         padding-top: 13px;
         padding-bottom: 13px;
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     thead th {
@@ -180,7 +180,7 @@ tbody td:first-child {
     tbody td {
         padding-top: 11px;
         padding-bottom: 11px;
-        font-size: 17px;
+        font-size: 17px !important;
     }
 
     thead th {
@@ -223,7 +223,7 @@ tbody td:first-child {
     tbody td {
         padding-top: 11px;
         padding-bottom: 11px;
-        font-size: 15px;
+        font-size: 15px !important;
     }
 
     thead th {
@@ -273,7 +273,7 @@ tbody td:first-child {
     tbody td {
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 13px;
+        font-size: 13px !important;
     }
 
     thead th {
@@ -318,7 +318,7 @@ tbody td:first-child {
     tbody td {
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 11px;
+        font-size: 11px !important;
     }
 
     thead th {

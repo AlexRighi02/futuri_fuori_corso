@@ -262,11 +262,16 @@ const OverlayCard = ({ player, onClose }) => {
             <div className={styles.columnDiv}>
               <div className={styles.upperRight}>
                 <div className={styles.overlayContainerHeader}>
-                  <h2 className={styles.overlayName}>
-                    {player.name === "Thomas G. Aracri"
-                      ? "THOMAS GRANDE ARACRI"
-                      : player.name.toUpperCase()}
+                {
+                  player.name !== "Giuseppe Malangone" ? 
+                  <h2 className={styles.overlayName}>  
+                    {player.name === "Thomas G. Aracri" ? "THOMAS GRANDE ARACRI" : player.name.toUpperCase()}
                   </h2>
+                  :
+                  <h2 className={`${styles.overlayName} ${styles.bepso}`}>
+                    {player.name.toUpperCase()}
+                  </h2>
+                }
 
                   <p className={styles.overlayRuolo}>
                     {player &&
