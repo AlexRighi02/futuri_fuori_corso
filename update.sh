@@ -24,7 +24,7 @@ echo "✅ Programmi avviati."
 echo "📦 Aggiornamento repository..."
 git add .
 git commit -m "Aggiornamento risultati e classifica"
-git push
+git push https://AlexRighi02@github.com/AlexRighi02/futuri_fuori_corso.git 
 
 echo "📦 Deploy del sito..."
 fly deploy
