@@ -89,7 +89,7 @@ for partita in list_partite:
     })
 
 # Output finale
-with open("risultati.json", "w", encoding="utf-8") as f:
+with open("back-end/risultati.json", "w", encoding="utf-8") as f:
     json.dump(json_squadre, f, ensure_ascii=False, indent=4)
 
-print("🎉 Partite salvate in risultati.json")
+print("🎉 Partite salvate in back-end/risultati.json")

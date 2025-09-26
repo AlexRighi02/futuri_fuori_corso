@@ -179,10 +179,10 @@ for partita in list_partite:
         })
 
 # Output finale
-with open("campionato.json", "w", encoding="utf-8") as f:
+with open("back-end/campionato.json", "w", encoding="utf-8") as f:
     json.dump(json_squadre, f, ensure_ascii=False, indent=4)
 
-print("🎉 Partite salvate in campionato.json")
+print("🎉 Partite salvate in back-end/campionato.json")
 
 # CONCLUSO IL SALVATAGGIO DELLE PARTITE GIOCATE MI SALVO LA CLASSIFICA IN UN FILE JSON
 # CRITERI PER I PIAZZAMENTI DELLA CLASSIFICA:
@@ -214,7 +214,7 @@ for nome_squadra in map_team.keys():
     }
 
 # ORA SCORRO IL FILE campionato.json E CALCOLO LA CLASSIFICA
-with open("campionato.json", "r", encoding="utf-8") as f:
+with open("back-end/campionato.json", "r", encoding="utf-8") as f:
     dati_partite = json.load(f)
     
 partite = dati_partite["partite"]    
@@ -269,7 +269,7 @@ for squadra, stats in classifica.items():
 classifica_ordinata = ordina_classifica(lista_classifica, partite)
 
 # Salvo la classifica ordinata
-with open("classifica.json", "w", encoding="utf-8") as f:
+with open("back-end/classifica.json", "w", encoding="utf-8") as f:
     json.dump(classifica_ordinata, f, indent=4, ensure_ascii=False)
 
-print("Classifica salvata in classifica.json")
+print("Classifica salvata in back-end/classifica.json")
