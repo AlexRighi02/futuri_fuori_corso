@@ -1,0 +1,56 @@
+{
+    "partite": [
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                },
+                {
+                    "nome": "INDOMINUS XI"
+                }
+            ],
+            "data": "22/09/25",
+            "ora": "21:00",
+            "risultato": "3-7"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "THE MOUNT II"
+                },
+                {
+                    "nome": "FOCUMEU"
+                }
+            ],
+            "data": "22/09/25",
+            "ora": "20:15",
+            "risultato": "4-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "AN CALCIO A 7"
+                }
+            ],
+            "data": "22/09/25",
+            "ora": "20:15",
+            "risultato": "3-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                }
+            ],
+            "data": "23/09/25",
+            "ora": "20:00",
+            "risultato": "0-0"
+        }
+    ]
+}
