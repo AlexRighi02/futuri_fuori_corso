@@ -26,4 +26,7 @@ git add .
 git commit -m "Aggiornamento risultati e classifica"
 git push
 
+echo "📦 Deploy del sito..."
+fly deploy
+
 echo "🎉 Tutto fatto!"
