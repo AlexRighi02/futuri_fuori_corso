@@ -1,5 +1,4 @@
 * {
-  font-size: 19px;
   letter-spacing: 1px;
   font-family: 'Bree Serif', Georgia, serif;
 }
@@ -23,8 +22,10 @@ body {
   min-height: 100dvh;
 
   background-image: url('../public/img/Sfondo_FFC_1.png');
-  background-size: 100% auto;     /* larghezza = 100% del div, altezza proporzionata */
-  background-position: top left; /* l'immagine parte dall'angolo in alto a sinistra del div */
+  background-size: 100% auto;
+  /* larghezza = 100% del div, altezza proporzionata */
+  background-position: top left;
+  /* l'immagine parte dall'angolo in alto a sinistra del div */
 }
 
 .sticky-top {
@@ -46,25 +47,28 @@ code {
     monospace;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   width: 5% !important;
   top: 50% !important;
   bottom: 50% !important;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   color: #fff !important;
   opacity: 0.5 !important;
   font-size: 20px !important;
 }
 
-.swiper-button-prev:hover, .swiper-button-next:hover {
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
   opacity: 1 !important;
   transition: opacity 0.3s;
 }
 
 ::after {
-    font-size: 30px !important;
+  font-size: 30px !important;
 }
 
 #sfondoSito {
@@ -72,8 +76,14 @@ code {
   height: auto;
 }
 
-.is-blurred { filter: blur(5px); }
-.is-blurred, .is-blurred * { cursor: default !important }
+.is-blurred {
+  filter: blur(5px);
+}
+
+.is-blurred,
+.is-blurred * {
+  cursor: default !important
+}
 
 @media (max-width: 768px) {
   #sfondoSito {
@@ -99,7 +109,7 @@ code {
 }
 
 
-#container_carosello {  
+#container_carosello {
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -111,7 +121,7 @@ code {
 }
 
 @media (max-width: 992px) {
-  #container_carosello {  
+  #container_carosello {
     padding-top: 33px;
     padding-bottom: 27px;
   }
@@ -128,7 +138,7 @@ code {
 }
 
 @media (max-width: 500px) {
-  #container_carosello {  
+  #container_carosello {
     padding-top: 20px;
     padding-bottom: 10px;
   }
@@ -137,4 +147,3 @@ code {
     padding-bottom: 10px;
   }
 }
-
