@@ -19,6 +19,10 @@
         {
             "squadre": [
                 {
+                    "nome": "FOCUMEU",
+                    "logo": "/img/img_anteprima/focumeu.png"
+                },
+                {
                     "nome": "F.C. FUTURI FUORI CORSO",
                     "logo": "/img/img_anteprima/futuri_fuori_corso.png"
                 }

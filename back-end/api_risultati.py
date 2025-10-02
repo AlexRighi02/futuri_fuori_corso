@@ -50,11 +50,11 @@ for partita in list_partite:
     full_link = f"https://live.centrosportivoitaliano.it{href}"
 
     # Trova i due blocchi di squadra
-    team_blocks = partita.find_all('div', class_='d-flex align-items-center gap-2')
+    team_blocks = partita.select('div.d-flex.align-items-center.gap-2')
     for block in team_blocks:
         nome_tag = block.find('span', class_='nome-squadra')
         nome = nome_tag.get_text(strip=True) if nome_tag else "N/A"
-
+        
         # logo_tag = block.find('img')
         # logo = logo_tag['src'] if logo_tag else None
         #print("ciao", map_team.get(nome.upper()))
