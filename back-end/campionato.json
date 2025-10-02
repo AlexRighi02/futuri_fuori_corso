@@ -51,6 +51,84 @@
             "data": "23/09/25",
             "ora": "20:00",
             "risultato": "0-0"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA'"
+                },
+                {
+                    "nome": "GATTATICO CLUB RAPTORS"
+                }
+            ],
+            "data": "25/09/25",
+            "ora": "20:45",
+            "risultato": "1-5"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                },
+                {
+                    "nome": "ATS TRINITA'"
+                }
+            ],
+            "data": "29/09/25",
+            "ora": "21:00",
+            "risultato": "4-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "AN CALCIO A 7"
+                },
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                }
+            ],
+            "data": "29/09/25",
+            "ora": "21:30",
+            "risultato": "6-1"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "FOCUMEU"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                }
+            ],
+            "data": "01/10/25",
+            "ora": "21:30",
+            "risultato": "0-6"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "INDOMINUS XI"
+                },
+                {
+                    "nome": "THE MOUNT II"
+                }
+            ],
+            "data": "01/10/25",
+            "ora": "20:00",
+            "risultato": "6-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "GATTATICO CLUB RAPTORS"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                }
+            ],
+            "data": "30/09/25",
+            "ora": "21:30",
+            "risultato": "2-2"
         }
     ]
 }

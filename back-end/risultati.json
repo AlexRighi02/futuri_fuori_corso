@@ -19,17 +19,13 @@
         {
             "squadre": [
                 {
-                    "nome": "FOCUMEU",
-                    "logo": "/img/img_anteprima/focumeu.png"
-                },
-                {
                     "nome": "F.C. FUTURI FUORI CORSO",
                     "logo": "/img/img_anteprima/futuri_fuori_corso.png"
                 }
             ],
             "data": "01/10/25",
             "ora": "21:30",
-            "risultato": "-",
+            "risultato": "0-6",
             "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0203/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRGREcmNDI9Yw=="
         },
         {
@@ -140,7 +136,7 @@
                 }
             ],
             "data": "17/11/25",
-            "ora": "21:00",
+            "ora": "21:15",
             "risultato": "-",
             "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AA0902/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROTkRNREYmNDI9Yw=="
         },
