@@ -3,30 +3,48 @@
 # Fermare lo script in caso di errori
 set -e
 
-# Vai nella directory dello script (repo principale)
-cd "$(dirname "$0")"
+# Directory della repository
+REPO_DIR="/home/ubuntu/futuri_fuori_corso"
+LOG_FILE="$REPO_DIR/Logs/cron_log.txt"
 
+# Percorsi assoluti dei comandi
+PYTHON="/usr/bin/python3"
+GIT="/usr/bin/git"
+FLY="/home/ubuntu/.fly/bin/fly"
+
+# Vai nella directory della repo
+cd "$REPO_DIR"
+
+# Tutto l'output va sul log
+{
+echo "===================================="
+echo "🚀 Avvio script: $(date)"
+
+# Avvio dei programmi Python in background con nohup
 echo "🚀 Avvio server.py..."
-python3 back-end/server.py &
+nohup $PYTHON back-end/server.py &
 
 echo "🚀 Avvio api_risultati.py..."
-python3 back-end/api_risultati.py &
+nohup $PYTHON back-end/api_risultati.py &
 
 echo "🚀 Avvio api_classifica.py..."
-python3 back-end/api_classifica.py &
+nohup $PYTHON back-end/api_classifica.py &
 
-# Attendi 5 secondi per sicurezza (puoi modificare)
+# Attendi qualche secondo per sicurezza
 sleep 5
 
 echo "✅ Programmi avviati."
 
-# Esegui aggiornamento Git
+# Aggiornamento Git
 echo "📦 Aggiornamento repository..."
-git add .
-git commit -m "Aggiornamento risultati e classifica"
-git push https://AlexRighi02@github.com/AlexRighi02/futuri_fuori_corso.git 
+$GIT add .
+$GIT commit -m "Aggiornamento risultati e classifica" || echo "⚠️ Nessun cambiamento da commitare"
+$GIT push https://AlexRighi02@github.com/AlexRighi02/futuri_fuori_corso.git
 
+# Deploy del sito
 echo "📦 Deploy del sito..."
-fly deploy
+$FLY deploy
 
 echo "🎉 Tutto fatto!"
+echo "===================================="
+} >> "$LOG_FILE" 2>&1
