@@ -135,8 +135,6 @@ headers.pop('Accept-Encoding', None)
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
 
-print(soup)
-
 list_partite = soup.find_all('a', class_='btn btn-gara')
 
 json_squadre = {"partite": []}
