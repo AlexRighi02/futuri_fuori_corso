@@ -10,7 +10,7 @@ LOG_FILE="$REPO_DIR/Logs/cron_log.txt"
 # Percorsi assoluti dei comandi
 PYTHON="/usr/bin/python3"
 GIT="/usr/bin/git"
-FLY="/home/ubuntu/.fly/bin/fly"
+FLY="/home/ubuntu/.fly/bin/flyctl"
 
 # Vai nella directory della repo
 cd "$REPO_DIR"
@@ -27,7 +27,7 @@ nohup $PYTHON back-end/server.py &
 echo "🚀 Avvio api_risultati.py..."
 nohup $PYTHON back-end/api_risultati.py &
 
-echo "🚀 Avvio api_classifica.py..."
+echo "�� Avvio api_classifica.py..."
 nohup $PYTHON back-end/api_classifica.py &
 
 # Attendi qualche secondo per sicurezza
@@ -35,11 +35,11 @@ sleep 5
 
 echo "✅ Programmi avviati."
 
-# Aggiornamento Git
+# Aggiornamento Git via SSH
 echo "📦 Aggiornamento repository..."
 $GIT add .
 $GIT commit -m "Aggiornamento risultati e classifica" || echo "⚠️ Nessun cambiamento da commitare"
-$GIT push https://AlexRighi02@github.com/AlexRighi02/futuri_fuori_corso.git
+$GIT push
 
 # Deploy del sito
 echo "📦 Deploy del sito..."
@@ -48,3 +48,4 @@ $FLY deploy
 echo "🎉 Tutto fatto!"
 echo "===================================="
 } >> "$LOG_FILE" 2>&1
+
