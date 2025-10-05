@@ -1,5 +1,5 @@
 ====================================
-🚀 Avvio script: Sun Oct  5 19:39:01 UTC 2025
+🚀 Avvio script: Sun Oct  5 21:53:01 UTC 2025
 🚀 Avvio server.py...
 🚀 Avvio api_risultati.py...
 🚀 Avvio api_classifica.py...
@@ -12,41 +12,3 @@ Port 8080 is in use by another program. Either identify and stop that program, o
 Classifica salvata in back-end/classifica.json
 ✅ Programmi avviati.
 📦 Aggiornamento repository...
-[master b5c0123] Aggiornamento risultati e classifica
- 2 files changed, 14 insertions(+), 3183 deletions(-)
- rewrite Logs/cron_log.txt (99%)
-fatal: could not read Password for 'https://AlexRighi02@github.com': No such device or address
-====================================
-🚀 Avvio script: Sun Oct  5 20:39:01 UTC 2025
-🚀 Avvio server.py...
-🚀 Avvio api_risultati.py...
-🚀 Avvio api_classifica.py...
- * Serving Flask app 'server'
- * Debug mode: off
-Address already in use
-Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
-🎉 Partite salvate in back-end/risultati.json
-🎉 Partite salvate in back-end/campionato.json
-Classifica salvata in back-end/classifica.json
-✅ Programmi avviati.
-📦 Aggiornamento repository...
-[master 47c91ca] Aggiornamento risultati e classifica
- 1 file changed, 18 insertions(+)
-fatal: could not read Password for 'https://AlexRighi02@github.com': No such device or address
-====================================
-🚀 Avvio script: Sun Oct  5 21:39:01 UTC 2025
-🚀 Avvio server.py...
-🚀 Avvio api_risultati.py...
-🚀 Avvio api_classifica.py...
- * Serving Flask app 'server'
- * Debug mode: off
-Address already in use
-Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
-🎉 Partite salvate in back-end/risultati.json
-🎉 Partite salvate in back-end/campionato.json
-Classifica salvata in back-end/classifica.json
-✅ Programmi avviati.
-📦 Aggiornamento repository...
-[master 220219f] Aggiornamento risultati e classifica
- 1 file changed, 17 insertions(+)
-fatal: could not read Password for 'https://AlexRighi02@github.com': No such device or address
