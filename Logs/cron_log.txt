@@ -47,3 +47,6 @@ Port 8080 is in use by another program. Either identify and stop that program, o
 Classifica salvata in back-end/classifica.json
 ✅ Programmi avviati.
 📦 Aggiornamento repository...
+[master 220219f] Aggiornamento risultati e classifica
+ 1 file changed, 17 insertions(+)
+fatal: could not read Password for 'https://AlexRighi02@github.com': No such device or address
