@@ -5,7 +5,6 @@ set -e
 
 # Directory della repository
 REPO_DIR="/home/ubuntu/futuri_fuori_corso"
-LOG_FILE="$REPO_DIR/Logs/cron_log.txt"
 
 # Percorsi assoluti dei comandi
 PYTHON="/usr/bin/python3"
@@ -16,35 +15,20 @@ FLY="/home/ubuntu/.fly/bin/flyctl"
 cd "$REPO_DIR"
 
 # Tutto l'output va sul log
-{
-echo "===================================="
-echo "🚀 Avvio script: $(date)"
 
 # Avvio dei programmi Python in background con nohup
-echo "🚀 Avvio server.py..."
 nohup $PYTHON back-end/server.py &
-
-echo "🚀 Avvio api_risultati.py..."
 nohup $PYTHON back-end/api_risultati.py &
-
-echo "�� Avvio api_classifica.py..."
 nohup $PYTHON back-end/api_classifica.py &
 
 # Attendi qualche secondo per sicurezza
 sleep 5
 
-echo "📦 Aggiornamento repository..."
 # Controlla se ci sono modifiche
+if ! $GIT diff-index --quiet HEAD --; then
+    $GIT add .
+    $GIT commit -m "Aggiornamento risultati e classifica"
+    $GIT push
 
-$GIT add .
-$GIT commit -m "Aggiornamento risultati e classifica"
-$GIT push
-
-# Deploy del sito
-echo "📦 Deploy del sito..."
-$FLY deploy
-
-
-echo "🎉 Tutto fatto!"
-echo "===================================="
-} > "$LOG_FILE" 2>&1
+    $FLY deploy
+fi
