@@ -35,18 +35,15 @@ sleep 5
 
 echo "📦 Aggiornamento repository..."
 # Controlla se ci sono modifiche
-if ! $GIT diff-index --quiet HEAD --; then
-    echo "📦 Ci sono modifiche, aggiorno GitHub..."
-    $GIT add .
-    $GIT commit -m "Aggiornamento risultati e classifica"
-    $GIT push
 
-    # Deploy del sito
-    echo "📦 Deploy del sito..."
-    $FLY deploy
-else
-    echo "⚠️ Nessuna modifica significativa da inviare a GitHub."
-fi
+$GIT add .
+$GIT commit -m "Aggiornamento risultati e classifica"
+$GIT push
+
+# Deploy del sito
+echo "📦 Deploy del sito..."
+$FLY deploy
+
 
 echo "🎉 Tutto fatto!"
 echo "===================================="
