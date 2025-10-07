@@ -129,6 +129,45 @@
             "data": "30/09/25",
             "ora": "21:30",
             "risultato": "2-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "THE MOUNT II"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                }
+            ],
+            "data": "06/10/25",
+            "ora": "20:15",
+            "risultato": "2-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "INDOMINUS XI"
+                }
+            ],
+            "data": "06/10/25",
+            "ora": "20:15",
+            "risultato": "2-5"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                },
+                {
+                    "nome": "GATTATICO CLUB RAPTORS"
+                }
+            ],
+            "data": "06/10/25",
+            "ora": "21:15",
+            "risultato": "3-3"
         }
     ]
 }
