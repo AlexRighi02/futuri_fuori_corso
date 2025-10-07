@@ -33,15 +33,13 @@ nohup $PYTHON back-end/api_classifica.py &
 # Attendi qualche secondo per sicurezza
 sleep 5
 
-# Aggiornamento Git solo se ci sono modifiche (escludendo il log)
-echo "📦 Controllo modifiche nella repository (escluso il log)..."
-if ! $GIT diff --quiet -- . ":(exclude)Logs/cron_log.txt"; then
+echo "📦 Aggiornamento repository..."
+# Controlla se ci sono modifiche
+if ! $GIT diff-index --quiet HEAD --; then
     echo "📦 Ci sono modifiche, aggiorno GitHub..."
-    $GIT add . ":(exclude)Logs/cron_log.txt"
+    $GIT add .
     $GIT commit -m "Aggiornamento risultati e classifica"
     $GIT push
-
-    echo "✅ Programmi avviati."
 
     # Deploy del sito
     echo "📦 Deploy del sito..."
