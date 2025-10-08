@@ -72,6 +72,18 @@
         "differenza_reti": -2
     },
     {
+        "squadra": "ATS TRINITA' ELITE",
+        "logo": "/img/img_anteprima/trinita_elite.png",
+        "punti": 4,
+        "giocate": 3,
+        "vinte": 1,
+        "pareggiate": 1,
+        "perse": 1,
+        "gol_fatti": 5,
+        "gol_subiti": 8,
+        "differenza_reti": -3
+    },
+    {
         "squadra": "U.S. MONTECCHIO NEW TEAM",
         "logo": "/img/img_anteprima/new_team.png",
         "punti": 2,
@@ -82,18 +94,6 @@
         "gol_fatti": 7,
         "gol_subiti": 11,
         "differenza_reti": -4
-    },
-    {
-        "squadra": "ATS TRINITA' ELITE",
-        "logo": "/img/img_anteprima/trinita_elite.png",
-        "punti": 1,
-        "giocate": 2,
-        "vinte": 0,
-        "pareggiate": 1,
-        "perse": 1,
-        "gol_fatti": 1,
-        "gol_subiti": 6,
-        "differenza_reti": -5
     },
     {
         "squadra": "ATS TRINITA'",
@@ -111,12 +111,12 @@
         "squadra": "FOCUMEU",
         "logo": "/img/img_anteprima/focumeu.png",
         "punti": 0,
-        "giocate": 2,
+        "giocate": 3,
         "vinte": 0,
         "pareggiate": 0,
-        "perse": 2,
-        "gol_fatti": 2,
-        "gol_subiti": 10,
-        "differenza_reti": -8
+        "perse": 3,
+        "gol_fatti": 4,
+        "gol_subiti": 14,
+        "differenza_reti": -10
     }
 ]

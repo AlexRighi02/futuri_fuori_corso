@@ -159,6 +159,19 @@
         {
             "squadre": [
                 {
+                    "nome": "ATS TRINITA' ELITE"
+                },
+                {
+                    "nome": "FOCUMEU"
+                }
+            ],
+            "data": "08/10/25",
+            "ora": "20:00",
+            "risultato": "4-2"
+        },
+        {
+            "squadre": [
+                {
                     "nome": "U.S. MONTECCHIO YOUNG"
                 },
                 {
