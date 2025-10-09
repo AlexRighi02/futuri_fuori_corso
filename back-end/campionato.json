@@ -172,6 +172,19 @@
         {
             "squadre": [
                 {
+                    "nome": "ATS TRINITA'"
+                },
+                {
+                    "nome": "AN CALCIO A 7"
+                }
+            ],
+            "data": "09/10/25",
+            "ora": "20:45",
+            "risultato": "2-0"
+        },
+        {
+            "squadre": [
+                {
                     "nome": "U.S. MONTECCHIO YOUNG"
                 },
                 {
