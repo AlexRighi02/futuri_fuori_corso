@@ -194,6 +194,32 @@
             "data": "09/10/25",
             "ora": "20:45",
             "risultato": "2-1"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                }
+            ],
+            "data": "13/10/25",
+            "ora": "21:00",
+            "risultato": "6-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "GATTATICO CLUB RAPTORS"
+                },
+                {
+                    "nome": "THE MOUNT II"
+                }
+            ],
+            "data": "14/10/25",
+            "ora": "21:30",
+            "risultato": "3-2"
         }
     ]
 }
