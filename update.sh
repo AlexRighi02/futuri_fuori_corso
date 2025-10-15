@@ -12,7 +12,7 @@ sleep 5
 if ! git diff-index --quiet HEAD --; then
     git add .
     git commit -m "Aggiornamento risultati e classifica"
-    git push
+    git push https://AlexRighi02@github.com/AlexRighi02/futuri_fuori_corso.git
 
     fly deploy
 fi
