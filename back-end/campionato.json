@@ -211,6 +211,19 @@
         {
             "squadre": [
                 {
+                    "nome": "AN CALCIO A 7"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                }
+            ],
+            "data": "13/10/25",
+            "ora": "21:30",
+            "risultato": "4-1"
+        },
+        {
+            "squadre": [
+                {
                     "nome": "GATTATICO CLUB RAPTORS"
                 },
                 {
@@ -220,6 +233,32 @@
             "data": "14/10/25",
             "ora": "21:30",
             "risultato": "3-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "INDOMINUS XI"
+                },
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                }
+            ],
+            "data": "15/10/25",
+            "ora": "20:00",
+            "risultato": "5-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "FOCUMEU"
+                },
+                {
+                    "nome": "ATS TRINITA'"
+                }
+            ],
+            "data": "15/10/25",
+            "ora": "21:30",
+            "risultato": "5-6"
         }
     ]
 }
