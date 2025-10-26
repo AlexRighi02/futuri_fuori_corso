@@ -259,6 +259,58 @@
             "data": "15/10/25",
             "ora": "21:30",
             "risultato": "5-6"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "THE MOUNT II"
+                }
+            ],
+            "data": "20/10/25",
+            "ora": "20:15",
+            "risultato": "0-0"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                },
+                {
+                    "nome": "FOCUMEU"
+                }
+            ],
+            "data": "20/10/25",
+            "ora": "21:15",
+            "risultato": "6-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "AN CALCIO A 7"
+                },
+                {
+                    "nome": "GATTATICO CLUB RAPTORS"
+                }
+            ],
+            "data": "20/10/25",
+            "ora": "21:30",
+            "risultato": "3-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                }
+            ],
+            "data": "21/10/25",
+            "ora": "20:00",
+            "risultato": "2-6"
         }
     ]
 }
