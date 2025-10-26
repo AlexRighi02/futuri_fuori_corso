@@ -51,6 +51,14 @@ const players = {
   ],
   centrocampisti: [
     {
+      name: "Mattia Malangone",
+      number: 0,
+      img: "img/img_rosa/mattia_malangone.jpg",
+      nation: "Italia",
+      insta: "https://www.instagram.com/mattiamalangone/",
+      description: "Il jolly tuttocampista dei Futuri Fuori Corso ha un nome e un cognome: Mattia Malangone. Fratello del capitano (e figlio del Main Sponsor…raccomandato), ex Avellino Banfi e unico membro della squadra ancora potenzialmente in gara per essere davvero un fuori corso, dopo un recente passato nel Celtic Cavriago il Matto si divide quest’anno tra gli impegni con l’FC 70 e la compagine gialloblù…solo per evitare in tutti i modi che il Vittorione Nazionale (sempre sia lodato) lo trovi a ciondolare e lo metta al lavoro. Certo, poi c'è da sperare ogni volta che riesca ad arrivare al campo (intero) e, possibilmente, lo faccia prima del triplice fischio…ma quando entra in scena agli avversari non resta altro che farsi il segno della croce e sperare di non doverci andare a contrasto. Un mix tra la cazzimma di Davids, il recupero palla di Cristante e i tiri di Nedved. Attila, fratello di dio (cit.)."
+    },
+    {
       name: "Giuseppe Esposito",
       number: 5,
       img: "img/img_rosa/giuseppe_esposito.jpg",
