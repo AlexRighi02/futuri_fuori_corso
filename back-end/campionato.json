@@ -311,6 +311,58 @@
             "data": "21/10/25",
             "ora": "20:00",
             "risultato": "2-6"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                },
+                {
+                    "nome": "ATS TRINITA'"
+                }
+            ],
+            "data": "27/10/25",
+            "ora": "21:00",
+            "risultato": "3-1"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "GATTATICO CLUB RAPTORS"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                }
+            ],
+            "data": "28/10/25",
+            "ora": "21:30",
+            "risultato": "2-1"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "INDOMINUS XI"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                }
+            ],
+            "data": "29/10/25",
+            "ora": "20:00",
+            "risultato": "5-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "FOCUMEU"
+                },
+                {
+                    "nome": "AN CALCIO A 7"
+                }
+            ],
+            "data": "29/10/25",
+            "ora": "21:30",
+            "risultato": "2-3"
         }
     ]
 }
