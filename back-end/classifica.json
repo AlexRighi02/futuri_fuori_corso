@@ -60,6 +60,18 @@
         "differenza_reti": -1
     },
     {
+        "squadra": "ATS TRINITA' ELITE",
+        "logo": "/img/img_anteprima/trinita_elite.png",
+        "punti": 7,
+        "giocate": 6,
+        "vinte": 2,
+        "pareggiate": 1,
+        "perse": 3,
+        "gol_fatti": 16,
+        "gol_subiti": 22,
+        "differenza_reti": -6
+    },
+    {
         "squadra": "ATS TRINITA'",
         "logo": "/img/img_anteprima/trinita.png",
         "punti": 6,
@@ -87,25 +99,13 @@
         "squadra": "THE MOUNT II",
         "logo": "/img/img_anteprima/the_mount.png",
         "punti": 5,
-        "giocate": 5,
+        "giocate": 6,
         "vinte": 1,
         "pareggiate": 2,
-        "perse": 2,
-        "gol_fatti": 10,
-        "gol_subiti": 13,
-        "differenza_reti": -3
-    },
-    {
-        "squadra": "ATS TRINITA' ELITE",
-        "logo": "/img/img_anteprima/trinita_elite.png",
-        "punti": 4,
-        "giocate": 5,
-        "vinte": 1,
-        "pareggiate": 1,
         "perse": 3,
-        "gol_fatti": 11,
-        "gol_subiti": 19,
-        "differenza_reti": -8
+        "gol_fatti": 13,
+        "gol_subiti": 18,
+        "differenza_reti": -5
     },
     {
         "squadra": "FOCUMEU",
