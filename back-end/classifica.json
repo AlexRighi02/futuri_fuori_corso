@@ -1,39 +1,39 @@
 [
     {
+        "squadra": "AN CALCIO A 7",
+        "logo": "/img/img_anteprima/an_calcio.png",
+        "punti": 16,
+        "giocate": 7,
+        "vinte": 5,
+        "pareggiate": 1,
+        "perse": 1,
+        "gol_fatti": 26,
+        "gol_subiti": 16,
+        "differenza_reti": 10
+    },
+    {
         "squadra": "INDOMINUS XI",
         "logo": "/img/img_anteprima/indominus.png",
         "punti": 15,
-        "giocate": 5,
+        "giocate": 6,
         "vinte": 5,
         "pareggiate": 0,
-        "perse": 0,
-        "gol_fatti": 28,
-        "gol_subiti": 15,
-        "differenza_reti": 13
-    },
-    {
-        "squadra": "AN CALCIO A 7",
-        "logo": "/img/img_anteprima/an_calcio.png",
-        "punti": 13,
-        "giocate": 6,
-        "vinte": 4,
-        "pareggiate": 1,
         "perse": 1,
-        "gol_fatti": 20,
-        "gol_subiti": 11,
-        "differenza_reti": 9
+        "gol_fatti": 33,
+        "gol_subiti": 21,
+        "differenza_reti": 12
     },
     {
         "squadra": "U.S. MONTECCHIO NEW TEAM",
         "logo": "/img/img_anteprima/new_team.png",
-        "punti": 11,
-        "giocate": 6,
-        "vinte": 3,
+        "punti": 14,
+        "giocate": 7,
+        "vinte": 4,
         "pareggiate": 2,
         "perse": 1,
-        "gol_fatti": 22,
-        "gol_subiti": 16,
-        "differenza_reti": 6
+        "gol_fatti": 26,
+        "gol_subiti": 19,
+        "differenza_reti": 7
     },
     {
         "squadra": "GATTATICO CLUB RAPTORS",
@@ -48,28 +48,28 @@
         "differenza_reti": 5
     },
     {
+        "squadra": "ATS TRINITA' ELITE",
+        "logo": "/img/img_anteprima/trinita_elite.png",
+        "punti": 10,
+        "giocate": 7,
+        "vinte": 3,
+        "pareggiate": 1,
+        "perse": 3,
+        "gol_fatti": 19,
+        "gol_subiti": 22,
+        "differenza_reti": -3
+    },
+    {
         "squadra": "U.S. MONTECCHIO YOUNG",
         "logo": "/img/img_anteprima/montecchio.png",
         "punti": 8,
-        "giocate": 6,
+        "giocate": 7,
         "vinte": 2,
         "pareggiate": 2,
-        "perse": 2,
-        "gol_fatti": 18,
-        "gol_subiti": 19,
-        "differenza_reti": -1
-    },
-    {
-        "squadra": "ATS TRINITA' ELITE",
-        "logo": "/img/img_anteprima/trinita_elite.png",
-        "punti": 7,
-        "giocate": 6,
-        "vinte": 2,
-        "pareggiate": 1,
         "perse": 3,
-        "gol_fatti": 16,
-        "gol_subiti": 22,
-        "differenza_reti": -6
+        "gol_fatti": 21,
+        "gol_subiti": 23,
+        "differenza_reti": -2
     },
     {
         "squadra": "ATS TRINITA'",
@@ -87,13 +87,13 @@
         "squadra": "F.C. FUTURI FUORI CORSO",
         "logo": "/img/img_anteprima/futuri_fuori_corso.png",
         "punti": 5,
-        "giocate": 6,
+        "giocate": 7,
         "vinte": 1,
         "pareggiate": 2,
-        "perse": 3,
+        "perse": 4,
         "gol_fatti": 14,
-        "gol_subiti": 16,
-        "differenza_reti": -2
+        "gol_subiti": 19,
+        "differenza_reti": -5
     },
     {
         "squadra": "THE MOUNT II",
