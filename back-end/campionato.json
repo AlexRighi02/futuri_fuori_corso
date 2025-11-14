@@ -415,6 +415,97 @@
             "data": "04/11/25",
             "ora": "20:00",
             "risultato": "3-0"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "FOCUMEU"
+                },
+                {
+                    "nome": "GATTATICO CLUB RAPTORS"
+                }
+            ],
+            "data": "05/11/25",
+            "ora": "21:30",
+            "risultato": "5-1"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA'"
+                },
+                {
+                    "nome": "THE MOUNT II"
+                }
+            ],
+            "data": "07/11/25",
+            "ora": "20:45",
+            "risultato": "4-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "THE MOUNT II"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                }
+            ],
+            "data": "10/11/25",
+            "ora": "20:15",
+            "risultato": "2-1"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                },
+                {
+                    "nome": "AN CALCIO A 7"
+                }
+            ],
+            "data": "10/11/25",
+            "ora": "21:00",
+            "risultato": "2-1"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "GATTATICO CLUB RAPTORS"
+                },
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                }
+            ],
+            "data": "11/11/25",
+            "ora": "21:30",
+            "risultato": "6-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "INDOMINUS XI"
+                },
+                {
+                    "nome": "FOCUMEU"
+                }
+            ],
+            "data": "12/11/25",
+            "ora": "20:00",
+            "risultato": "7-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA'"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                }
+            ],
+            "data": "13/11/25",
+            "ora": "20:45",
+            "risultato": "2-4"
         }
     ]
 }
