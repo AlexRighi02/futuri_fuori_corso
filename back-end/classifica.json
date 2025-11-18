@@ -27,13 +27,13 @@
         "squadra": "AN CALCIO A 7",
         "logo": "/img/img_anteprima/an_calcio.png",
         "punti": 16,
-        "giocate": 8,
+        "giocate": 9,
         "vinte": 5,
         "pareggiate": 1,
-        "perse": 2,
-        "gol_fatti": 27,
-        "gol_subiti": 18,
-        "differenza_reti": 9
+        "perse": 3,
+        "gol_fatti": 29,
+        "gol_subiti": 23,
+        "differenza_reti": 6
     },
     {
         "squadra": "GATTATICO CLUB RAPTORS",
@@ -46,6 +46,30 @@
         "gol_fatti": 24,
         "gol_subiti": 20,
         "differenza_reti": 4
+    },
+    {
+        "squadra": "THE MOUNT II",
+        "logo": "/img/img_anteprima/the_mount.png",
+        "punti": 11,
+        "giocate": 9,
+        "vinte": 3,
+        "pareggiate": 2,
+        "perse": 4,
+        "gol_fatti": 22,
+        "gol_subiti": 25,
+        "differenza_reti": -3
+    },
+    {
+        "squadra": "U.S. MONTECCHIO YOUNG",
+        "logo": "/img/img_anteprima/montecchio.png",
+        "punti": 11,
+        "giocate": 9,
+        "vinte": 3,
+        "pareggiate": 2,
+        "perse": 4,
+        "gol_fatti": 27,
+        "gol_subiti": 27,
+        "differenza_reti": 0
     },
     {
         "squadra": "ATS TRINITA' ELITE",
@@ -72,39 +96,15 @@
         "differenza_reti": -5
     },
     {
-        "squadra": "U.S. MONTECCHIO YOUNG",
-        "logo": "/img/img_anteprima/montecchio.png",
-        "punti": 8,
-        "giocate": 8,
-        "vinte": 2,
-        "pareggiate": 2,
-        "perse": 4,
-        "gol_fatti": 22,
-        "gol_subiti": 25,
-        "differenza_reti": -3
-    },
-    {
         "squadra": "F.C. FUTURI FUORI CORSO",
         "logo": "/img/img_anteprima/futuri_fuori_corso.png",
         "punti": 8,
-        "giocate": 8,
+        "giocate": 9,
         "vinte": 2,
         "pareggiate": 2,
-        "perse": 4,
-        "gol_fatti": 18,
-        "gol_subiti": 21,
-        "differenza_reti": -3
-    },
-    {
-        "squadra": "THE MOUNT II",
-        "logo": "/img/img_anteprima/the_mount.png",
-        "punti": 8,
-        "giocate": 8,
-        "vinte": 2,
-        "pareggiate": 2,
-        "perse": 4,
-        "gol_fatti": 17,
-        "gol_subiti": 23,
+        "perse": 5,
+        "gol_fatti": 20,
+        "gol_subiti": 26,
         "differenza_reti": -6
     },
     {
