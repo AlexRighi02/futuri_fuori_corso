@@ -7,7 +7,7 @@ map_team = {
     "FOCUMEU": "/img/img_anteprima/focumeu.png",
     "U.S. MONTECCHIO NEW TEAM": "/img/img_anteprima/new_team.png",
     "ATS TRINITA' ELITE": "/img/img_anteprima/trinita_elite.png",
-    "GATTATICO CLUB RAPTORS": "/img/img_anteprima/gattatico_club_raptors.png",
+    "GATTATICO RAPTORS": "/img/img_anteprima/gattatico_raptors.png",
     "INDOMINUS XI": "/img/img_anteprima/indominus.png",
     "U.S. MONTECCHIO YOUNG": "/img/img_anteprima/montecchio.png",
     "THE MOUNT II": "/img/img_anteprima/the_mount.png",
