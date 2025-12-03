@@ -83,8 +83,8 @@
         {
             "squadre": [
                 {
-                    "nome": "GATTATICO CLUB RAPTORS",
-                    "logo": "/img/img_anteprima/gattatico_club_raptors.png"
+                    "nome": "GATTATICO RAPTORS",
+                    "logo": null
                 },
                 {
                     "nome": "F.C. FUTURI FUORI CORSO",
@@ -157,7 +157,7 @@
             ],
             "data": "24/11/25",
             "ora": "21:30",
-            "risultato": "-",
+            "risultato": "4-3",
             "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AR1003/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROZUVEREcmNDI9Yw=="
         },
         {
@@ -173,7 +173,7 @@
             ],
             "data": "01/12/25",
             "ora": "20:15",
-            "risultato": "-",
+            "risultato": "4-3",
             "link_dettaglio": "https://live.centrosportivoitaliano.it/25/Calcio-a-7/Emilia-Romagna/Reggio-Emilia/P2025290AR1103/?j=NEU9REhGJjRGPVBOSyY0Rz1GTUQmNEg9RCY0ST1OJjRKPUZERklGTUROZUVFREcmNDI9Yw=="
         }
     ]

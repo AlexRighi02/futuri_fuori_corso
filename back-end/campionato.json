@@ -58,7 +58,7 @@
                     "nome": "ATS TRINITA'"
                 },
                 {
-                    "nome": "GATTATICO CLUB RAPTORS"
+                    "nome": "GATTATICO RAPTORS"
                 }
             ],
             "data": "25/09/25",
@@ -94,7 +94,7 @@
         {
             "squadre": [
                 {
-                    "nome": "GATTATICO CLUB RAPTORS"
+                    "nome": "GATTATICO RAPTORS"
                 },
                 {
                     "nome": "U.S. MONTECCHIO NEW TEAM"
@@ -162,7 +162,7 @@
                     "nome": "U.S. MONTECCHIO YOUNG"
                 },
                 {
-                    "nome": "GATTATICO CLUB RAPTORS"
+                    "nome": "GATTATICO RAPTORS"
                 }
             ],
             "data": "06/10/25",
@@ -224,7 +224,7 @@
         {
             "squadre": [
                 {
-                    "nome": "GATTATICO CLUB RAPTORS"
+                    "nome": "GATTATICO RAPTORS"
                 },
                 {
                     "nome": "THE MOUNT II"
@@ -292,7 +292,7 @@
                     "nome": "AN CALCIO A 7"
                 },
                 {
-                    "nome": "GATTATICO CLUB RAPTORS"
+                    "nome": "GATTATICO RAPTORS"
                 }
             ],
             "data": "20/10/25",
@@ -328,7 +328,7 @@
         {
             "squadre": [
                 {
-                    "nome": "GATTATICO CLUB RAPTORS"
+                    "nome": "GATTATICO RAPTORS"
                 },
                 {
                     "nome": "F.C. FUTURI FUORI CORSO"
@@ -422,7 +422,7 @@
                     "nome": "FOCUMEU"
                 },
                 {
-                    "nome": "GATTATICO CLUB RAPTORS"
+                    "nome": "GATTATICO RAPTORS"
                 }
             ],
             "data": "05/11/25",
@@ -471,7 +471,7 @@
         {
             "squadre": [
                 {
-                    "nome": "GATTATICO CLUB RAPTORS"
+                    "nome": "GATTATICO RAPTORS"
                 },
                 {
                     "nome": "ATS TRINITA' ELITE"
@@ -532,6 +532,149 @@
             "data": "17/11/25",
             "ora": "21:30",
             "risultato": "2-5"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "FOCUMEU"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                }
+            ],
+            "data": "19/11/25",
+            "ora": "21:30",
+            "risultato": "1-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA'"
+                },
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                }
+            ],
+            "data": "20/11/25",
+            "ora": "20:00",
+            "risultato": "2-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "INDOMINUS XI"
+                },
+                {
+                    "nome": "GATTATICO RAPTORS"
+                }
+            ],
+            "data": "20/11/25",
+            "ora": "21:30",
+            "risultato": "7-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                },
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                }
+            ],
+            "data": "24/11/25",
+            "ora": "21:15",
+            "risultato": "5-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "AN CALCIO A 7"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                }
+            ],
+            "data": "24/11/25",
+            "ora": "21:30",
+            "risultato": "4-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "GATTATICO RAPTORS"
+                },
+                {
+                    "nome": "ATS TRINITA'"
+                }
+            ],
+            "data": "25/11/25",
+            "ora": "21:30",
+            "risultato": "3-1"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "INDOMINUS XI"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                }
+            ],
+            "data": "26/11/25",
+            "ora": "20:00",
+            "risultato": "2-7"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "FOCUMEU"
+                },
+                {
+                    "nome": "THE MOUNT II"
+                }
+            ],
+            "data": "26/11/25",
+            "ora": "21:30",
+            "risultato": "3-5"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "FOCUMEU"
+                }
+            ],
+            "data": "01/12/25",
+            "ora": "20:15",
+            "risultato": "4-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "THE MOUNT II"
+                },
+                {
+                    "nome": "INDOMINUS XI"
+                }
+            ],
+            "data": "01/12/25",
+            "ora": "20:15",
+            "risultato": "3-5"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                },
+                {
+                    "nome": "GATTATICO RAPTORS"
+                }
+            ],
+            "data": "01/12/25",
+            "ora": "21:00",
+            "risultato": "2-2"
         }
     ]
 }
