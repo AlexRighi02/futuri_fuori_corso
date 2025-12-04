@@ -150,6 +150,14 @@ const players = {
       insta: "https://www.instagram.com/lucaceroni_?igsh=MThmdnRkNTBpcDhhdA==",
       description: "Di Luca è veramente difficile dire qualcosa…soprattutto fuori posto. Chiamato dal buon Tommi per infoltire il reparto offensivo, il nostro Lucca (sì: ormai per il mister sei ribattezzato così, rassegnati) ha da subito risposto sempre “presente”, con un sorriso sulla faccia e l'impegno di chi non ha voglia di mollare mai fino all'ultimo secondo di partita. Punta fisica dotata di un ottimo tocco di palla e senso della posizione, pare perfettamente a suo agio in mezzo a questo gruppo di co…mpagni strepitosi. Se è vero che “similes cum similibus”…Luca, ci devi dire qualcosa? Il mister non è ancora riuscito a scoprire granché su di lui, se non una passione condivisa con Tommi per il collezionismo di scarpe da calcio. Questo basterà a relegarli in panchina entrambi, almeno per le prime partite."
     },
+    {
+      name: "Filippo Megna",
+      number: 84,
+      img: "img/img_rosa/filippo_megna.jpg",
+      nation: "Italia",
+      insta: "https://www.instagram.com/fillomegna/",
+      description: "La sorpresa che non ti aspetti dei mesi invernali. Classe 2005, impossibilitato a entrare fin dagli albori in squadra per progetti milanesi più top secret e importanti dell'Area 51, Fillo sbarca negli FFC a campionato in corso con la stessa voglia ed entusiasmo che hanno Mancio e Alex quando è finita la partita ed è ora di andare al pub. Con un recente passato a dominare i campi santilariesi (il mister se lo ricorda bene) e regalare perle calcistiche con la maglia del Sant'Ilario, il content creator coi numeri di Favij e i piedi Kovacic ha scelto di rimettersi gli scarpini per tornare a regalare emozioni al suo pubblico e scrivere insieme ai Futuri Fuori Corso un altro pezzo di storia col suo più grande amore: il pallone. Gli osservatori della Kings League sono già stati notati appostati e nascosti al Tannetum Stadium, ma vogliamo essere chiari: Fillo è nostro e non ve lo cediamo. A meno che non offriate birra. In quel caso se ne può parlare. Uscendo dagli spogliatoi c'è chi l'ha visto mettersi la maschera sugli occhi al grido di “si va in scena”. …is the answer to a neverending story…"
+    }
   ],
   staff: [
     {
