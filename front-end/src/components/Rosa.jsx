@@ -17,13 +17,13 @@ const players = {
   ],
   difensori: [
     {
-      name: "Giuseppe Malangone",
-      number: 21,
-      img: "img/img_rosa/giuseppe_malangone.jpg",
+      name: "Andrea Montepietra",
+      number: 3,
+      img: "img/img_rosa/andrea_montepietra.jpg",
       nation: "Italia",
-      insta: "https://www.instagram.com/giuse.malangone_?igsh=Zmo4cjZ0anV5aGFn",
-      description: "Se della squadra dovessimo indicare un'anima, un fondatore, un padre, questi avrebbe un nome e un cognome: Giuseppe Malangone. Dopo una lunga gavetta nelle giovanili dell'FC 70 e due anni di esperienza agli Avellino Banfi, tra un sold out di concerti di sax e l'altro è tra i primi a pensare e realizzare il progetto, costruendo quello che ogni ragazzo di questo gruppo sognava: la NOSTRA squadra. Classe '01, Beppe porta in dote voglia, forza, premi oscar, sgaloppate, grinta, intelligenza tattica, cuore e qualità. Innamorato perso del 21 più bello e forte della Serie A, come lui ogni tanto decide di fermarsi per problemi muscolari…ma sappiamo che è solo solidarietà. Qualcuno lo definisce a ragion veduta “il Gigante d'attacco”, ma quest'anno è pronto a prendere per mano la difesa. Come un veterano, come chi ormai sono anni che calca con successo i campi di calcio a 7 e detta legge per tutta la provincia. Gli avversari sono avvisati: o la gamba o la palla."
-    },
+      insta: "https://www.instagram.com/andreamontepietra?igsh=MTI3Y3cwZG0xcTNtMg==",
+      description: "Il precampionato parla chiaro: Monte è tornato. Spensieratezza, tanta corsa, quantità, testa che sembra finalmente libera e quel fatato piede sinistro capace di sfornare cross che qualche pazzo visionario un tempo definì “telecomandati”. Chef (quasi stellato) di professione, come il compagno di reparto Malangone ha giocato per molto tempo nelle giovanili dell'FC 70, prima di dividersi tra il calcio a 11 nel Santos e il calcio a 7 negli Avellino Banfi. Da quest'anno, ha deciso di aderire totalmente (turni a lavoro permettendo) alla causa della squadra e i primi segnali sembrano essere incoraggianti. Manca ancora l'assaggio del suo famoso risotto alle fragole, ma il campionato è solo all'inizio. Rimane l'incognita più importante: durerà fino a fine anno o una ragazza lo porterà via? Ai posteri l'ardua sentenza."
+    },    
     {
       name: "Giuseppe Di Blasi",
       number: 4,
@@ -41,13 +41,13 @@ const players = {
       description: "Oggetto di mistero della campagna acquisti della squadra, durante una calda e anonima sera d'estate passata al pub è entrato all'improvviso a far parte della rosa e…fin dal primo calcetto ha dimostrato di avere le carte in regola e volersi giocare fino alla fine le sue chance: presentarsi in tenuta romanista, con una stupenda maglia di Dybala, è stata una mossa decisamente vincente, notata e molto apprezzata dal mister. Centrale fisico, dotato di un buon senso della posizione, è pronto a scendere nuovamente in campo e mettere tutto se stesso per difendere la porta di Giglioli. In squadra si mormora già di una sfida tra lui e Di Michele sul numero di tibie portate a casa, ma noi a certe maldicenze non crediamo. Quel che conta è che Gabriel non vede l'ora di cominciare, ma il primo intervento da recupera-palloni l'ha già fatto: ha salvato un Fantacalcio."
     },
     {
-      name: "Andrea Montepietra",
-      number: 3,
-      img: "img/img_rosa/andrea_montepietra.jpg",
+      name: "Giuseppe Malangone",
+      number: 21,
+      img: "img/img_rosa/giuseppe_malangone.jpg",
       nation: "Italia",
-      insta: "https://www.instagram.com/andreamontepietra?igsh=MTI3Y3cwZG0xcTNtMg==",
-      description: "Il precampionato parla chiaro: Monte è tornato. Spensieratezza, tanta corsa, quantità, testa che sembra finalmente libera e quel fatato piede sinistro capace di sfornare cross che qualche pazzo visionario un tempo definì “telecomandati”. Chef (quasi stellato) di professione, come il compagno di reparto Malangone ha giocato per molto tempo nelle giovanili dell'FC 70, prima di dividersi tra il calcio a 11 nel Santos e il calcio a 7 negli Avellino Banfi. Da quest'anno, ha deciso di aderire totalmente (turni a lavoro permettendo) alla causa della squadra e i primi segnali sembrano essere incoraggianti. Manca ancora l'assaggio del suo famoso risotto alle fragole, ma il campionato è solo all'inizio. Rimane l'incognita più importante: durerà fino a fine anno o una ragazza lo porterà via? Ai posteri l'ardua sentenza."
-    },
+      insta: "https://www.instagram.com/giuse.malangone_?igsh=Zmo4cjZ0anV5aGFn",
+      description: "Se della squadra dovessimo indicare un'anima, un fondatore, un padre, questi avrebbe un nome e un cognome: Giuseppe Malangone. Dopo una lunga gavetta nelle giovanili dell'FC 70 e due anni di esperienza agli Avellino Banfi, tra un sold out di concerti di sax e l'altro è tra i primi a pensare e realizzare il progetto, costruendo quello che ogni ragazzo di questo gruppo sognava: la NOSTRA squadra. Classe '01, Beppe porta in dote voglia, forza, premi oscar, sgaloppate, grinta, intelligenza tattica, cuore e qualità. Innamorato perso del 21 più bello e forte della Serie A, come lui ogni tanto decide di fermarsi per problemi muscolari…ma sappiamo che è solo solidarietà. Qualcuno lo definisce a ragion veduta “il Gigante d'attacco”, ma quest'anno è pronto a prendere per mano la difesa. Come un veterano, come chi ormai sono anni che calca con successo i campi di calcio a 7 e detta legge per tutta la provincia. Gli avversari sono avvisati: o la gamba o la palla."
+    }
   ],
   centrocampisti: [
     {
