@@ -51,14 +51,6 @@ const players = {
   ],
   centrocampisti: [
     {
-      name: "Mattia Malangone",
-      number: 0,
-      img: "img/img_rosa/mattia_malangone.jpg",
-      nation: "Italia",
-      insta: "https://www.instagram.com/mattiamalangone/",
-      description: "Il jolly tuttocampista dei Futuri Fuori Corso ha un nome e un cognome: Mattia Malangone. Fratello del capitano (e figlio del Main Sponsor…raccomandato), ex Avellino Banfi e unico membro della squadra ancora potenzialmente in gara per essere davvero un fuori corso, dopo un recente passato nel Celtic Cavriago il Matto si divide quest’anno tra gli impegni con l’FC 70 e la compagine gialloblù…solo per evitare in tutti i modi che il Vittorione Nazionale (sempre sia lodato) lo trovi a ciondolare e lo metta al lavoro. Certo, poi c'è da sperare ogni volta che riesca ad arrivare al campo (intero) e, possibilmente, lo faccia prima del triplice fischio…ma quando entra in scena agli avversari non resta altro che farsi il segno della croce e sperare di non doverci andare a contrasto. Un mix tra la cazzimma di Davids, il recupero palla di Cristante e i tiri di Nedved. Attila, fratello di dio (cit.)."
-    },
-    {
       name: "Giuseppe Esposito",
       number: 5,
       img: "img/img_rosa/giuseppe_esposito.jpg",
@@ -81,6 +73,14 @@ const players = {
       nation: "Italia",
       insta: "https://www.instagram.com/andre_mancin?igsh=bnNveXRmd2wwcHoz",
       description: "Esterno mancino (nomen omen) dotato di un poderoso tiro dalla distanza, con un glorioso passato nelle giovanili dell'FC 70, Mancio ha deciso di cambiare disciplina e darsi al parkour: dopo l'annunciato ritiro dal calcio giocato a maggio 2025, è ufficialmente passato al doppio impegno al Tannetum Stadium per sostenere sia i colori dei Real Maleducati che quelli dei Futuri Fuori Corso. Una scelta dettata dal cuore, dalla passione, dalla voglia di dominare la fascia sinistra, tutte caratteristiche che lo contraddistinguono in modo netto. Almeno fino a più o meno i primi di novembre, quando arriveranno i primi freddi. Ecco, a quel punto tutte le buone intenzioni si sgretoleranno come i migliori propositi per l'anno nuovo fatti il 31 dicembre dopo il quinto Uragano alla festa di Capodanno, per lasciar spazio alla sua più letale e leggendaria arma segreta, compagna fedele di mille panchine: la copertina. Questa lo accompagnerà instancabilmente per tutto l'inverno, abbandonandolo solo verso aprile, quando tornerà a disposizione dei mister per portare a termine la stagione. “Ma con ‘sto freddo, chi me l'ha fatto fare…”."
+    },
+    {
+      name: "Mattia Malangone",
+      number: 17,
+      img: "img/img_rosa/mattia_malangone.jpg",
+      nation: "Italia",
+      insta: "https://www.instagram.com/mattiamalangone/",
+      description: "Il jolly tuttocampista dei Futuri Fuori Corso ha un nome e un cognome: Mattia Malangone. Fratello del capitano (e figlio del Main Sponsor…raccomandato), ex Avellino Banfi e unico membro della squadra ancora potenzialmente in gara per essere davvero un fuori corso, dopo un recente passato nel Celtic Cavriago il Matto si divide quest’anno tra gli impegni con l’FC 70 e la compagine gialloblù…solo per evitare in tutti i modi che il Vittorione Nazionale (sempre sia lodato) lo trovi a ciondolare e lo metta al lavoro. Certo, poi c'è da sperare ogni volta che riesca ad arrivare al campo (intero) e, possibilmente, lo faccia prima del triplice fischio…ma quando entra in scena agli avversari non resta altro che farsi il segno della croce e sperare di non doverci andare a contrasto. Un mix tra la cazzimma di Davids, il recupero palla di Cristante e i tiri di Nedved. Attila, fratello di dio (cit.)."
     },
     {
       name: "Lorenzo Di Michele",
@@ -156,7 +156,7 @@ const players = {
       img: "img/img_rosa/filippo_megna.jpg",
       nation: "Italia",
       insta: "https://www.instagram.com/fillomegna/",
-      description: "La sorpresa che non ti aspetti dei mesi invernali. Classe 2005, impossibilitato a entrare fin dagli albori in squadra per progetti milanesi più top secret e importanti dell'Area 51, Fillo sbarca negli FFC a campionato in corso con la stessa voglia ed entusiasmo che hanno Mancio e Alex quando è finita la partita ed è ora di andare al pub. Con un recente passato a dominare i campi santilariesi (il mister se lo ricorda bene) e regalare perle calcistiche con la maglia del Sant'Ilario, il content creator coi numeri di Favij e i piedi Kovacic ha scelto di rimettersi gli scarpini per tornare a regalare emozioni al suo pubblico e scrivere insieme ai Futuri Fuori Corso un altro pezzo di storia col suo più grande amore: il pallone. Gli osservatori della Kings League sono già stati notati appostati e nascosti al Tannetum Stadium, ma vogliamo essere chiari: Fillo è nostro e non ve lo cediamo. A meno che non offriate birra. In quel caso se ne può parlare. Uscendo dagli spogliatoi c'è chi l'ha visto mettersi la maschera sugli occhi al grido di “si va in scena”. …is the answer to a neverending story…"
+      description: "La sorpresa che non ti aspetti dei mesi invernali. Classe 2005, impossibilitato a entrare fin dagli albori in squadra per progetti milanesi più top secret e importanti dell'Area 51, Fillo sbarca negli FFC a campionato in corso con la stessa voglia ed entusiasmo che hanno Mancio e Alex quando è finita la partita ed è ora di andare al pub. Con un recente passato a dominare i campi santilariesi (il mister se lo ricorda bene) e regalare perle calcistiche con la maglia del Sant'Ilario, il content creator coi numeri di Favij e i piedi di Kovacic ha scelto di rimettersi gli scarpini per tornare a regalare emozioni al suo pubblico e scrivere insieme ai Futuri Fuori Corso un altro pezzo di storia col suo più grande amore: il pallone. Gli osservatori della Kings League sono già stati notati appostati e nascosti al Tannetum Stadium, ma vogliamo essere chiari: Fillo è nostro e non ve lo cediamo. A meno che non offriate birra. In quel caso se ne può parlare. Uscendo dagli spogliatoi c'è chi l'ha visto mettersi la maschera sugli occhi al grido di “si va in scena”. …is the answer to a neverending story…"
     }
   ],
   staff: [
