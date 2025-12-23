@@ -133,19 +133,6 @@
         {
             "squadre": [
                 {
-                    "nome": "F.C. FUTURI FUORI CORSO"
-                },
-                {
-                    "nome": "INDOMINUS XI"
-                }
-            ],
-            "data": "06/10/25",
-            "ora": "20:15",
-            "risultato": "2-5"
-        },
-        {
-            "squadre": [
-                {
                     "nome": "THE MOUNT II"
                 },
                 {
@@ -155,6 +142,19 @@
             "data": "06/10/25",
             "ora": "20:15",
             "risultato": "2-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "INDOMINUS XI"
+                }
+            ],
+            "data": "06/10/25",
+            "ora": "20:15",
+            "risultato": "2-5"
         },
         {
             "squadre": [
@@ -311,6 +311,19 @@
             "data": "21/10/25",
             "ora": "20:00",
             "risultato": "2-6"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "INDOMINUS XI"
+                },
+                {
+                    "nome": "ATS TRINITA'"
+                }
+            ],
+            "data": "12/12/25",
+            "ora": "20:00",
+            "risultato": "6-5"
         },
         {
             "squadre": [
@@ -640,19 +653,6 @@
         {
             "squadre": [
                 {
-                    "nome": "F.C. FUTURI FUORI CORSO"
-                },
-                {
-                    "nome": "FOCUMEU"
-                }
-            ],
-            "data": "01/12/25",
-            "ora": "20:15",
-            "risultato": "4-3"
-        },
-        {
-            "squadre": [
-                {
                     "nome": "THE MOUNT II"
                 },
                 {
@@ -662,6 +662,19 @@
             "data": "01/12/25",
             "ora": "20:15",
             "risultato": "3-5"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "FOCUMEU"
+                }
+            ],
+            "data": "01/12/25",
+            "ora": "20:15",
+            "risultato": "4-3"
         },
         {
             "squadre": [
