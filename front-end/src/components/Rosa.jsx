@@ -13,7 +13,18 @@ const players = {
       nation: "Italia",
       insta: "https://www.instagram.com/giglioliemanuele?igsh=NnRxYjdoY3NkY242",
       description: "Dopo una vita dedicata a impartire lezioni agli avversari sul parquet, da quest'anno Giglio ha deciso cambiare terreno di gioco e sfruttare la magia delle sue mani per difendere i pali della FC Futuri Fuori Corso. Passare con tranquillità dal basket al calcio non è da tutti, ma d'altra parte strafare a lui è sempre piaciuto tantissimo: nei tanti tornei estivi che ha disputato, a parlare sono state le parate ai limiti del sovrannaturale e i trofei alzati. Ora la domanda che tutti si pongono è: riuscirà a ripetersi anche in una porta di calcio a 7? Lui non ha dubbi. Rimane in vacanza (lui dice “a studiare”) tutta estate, sparisce, non si presenta a un calcetto e non risponde a un messaggio fino al 10 settembre…ma ha anche dei difetti."
-    }
+    },
+    {
+      name: "Emanuele Marasi",
+      number: '1(0)',
+      img: "img/img_rosa/emanuele_marasi.jpg",
+      nation: "Italia",
+      insta: "https://www.instagram.com/meme_gk_/",
+      description: `Avversario: Io ho un esercito! 
+                    FFC: E noi abbiamo Meme! 
+      
+      Sì, perché i Supereroi fanno così: quando c'è bisogno di loro, si mettono il costume d'ordinanza alla velocità della luce e corrono a salvare la situazione. Ed è proprio così che, subito dopo il grave infortunio di Giglio, SuperMeme (Gk) si è infilato i guantoni, ha risposto “presente!” e si è messo a parare anche i tiri all'indietro di Marti. Le malelingue sostengono lo faccia solo per una sfida a suon di views tra content creator, ma la realtà è che ha rifiutato offerte faraoniche da tutta la provincia (Criscitiello parla anche di Eccellenza) per vestire la maglia gialloblù. Anche perché non aveva capito che Alex facesse parte della squadra. Ormai è troppo tardi, Meme...`
+    },
   ],
   difensori: [
     {
@@ -122,6 +133,14 @@ const players = {
       insta: "https://www.instagram.com/tommaso.panciroli?igsh=MWd1aW9qOXByNGtmYw==",
       description: "Da Gavassa con furore, il talento della fascia sinistra che non ti aspetti. Sì, perché il nostro Tommi, nonostante il gravoso impegno con il Coviolo FC - le sue gesta, come i suoi gol al volo all'ultimo minuto, si narrano fin nei sobborghi di Villa Minozzo -, ha deciso con grande entusiasmo di buttarsi anche nel mondo del calcio a 7 e di farlo proprio con i Futuri Fuori Corso, in un habitat perfetto per lui. Esplosivo, dinamico, tecnico, sempre pronto a incoraggiare i compagni: è l'uomo giusto, nel posto giusto, al momento giusto. La sua più grande dote è senza ombra di dubbio la pazienza: se vi sembra di intravedere Mr. Rain in campo un'ora prima della partita mentre tutti gli altri sono ancora negli spogliatoi a cambiarsi, tranquilli, non sta per iniziare un concerto, è solo Tommi che non riesce a stare fermo più di 30 secondi nello stesso posto. Soprattutto, dopo questa descrizione, sappiamo che toglierà il saluto a qualcuno di noi. In realtà la storia di come le intricate trame del destino hanno deciso di far incrociare la sua strada con quella di questa squadra inizia parecchi anni fa, addirittura a Valencia. Ed è bellissimo così: “How I Met Your Tommi”. Se volete divertirvi, venite al Tannetum a vederlo, perché ne vale veramente la pena."
     },
+    {
+      name: "Mattia Numeroso",
+      number: '??',
+      img: "img/img_rosa/mattia_numeroso.jpg",
+      nation: "Italia",
+      insta: "https://www.instagram.com/mattianumeroso",
+      description: "Mattia Numeroso: Lo Special Guest invernale, quello capace di risolverti le partite con le sue giocate. “Lui ci svolta la Winter davvero”, fu il messaggio di presentazione. Glorioso curriculum calcistico con un esordio in Reggiana, piede educato, dribbling e padronanza del campo da categorie superiori. Un vero asso nella manica. “Meraviglioso, bello, bello. Ma intanto come abbiamo fatto a fare 3 punti in 4 partite?”. Fortemente voluto da Alex (e questo doveva essere il campanello d’allarme…) per coronare finalmente il sogno di condividere la stessa maglia in campo dopo una vita passata fianco a fianco tra i banchi di scuola e dell’Università, Nume in poco tempo regala prestigio, consapevolezza ed esperienza a tutto il gruppo, che guarda avanti con più fiducia nelle proprie capacità. Stima per chi indossa con orgoglio e rispetto il nostro Pepe. E chissà che un giorno le nostre strade non si incrocino di nuovo… Grazie, Nume."
+     },
   ],
   attaccanti: [
     {
