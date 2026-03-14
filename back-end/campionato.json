@@ -3,19 +3,6 @@
         {
             "squadre": [
                 {
-                    "nome": "F.C. FUTURI FUORI CORSO"
-                },
-                {
-                    "nome": "AN CALCIO A 7"
-                }
-            ],
-            "data": "22/09/25",
-            "ora": "20:15",
-            "risultato": "3-3"
-        },
-        {
-            "squadre": [
-                {
                     "nome": "THE MOUNT II"
                 },
                 {
@@ -25,6 +12,19 @@
             "data": "22/09/25",
             "ora": "20:15",
             "risultato": "4-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "AN CALCIO A 7"
+                }
+            ],
+            "data": "22/09/25",
+            "ora": "20:15",
+            "risultato": "3-3"
         },
         {
             "squadre": [
@@ -688,6 +688,214 @@
             "data": "01/12/25",
             "ora": "21:00",
             "risultato": "2-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA'"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                }
+            ],
+            "data": "12/02/26",
+            "ora": "21:30",
+            "risultato": "1-8"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                },
+                {
+                    "nome": "THE MOUNT II"
+                }
+            ],
+            "data": "23/02/26",
+            "ora": "21:00",
+            "risultato": "3-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "AN CALCIO A 7"
+                },
+                {
+                    "nome": "ATS TRINITA'"
+                }
+            ],
+            "data": "23/02/26",
+            "ora": "21:30",
+            "risultato": "8-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "GATTATICO RAPTORS"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                }
+            ],
+            "data": "24/02/26",
+            "ora": "21:00",
+            "risultato": "8-5"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "INDOMINUS XI"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                }
+            ],
+            "data": "25/02/26",
+            "ora": "20:00",
+            "risultato": "10-1"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "FOCUMEU"
+                },
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                }
+            ],
+            "data": "25/02/26",
+            "ora": "21:30",
+            "risultato": "3-5"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                },
+                {
+                    "nome": "INDOMINUS XI"
+                }
+            ],
+            "data": "02/03/26",
+            "ora": "20:00",
+            "risultato": "2-1"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                }
+            ],
+            "data": "02/03/26",
+            "ora": "20:15",
+            "risultato": "3-0"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "THE MOUNT II"
+                },
+                {
+                    "nome": "GATTATICO RAPTORS"
+                }
+            ],
+            "data": "02/03/26",
+            "ora": "20:15",
+            "risultato": "3-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                },
+                {
+                    "nome": "AN CALCIO A 7"
+                }
+            ],
+            "data": "02/03/26",
+            "ora": "21:15",
+            "risultato": "2-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA'"
+                },
+                {
+                    "nome": "FOCUMEU"
+                }
+            ],
+            "data": "05/03/26",
+            "ora": "20:45",
+            "risultato": "2-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                },
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                }
+            ],
+            "data": "09/03/26",
+            "ora": "21:00",
+            "risultato": "4-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "THE MOUNT II"
+                },
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                }
+            ],
+            "data": "09/03/26",
+            "ora": "21:30",
+            "risultato": "5-5"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "GATTATICO RAPTORS"
+                },
+                {
+                    "nome": "AN CALCIO A 7"
+                }
+            ],
+            "data": "10/03/26",
+            "ora": "21:00",
+            "risultato": "9-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "FOCUMEU"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                }
+            ],
+            "data": "11/03/26",
+            "ora": "21:30",
+            "risultato": "0-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA'"
+                },
+                {
+                    "nome": "INDOMINUS XI"
+                }
+            ],
+            "data": "12/03/26",
+            "ora": "20:45",
+            "risultato": "2-5"
         }
     ]
 }
