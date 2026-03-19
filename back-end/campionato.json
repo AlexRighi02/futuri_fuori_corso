@@ -896,6 +896,71 @@
             "data": "12/03/26",
             "ora": "20:45",
             "risultato": "2-5"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "GATTATICO RAPTORS"
+                }
+            ],
+            "data": "16/03/26",
+            "ora": "20:15",
+            "risultato": "0-6"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA'"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                }
+            ],
+            "data": "16/03/26",
+            "ora": "20:45",
+            "risultato": "1-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                },
+                {
+                    "nome": "INDOMINUS XI"
+                }
+            ],
+            "data": "16/03/26",
+            "ora": "21:15",
+            "risultato": "3-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "AN CALCIO A 7"
+                },
+                {
+                    "nome": "FOCUMEU"
+                }
+            ],
+            "data": "16/03/26",
+            "ora": "21:30",
+            "risultato": "5-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                },
+                {
+                    "nome": "THE MOUNT II"
+                }
+            ],
+            "data": "17/03/26",
+            "ora": "20:00",
+            "risultato": "1-4"
         }
     ]
 }
