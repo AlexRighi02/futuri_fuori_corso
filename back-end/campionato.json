@@ -3,19 +3,6 @@
         {
             "squadre": [
                 {
-                    "nome": "THE MOUNT II"
-                },
-                {
-                    "nome": "FOCUMEU"
-                }
-            ],
-            "data": "22/09/25",
-            "ora": "20:15",
-            "risultato": "4-2"
-        },
-        {
-            "squadre": [
-                {
                     "nome": "F.C. FUTURI FUORI CORSO"
                 },
                 {
@@ -25,6 +12,19 @@
             "data": "22/09/25",
             "ora": "20:15",
             "risultato": "3-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "THE MOUNT II"
+                },
+                {
+                    "nome": "FOCUMEU"
+                }
+            ],
+            "data": "22/09/25",
+            "ora": "20:15",
+            "risultato": "4-2"
         },
         {
             "squadre": [
@@ -705,6 +705,19 @@
         {
             "squadre": [
                 {
+                    "nome": "ATS TRINITA' ELITE"
+                },
+                {
+                    "nome": "AN CALCIO A 7"
+                }
+            ],
+            "data": "02/04/26",
+            "ora": "20:00",
+            "risultato": "4-4"
+        },
+        {
+            "squadre": [
+                {
                     "nome": "U.S. MONTECCHIO NEW TEAM"
                 },
                 {
@@ -783,19 +796,6 @@
         {
             "squadre": [
                 {
-                    "nome": "F.C. FUTURI FUORI CORSO"
-                },
-                {
-                    "nome": "U.S. MONTECCHIO NEW TEAM"
-                }
-            ],
-            "data": "02/03/26",
-            "ora": "20:15",
-            "risultato": "3-0"
-        },
-        {
-            "squadre": [
-                {
                     "nome": "THE MOUNT II"
                 },
                 {
@@ -805,6 +805,19 @@
             "data": "02/03/26",
             "ora": "20:15",
             "risultato": "3-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                }
+            ],
+            "data": "02/03/26",
+            "ora": "20:15",
+            "risultato": "3-0"
         },
         {
             "squadre": [
@@ -1065,6 +1078,71 @@
             "data": "30/03/26",
             "ora": "21:30",
             "risultato": "2-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "FOCUMEU"
+                },
+                {
+                    "nome": "INDOMINUS XI"
+                }
+            ],
+            "data": "01/04/26",
+            "ora": "21:30",
+            "risultato": "3-2"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "ATS TRINITA' ELITE"
+                },
+                {
+                    "nome": "GATTATICO RAPTORS"
+                }
+            ],
+            "data": "07/04/26",
+            "ora": "20:30",
+            "risultato": "0-3"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "THE MOUNT II"
+                },
+                {
+                    "nome": "AN CALCIO A 7"
+                }
+            ],
+            "data": "13/04/26",
+            "ora": "20:15",
+            "risultato": "4-4"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "F.C. FUTURI FUORI CORSO"
+                },
+                {
+                    "nome": "U.S. MONTECCHIO YOUNG"
+                }
+            ],
+            "data": "13/04/26",
+            "ora": "20:15",
+            "risultato": "6-8"
+        },
+        {
+            "squadre": [
+                {
+                    "nome": "U.S. MONTECCHIO NEW TEAM"
+                },
+                {
+                    "nome": "FOCUMEU"
+                }
+            ],
+            "data": "13/04/26",
+            "ora": "21:00",
+            "risultato": "12-7"
         }
     ]
 }
